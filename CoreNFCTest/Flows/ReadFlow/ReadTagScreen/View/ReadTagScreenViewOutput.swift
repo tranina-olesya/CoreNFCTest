@@ -7,5 +7,5 @@
 //
 
 protocol ReadTagScreenViewOutput {
-
+    func viewDidLoad()
 }

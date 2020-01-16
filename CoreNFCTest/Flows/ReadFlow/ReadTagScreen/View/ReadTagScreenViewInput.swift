@@ -7,5 +7,5 @@
 //
 
 protocol ReadTagScreenViewInput: class {
-
+    func setupInitialState()
 }

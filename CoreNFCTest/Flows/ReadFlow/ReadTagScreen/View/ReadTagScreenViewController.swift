@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreNFC
 
 final class ReadTagScreenViewController: UIViewController, ModuleTransitionable {
 
@@ -22,6 +23,7 @@ final class ReadTagScreenViewController: UIViewController, ModuleTransitionable 
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        output?.viewDidLoad()
     }
 
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -33,5 +35,20 @@ final class ReadTagScreenViewController: UIViewController, ModuleTransitionable 
 // MARK: - ReadTagScreenViewInput
 
 extension ReadTagScreenViewController: ReadTagScreenViewInput {
+
+    func setupInitialState() {
+        nfcReader.onRead = processMessages(messages:)
+    }
+
+}
+
+private extension ReadTagScreenViewController {
+
+    func processMessages(messages: [NDEFPayload]) {
+        for message in messages {
+            print(message)
+            print(message)
+        }
+    }
 
 }

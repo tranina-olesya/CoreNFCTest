@@ -6,7 +6,7 @@
 //  Copyright © 2020 Олеся Транина. All rights reserved.
 //
 
-final class ReadTagScreenPresenter: ReadTagScreenViewOutput, ReadTagScreenModuleInput {
+final class ReadTagScreenPresenter: ReadTagScreenModuleInput {
 
     // MARK: - Properties
 
@@ -14,8 +14,14 @@ final class ReadTagScreenPresenter: ReadTagScreenViewOutput, ReadTagScreenModule
     var router: ReadTagScreenRouterInput?
     var output: ReadTagScreenModuleOutput?
 
-    // MARK: - ReadTagScreenViewOutput
+}
 
-    // MARK: - ReadTagScreenModuleInput
+// MARK: - ReadTagScreenViewOutput
+
+extension ReadTagScreenPresenter: ReadTagScreenViewOutput {
+
+    func viewDidLoad() {
+        view?.setupInitialState()
+    }
 
 }
