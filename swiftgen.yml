@@ -1,0 +1,12 @@
+strings:
+  inputs: CoreNFCTest/Resources/Strings/en.lproj/Localizable.strings
+  outputs:
+    - templateName: structured-swift4
+      output: CoreNFCTest/Resources/Strings/Strings.swift
+xcassets:
+  inputs:
+    - CoreNFCTest/Resources/Images/Assets.xcassets
+  outputs:
+    - templateName: swift4
+      output: CoreNFCTest/Resources/Images/Assets.swift
+    

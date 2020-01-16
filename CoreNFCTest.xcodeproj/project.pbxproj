@@ -3,30 +3,58 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		119A22AA04B2E3C024E2D417 /* Pods_CoreNFCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39CFC515F4CDC295DF31C711 /* Pods_CoreNFCTest.framework */; };
 		2D187DF623CF25250062201F /* NFCReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D187DF523CF25250062201F /* NFCReader.swift */; };
 		2D1BA2BF23CC621600FE9799 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1BA2BE23CC621600FE9799 /* AppDelegate.swift */; };
 		2D1BA2C123CC621600FE9799 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1BA2C023CC621600FE9799 /* SceneDelegate.swift */; };
-		2D1BA2C323CC621600FE9799 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1BA2C223CC621600FE9799 /* ViewController.swift */; };
-		2D1BA2C623CC621600FE9799 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D1BA2C423CC621600FE9799 /* Main.storyboard */; };
 		2D1BA2C823CC621800FE9799 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D1BA2C723CC621800FE9799 /* Assets.xcassets */; };
 		2D1BA2CB23CC621800FE9799 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D1BA2C923CC621800FE9799 /* LaunchScreen.storyboard */; };
+		2D26B6E923D0625B00491641 /* ModuleTransitionable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D26B6E823D0625B00491641 /* ModuleTransitionable.swift */; };
+		2D26B6F023D064AC00491641 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2D26B6EE23D064AC00491641 /* Localizable.strings */; };
+		2D26B6F223D064BC00491641 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D26B6F123D064BC00491641 /* Strings.swift */; };
+		2D26B6F423D064D300491641 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D26B6F323D064D300491641 /* Assets.swift */; };
+		43C271ACDECA4DF45AC879C1 /* ReadTagScreenViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0598D2768354D0219A7A0B4A /* ReadTagScreenViewController.storyboard */; };
+		74459331113361FFD00950FC /* ReadTagScreenModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7440254AFEEB44D31F5750FC /* ReadTagScreenModuleConfigurator.swift */; };
+		8A9EE0506EFC27DB0DAD3193 /* ReadTagScreenViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF1A53C2B8FD16C86D9851C /* ReadTagScreenViewOutput.swift */; };
+		8B5C6ADED258E5A196DA7F7D /* ReadTagScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7077AC25B1AF1C8E0C81A559 /* ReadTagScreenPresenter.swift */; };
+		8CB1F58A8EA7361C34917D03 /* ReadTagScreenRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CA91CF3F759B6E3166229C /* ReadTagScreenRouterInput.swift */; };
+		8CCDEFFF87B98FED18710C6C /* ReadTagScreenModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E070F6CC504E3FC9AF6538D1 /* ReadTagScreenModuleOutput.swift */; };
+		916DB4C60045ECE10A462544 /* ReadTagScreenViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C805155B5174D10C811D42C5 /* ReadTagScreenViewInput.swift */; };
+		931D114B9C2A6E5EB9A0284F /* ReadTagScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2D6A06C0D3B9B93EAA1189 /* ReadTagScreenViewController.swift */; };
+		E6391A478675BF2FC2DEC589 /* ReadTagScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AD0B8DF9A08D329FBBDAEA /* ReadTagScreenRouter.swift */; };
+		F4A1295E4619D548E2B90D42 /* ReadTagScreenModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016FF60B5C98AE7FC6F3E13B /* ReadTagScreenModuleInput.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		016FF60B5C98AE7FC6F3E13B /* ReadTagScreenModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReadTagScreenModuleInput.swift; sourceTree = "<group>"; };
+		0598D2768354D0219A7A0B4A /* ReadTagScreenViewController.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = ReadTagScreenViewController.storyboard; sourceTree = "<group>"; };
+		0A2D6A06C0D3B9B93EAA1189 /* ReadTagScreenViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReadTagScreenViewController.swift; sourceTree = "<group>"; };
 		2D187DF523CF25250062201F /* NFCReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCReader.swift; sourceTree = "<group>"; };
 		2D1BA2BB23CC621600FE9799 /* CoreNFCTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreNFCTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D1BA2BE23CC621600FE9799 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2D1BA2C023CC621600FE9799 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2D1BA2C223CC621600FE9799 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2D1BA2C523CC621600FE9799 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2D1BA2C723CC621800FE9799 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D1BA2CA23CC621800FE9799 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D1BA2CC23CC621800FE9799 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D26B6E823D0625B00491641 /* ModuleTransitionable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleTransitionable.swift; sourceTree = "<group>"; };
+		2D26B6EF23D064AC00491641 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2D26B6F123D064BC00491641 /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		2D26B6F323D064D300491641 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		2D94312E23CC736E004B4E9B /* CoreNFCTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CoreNFCTest.entitlements; sourceTree = "<group>"; };
+		39CFC515F4CDC295DF31C711 /* Pods_CoreNFCTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoreNFCTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CF1A53C2B8FD16C86D9851C /* ReadTagScreenViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReadTagScreenViewOutput.swift; sourceTree = "<group>"; };
+		7077AC25B1AF1C8E0C81A559 /* ReadTagScreenPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReadTagScreenPresenter.swift; sourceTree = "<group>"; };
+		7440254AFEEB44D31F5750FC /* ReadTagScreenModuleConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReadTagScreenModuleConfigurator.swift; sourceTree = "<group>"; };
+		82AD0B8DF9A08D329FBBDAEA /* ReadTagScreenRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReadTagScreenRouter.swift; sourceTree = "<group>"; };
+		88CA91CF3F759B6E3166229C /* ReadTagScreenRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReadTagScreenRouterInput.swift; sourceTree = "<group>"; };
+		9E4B534069FA888FC6C737F6 /* Pods-CoreNFCTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreNFCTest.release.xcconfig"; path = "Target Support Files/Pods-CoreNFCTest/Pods-CoreNFCTest.release.xcconfig"; sourceTree = "<group>"; };
+		C805155B5174D10C811D42C5 /* ReadTagScreenViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReadTagScreenViewInput.swift; sourceTree = "<group>"; };
+		E070F6CC504E3FC9AF6538D1 /* ReadTagScreenModuleOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReadTagScreenModuleOutput.swift; sourceTree = "<group>"; };
+		E2177F898BFEDE444506DD21 /* Pods-CoreNFCTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreNFCTest.debug.xcconfig"; path = "Target Support Files/Pods-CoreNFCTest/Pods-CoreNFCTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,17 +62,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				119A22AA04B2E3C024E2D417 /* Pods_CoreNFCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		21C2DCF721F41504976D11A0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E2177F898BFEDE444506DD21 /* Pods-CoreNFCTest.debug.xcconfig */,
+				9E4B534069FA888FC6C737F6 /* Pods-CoreNFCTest.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		2D1BA2B223CC621600FE9799 = {
 			isa = PBXGroup;
 			children = (
 				2D1BA2BD23CC621600FE9799 /* CoreNFCTest */,
 				2D1BA2BC23CC621600FE9799 /* Products */,
+				21C2DCF721F41504976D11A0 /* Pods */,
+				84D77986DD56C678F4C1BF3B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,17 +99,149 @@
 		2D1BA2BD23CC621600FE9799 /* CoreNFCTest */ = {
 			isa = PBXGroup;
 			children = (
-				2D94312E23CC736E004B4E9B /* CoreNFCTest.entitlements */,
-				2D1BA2BE23CC621600FE9799 /* AppDelegate.swift */,
-				2D1BA2C023CC621600FE9799 /* SceneDelegate.swift */,
-				2D1BA2C223CC621600FE9799 /* ViewController.swift */,
-				2D1BA2C423CC621600FE9799 /* Main.storyboard */,
-				2D1BA2C723CC621800FE9799 /* Assets.xcassets */,
-				2D1BA2C923CC621800FE9799 /* LaunchScreen.storyboard */,
-				2D1BA2CC23CC621800FE9799 /* Info.plist */,
-				2D187DF523CF25250062201F /* NFCReader.swift */,
+				2D26B6DE23D0582300491641 /* Application */,
+				2D26B6DF23D0584100491641 /* Flows */,
+				2D26B6E023D0584A00491641 /* Resources */,
+				2D26B6E123D0587800491641 /* Library */,
 			);
 			path = CoreNFCTest;
+			sourceTree = "<group>";
+		};
+		2D26B6DE23D0582300491641 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				2D1BA2BE23CC621600FE9799 /* AppDelegate.swift */,
+				2D94312E23CC736E004B4E9B /* CoreNFCTest.entitlements */,
+				2D1BA2CC23CC621800FE9799 /* Info.plist */,
+				2D1BA2C923CC621800FE9799 /* LaunchScreen.storyboard */,
+				2D1BA2C023CC621600FE9799 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		2D26B6DF23D0584100491641 /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				500D385CDA984824ABBCD72A /* ReadFlow */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		2D26B6E023D0584A00491641 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2D26B6EA23D0636300491641 /* Images */,
+				2D26B6EB23D0639E00491641 /* Strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2D26B6E123D0587800491641 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				2D26B6E523D0624100491641 /* Protocols */,
+				2D26B6E223D0587E00491641 /* Utils */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		2D26B6E223D0587E00491641 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				2D187DF523CF25250062201F /* NFCReader.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		2D26B6E523D0624100491641 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				2D26B6E823D0625B00491641 /* ModuleTransitionable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		2D26B6EA23D0636300491641 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				2D26B6F323D064D300491641 /* Assets.swift */,
+				2D1BA2C723CC621800FE9799 /* Assets.xcassets */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		2D26B6EB23D0639E00491641 /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				2D26B6F123D064BC00491641 /* Strings.swift */,
+				2D26B6EE23D064AC00491641 /* Localizable.strings */,
+			);
+			path = Strings;
+			sourceTree = "<group>";
+		};
+		2E364170475385F1B41468C8 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				7440254AFEEB44D31F5750FC /* ReadTagScreenModuleConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		500D385CDA984824ABBCD72A /* ReadFlow */ = {
+			isa = PBXGroup;
+			children = (
+				676A5042BE47D827931E24DF /* ReadTagScreen */,
+			);
+			path = ReadFlow;
+			sourceTree = "<group>";
+		};
+		5DFCA61CE43D048BDD396837 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0A2D6A06C0D3B9B93EAA1189 /* ReadTagScreenViewController.swift */,
+				0598D2768354D0219A7A0B4A /* ReadTagScreenViewController.storyboard */,
+				C805155B5174D10C811D42C5 /* ReadTagScreenViewInput.swift */,
+				6CF1A53C2B8FD16C86D9851C /* ReadTagScreenViewOutput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		676A5042BE47D827931E24DF /* ReadTagScreen */ = {
+			isa = PBXGroup;
+			children = (
+				2E364170475385F1B41468C8 /* Configurator */,
+				8FB475FAF867DF4A655E82F2 /* Router */,
+				81025675CAA710D04449DCFB /* Presenter */,
+				5DFCA61CE43D048BDD396837 /* View */,
+			);
+			path = ReadTagScreen;
+			sourceTree = "<group>";
+		};
+		81025675CAA710D04449DCFB /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				7077AC25B1AF1C8E0C81A559 /* ReadTagScreenPresenter.swift */,
+				016FF60B5C98AE7FC6F3E13B /* ReadTagScreenModuleInput.swift */,
+				E070F6CC504E3FC9AF6538D1 /* ReadTagScreenModuleOutput.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		84D77986DD56C678F4C1BF3B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				39CFC515F4CDC295DF31C711 /* Pods_CoreNFCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8FB475FAF867DF4A655E82F2 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				82AD0B8DF9A08D329FBBDAEA /* ReadTagScreenRouter.swift */,
+				88CA91CF3F759B6E3166229C /* ReadTagScreenRouterInput.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -79,9 +251,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D1BA2CF23CC621800FE9799 /* Build configuration list for PBXNativeTarget "CoreNFCTest" */;
 			buildPhases = (
+				DEA2AFA5A2C22034797C23C5 /* [CP] Check Pods Manifest.lock */,
+				2D26B6E323D05E4300491641 /* SwiftLint */,
+				2D26B6E423D05E8000491641 /* SwiftGen */,
 				2D1BA2B723CC621600FE9799 /* Sources */,
 				2D1BA2B823CC621600FE9799 /* Frameworks */,
 				2D1BA2B923CC621600FE9799 /* Resources */,
+				BDC0EA57F5C90AF1C411BA76 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,13 +306,92 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D26B6F023D064AC00491641 /* Localizable.strings in Resources */,
 				2D1BA2CB23CC621800FE9799 /* LaunchScreen.storyboard in Resources */,
 				2D1BA2C823CC621800FE9799 /* Assets.xcassets in Resources */,
-				2D1BA2C623CC621600FE9799 /* Main.storyboard in Resources */,
+				43C271ACDECA4DF45AC879C1 /* ReadTagScreenViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2D26B6E323D05E4300491641 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint\n";
+		};
+		2D26B6E423D05E8000491641 /* SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftGen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "$PODS_ROOT/SwiftGen/bin/swiftgen\n";
+		};
+		BDC0EA57F5C90AF1C411BA76 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CoreNFCTest/Pods-CoreNFCTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CoreNFCTest/Pods-CoreNFCTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CoreNFCTest/Pods-CoreNFCTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DEA2AFA5A2C22034797C23C5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CoreNFCTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2D1BA2B723CC621600FE9799 /* Sources */ = {
@@ -144,29 +399,40 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D187DF623CF25250062201F /* NFCReader.swift in Sources */,
-				2D1BA2C323CC621600FE9799 /* ViewController.swift in Sources */,
 				2D1BA2BF23CC621600FE9799 /* AppDelegate.swift in Sources */,
 				2D1BA2C123CC621600FE9799 /* SceneDelegate.swift in Sources */,
+				74459331113361FFD00950FC /* ReadTagScreenModuleConfigurator.swift in Sources */,
+				E6391A478675BF2FC2DEC589 /* ReadTagScreenRouter.swift in Sources */,
+				8CB1F58A8EA7361C34917D03 /* ReadTagScreenRouterInput.swift in Sources */,
+				2D26B6F223D064BC00491641 /* Strings.swift in Sources */,
+				8B5C6ADED258E5A196DA7F7D /* ReadTagScreenPresenter.swift in Sources */,
+				F4A1295E4619D548E2B90D42 /* ReadTagScreenModuleInput.swift in Sources */,
+				2D26B6F423D064D300491641 /* Assets.swift in Sources */,
+				8CCDEFFF87B98FED18710C6C /* ReadTagScreenModuleOutput.swift in Sources */,
+				931D114B9C2A6E5EB9A0284F /* ReadTagScreenViewController.swift in Sources */,
+				916DB4C60045ECE10A462544 /* ReadTagScreenViewInput.swift in Sources */,
+				2D26B6E923D0625B00491641 /* ModuleTransitionable.swift in Sources */,
+				8A9EE0506EFC27DB0DAD3193 /* ReadTagScreenViewOutput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		2D1BA2C423CC621600FE9799 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2D1BA2C523CC621600FE9799 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		2D1BA2C923CC621800FE9799 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				2D1BA2CA23CC621800FE9799 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		2D26B6EE23D064AC00491641 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D26B6EF23D064AC00491641 /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -288,13 +554,14 @@
 		};
 		2D1BA2D023CC621800FE9799 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2177F898BFEDE444506DD21 /* Pods-CoreNFCTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = CoreNFCTest/CoreNFCTest.entitlements;
+				CODE_SIGN_ENTITLEMENTS = CoreNFCTest/Application/CoreNFCTest.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = EFAAG9GXN4;
-				INFOPLIST_FILE = CoreNFCTest/Info.plist;
+				INFOPLIST_FILE = CoreNFCTest/Application/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,13 +576,14 @@
 		};
 		2D1BA2D123CC621800FE9799 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E4B534069FA888FC6C737F6 /* Pods-CoreNFCTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = CoreNFCTest/CoreNFCTest.entitlements;
+				CODE_SIGN_ENTITLEMENTS = CoreNFCTest/Application/CoreNFCTest.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = EFAAG9GXN4;
-				INFOPLIST_FILE = CoreNFCTest/Info.plist;
+				INFOPLIST_FILE = CoreNFCTest/Application/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
