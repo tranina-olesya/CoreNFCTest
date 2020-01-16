@@ -10,8 +10,12 @@ import Foundation
 
 final class TextPayload: NDEFPayload {
 
+    // MARK: - Properties
+
     let languageCode: String
     let text: String
+
+    // MARK: - Initialization
 
     init(languageCode: String, text: String) {
         self.languageCode = languageCode

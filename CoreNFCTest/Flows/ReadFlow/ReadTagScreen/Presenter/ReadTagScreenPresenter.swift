@@ -24,4 +24,8 @@ extension ReadTagScreenPresenter: ReadTagScreenViewOutput {
         view?.setupInitialState()
     }
 
+    func uriChosen(uriPayload: URIPayload) {
+        view?.openURL(url: uriPayload.url)
+    }
+
 }

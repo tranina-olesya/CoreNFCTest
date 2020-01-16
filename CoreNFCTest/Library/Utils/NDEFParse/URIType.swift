@@ -18,6 +18,8 @@ enum URIType {
     case tel
     case mailto
 
+    // MARK: - Properties
+
     var stringPrefix: String {
         switch self {
         case .unknown:
@@ -36,6 +38,8 @@ enum URIType {
             return "mailto:"
         }
     }
+
+    // MARK: - Internal Methods
 
     static func from(prefix: Data) -> URIType {
         switch prefix {

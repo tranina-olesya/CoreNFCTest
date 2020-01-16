@@ -21,8 +21,12 @@
 		2D26B6FA23D06C2D00491641 /* PayloadType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D26B6F923D06C2D00491641 /* PayloadType.swift */; };
 		2D26B6FC23D0702200491641 /* URIType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D26B6FB23D0702200491641 /* URIType.swift */; };
 		2D26B6FE23D0792500491641 /* TextPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D26B6FD23D0792500491641 /* TextPayload.swift */; };
-		2D26B70023D0849D00491641 /* URLPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D26B6FF23D0849D00491641 /* URLPayload.swift */; };
+		2D26B70023D0849D00491641 /* URIPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D26B6FF23D0849D00491641 /* URIPayload.swift */; };
 		2D26B70223D084F000491641 /* NDEFPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D26B70123D084F000491641 /* NDEFPayload.swift */; };
+		2D26B70523D08D1900491641 /* TextMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D26B70323D08D1900491641 /* TextMessageCell.swift */; };
+		2D26B70623D08D1900491641 /* TextMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D26B70423D08D1900491641 /* TextMessageCell.xib */; };
+		2D26B70C23D08E7700491641 /* URIMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D26B70A23D08E7700491641 /* URIMessageCell.swift */; };
+		2D26B70D23D08E7700491641 /* URIMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D26B70B23D08E7700491641 /* URIMessageCell.xib */; };
 		43C271ACDECA4DF45AC879C1 /* ReadTagScreenViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0598D2768354D0219A7A0B4A /* ReadTagScreenViewController.storyboard */; };
 		74459331113361FFD00950FC /* ReadTagScreenModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7440254AFEEB44D31F5750FC /* ReadTagScreenModuleConfigurator.swift */; };
 		8A9EE0506EFC27DB0DAD3193 /* ReadTagScreenViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF1A53C2B8FD16C86D9851C /* ReadTagScreenViewOutput.swift */; };
@@ -54,8 +58,12 @@
 		2D26B6F923D06C2D00491641 /* PayloadType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayloadType.swift; sourceTree = "<group>"; };
 		2D26B6FB23D0702200491641 /* URIType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URIType.swift; sourceTree = "<group>"; };
 		2D26B6FD23D0792500491641 /* TextPayload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextPayload.swift; sourceTree = "<group>"; };
-		2D26B6FF23D0849D00491641 /* URLPayload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLPayload.swift; sourceTree = "<group>"; };
+		2D26B6FF23D0849D00491641 /* URIPayload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URIPayload.swift; sourceTree = "<group>"; };
 		2D26B70123D084F000491641 /* NDEFPayload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NDEFPayload.swift; sourceTree = "<group>"; };
+		2D26B70323D08D1900491641 /* TextMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextMessageCell.swift; sourceTree = "<group>"; };
+		2D26B70423D08D1900491641 /* TextMessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextMessageCell.xib; sourceTree = "<group>"; };
+		2D26B70A23D08E7700491641 /* URIMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URIMessageCell.swift; sourceTree = "<group>"; };
+		2D26B70B23D08E7700491641 /* URIMessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = URIMessageCell.xib; sourceTree = "<group>"; };
 		2D94312E23CC736E004B4E9B /* CoreNFCTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CoreNFCTest.entitlements; sourceTree = "<group>"; };
 		39CFC515F4CDC295DF31C711 /* Pods_CoreNFCTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoreNFCTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CF1A53C2B8FD16C86D9851C /* ReadTagScreenViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReadTagScreenViewOutput.swift; sourceTree = "<group>"; };
@@ -200,9 +208,36 @@
 				2D26B6F923D06C2D00491641 /* PayloadType.swift */,
 				2D26B6FD23D0792500491641 /* TextPayload.swift */,
 				2D26B6FB23D0702200491641 /* URIType.swift */,
-				2D26B6FF23D0849D00491641 /* URLPayload.swift */,
+				2D26B6FF23D0849D00491641 /* URIPayload.swift */,
 			);
 			path = NDEFParse;
+			sourceTree = "<group>";
+		};
+		2D26B70723D08D1E00491641 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2D26B70823D08D6800491641 /* TextMessageCell */,
+				2D26B70923D08E3D00491641 /* URIMessageCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		2D26B70823D08D6800491641 /* TextMessageCell */ = {
+			isa = PBXGroup;
+			children = (
+				2D26B70323D08D1900491641 /* TextMessageCell.swift */,
+				2D26B70423D08D1900491641 /* TextMessageCell.xib */,
+			);
+			path = TextMessageCell;
+			sourceTree = "<group>";
+		};
+		2D26B70923D08E3D00491641 /* URIMessageCell */ = {
+			isa = PBXGroup;
+			children = (
+				2D26B70A23D08E7700491641 /* URIMessageCell.swift */,
+				2D26B70B23D08E7700491641 /* URIMessageCell.xib */,
+			);
+			path = URIMessageCell;
 			sourceTree = "<group>";
 		};
 		2E364170475385F1B41468C8 /* Configurator */ = {
@@ -224,6 +259,7 @@
 		5DFCA61CE43D048BDD396837 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2D26B70723D08D1E00491641 /* Cells */,
 				0A2D6A06C0D3B9B93EAA1189 /* ReadTagScreenViewController.swift */,
 				0598D2768354D0219A7A0B4A /* ReadTagScreenViewController.storyboard */,
 				C805155B5174D10C811D42C5 /* ReadTagScreenViewInput.swift */,
@@ -332,9 +368,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D26B70623D08D1900491641 /* TextMessageCell.xib in Resources */,
 				2D26B6F023D064AC00491641 /* Localizable.strings in Resources */,
 				2D1BA2CB23CC621800FE9799 /* LaunchScreen.storyboard in Resources */,
 				2D1BA2C823CC621800FE9799 /* Assets.xcassets in Resources */,
+				2D26B70D23D08E7700491641 /* URIMessageCell.xib in Resources */,
 				43C271ACDECA4DF45AC879C1 /* ReadTagScreenViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,13 +464,14 @@
 			files = (
 				2D187DF623CF25250062201F /* NFCReader.swift in Sources */,
 				2D1BA2BF23CC621600FE9799 /* AppDelegate.swift in Sources */,
+				2D26B70523D08D1900491641 /* TextMessageCell.swift in Sources */,
 				2D1BA2C123CC621600FE9799 /* SceneDelegate.swift in Sources */,
 				74459331113361FFD00950FC /* ReadTagScreenModuleConfigurator.swift in Sources */,
 				E6391A478675BF2FC2DEC589 /* ReadTagScreenRouter.swift in Sources */,
 				2D26B6F723D068E600491641 /* NDEFParser.swift in Sources */,
 				8CB1F58A8EA7361C34917D03 /* ReadTagScreenRouterInput.swift in Sources */,
 				2D26B6F223D064BC00491641 /* Strings.swift in Sources */,
-				2D26B70023D0849D00491641 /* URLPayload.swift in Sources */,
+				2D26B70023D0849D00491641 /* URIPayload.swift in Sources */,
 				8B5C6ADED258E5A196DA7F7D /* ReadTagScreenPresenter.swift in Sources */,
 				F4A1295E4619D548E2B90D42 /* ReadTagScreenModuleInput.swift in Sources */,
 				2D26B6FA23D06C2D00491641 /* PayloadType.swift in Sources */,
@@ -443,6 +482,7 @@
 				8CCDEFFF87B98FED18710C6C /* ReadTagScreenModuleOutput.swift in Sources */,
 				931D114B9C2A6E5EB9A0284F /* ReadTagScreenViewController.swift in Sources */,
 				916DB4C60045ECE10A462544 /* ReadTagScreenViewInput.swift in Sources */,
+				2D26B70C23D08E7700491641 /* URIMessageCell.swift in Sources */,
 				2D26B6E923D0625B00491641 /* ModuleTransitionable.swift in Sources */,
 				8A9EE0506EFC27DB0DAD3193 /* ReadTagScreenViewOutput.swift in Sources */,
 			);

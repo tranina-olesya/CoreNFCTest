@@ -49,7 +49,7 @@ final class NFCReader: NSObject, NFCNDEFReaderSessionDelegate {
     }
 
     func beginSession() {
-        let session = NFCNDEFReaderSession(delegate: self, queue: DispatchQueue.main, invalidateAfterFirstRead: false)
+        let session = NFCNDEFReaderSession(delegate: self, queue: DispatchQueue.main, invalidateAfterFirstRead: true)
         session.alertMessage = L10n.nfcAlertMessage
         session.begin()
     }

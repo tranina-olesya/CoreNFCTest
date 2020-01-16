@@ -6,4 +6,5 @@
   Copyright © 2020 Surf. All rights reserved.
 */
 
-"NFCAlertMessage" = "Hold your iPhone near the item to learn more about it.";
+"NFCAlertMessage" = "Поднесите телефон к метке";
+"ReadTagScreen.scanButtonTitle" = "Отсканировать метку";

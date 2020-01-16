@@ -8,10 +8,14 @@
 
 import Foundation
 
-final class URLPayload: NDEFPayload {
+final class URIPayload: NDEFPayload {
+
+    // MARK: - Properties
 
     let uriType: URIType
     let url: URL
+
+    // MARK: - Initialization
 
     init(uriType: URIType, url: URL) {
         self.uriType = uriType

@@ -10,7 +10,11 @@ import Foundation
 
 class NDEFPayload {
 
+    // MARK: - Properties
+
     let type: PayloadType
+
+    // MARK: - Initialization
 
     init(type: PayloadType) {
         self.type = type

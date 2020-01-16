@@ -11,8 +11,13 @@ import Foundation
 // swiftlint:disable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:disable nesting type_body_length type_name
 internal enum L10n {
-  /// Hold your iPhone near the item to learn more about it.
+  /// Поднесите телефон к метке
   internal static let nfcAlertMessage = L10n.tr("Localizable", "NFCAlertMessage")
+
+  internal enum ReadTagScreen {
+    /// Отсканировать метку
+    internal static let scanButtonTitle = L10n.tr("Localizable", "ReadTagScreen.scanButtonTitle")
+  }
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:enable nesting type_body_length type_name

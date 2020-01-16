@@ -10,7 +10,7 @@ import CoreNFC
 
 enum NDEFParser {
 
-    static func parseUriPayload(payload: Data) -> URLPayload? {
+    static func parseUriPayload(payload: Data) -> URIPayload? {
         let prefix = URIType.from(prefix: payload.prefix(1))
         let rawPayload = payload.dropFirst(1)
 
@@ -19,7 +19,7 @@ enum NDEFParser {
             return nil
         }
 
-        return URLPayload(uriType: prefix, url: url)
+        return URIPayload(uriType: prefix, url: url)
     }
 
     static func parseTextPayload(payload: Data) -> TextPayload? {
