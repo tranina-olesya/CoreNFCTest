@@ -63,7 +63,7 @@ private extension ReadTagScreenViewController {
         nfcReader.beginSession()
     }
 
-    func processMessages(messages: [NDEFPayload]) {
+    func processMessages(messages: [NDEFPayloadMessage]) {
         fillAdapter(messages: messages)
     }
 
@@ -73,32 +73,54 @@ private extension ReadTagScreenViewController {
 
 private extension ReadTagScreenViewController {
 
-    func fillAdapter(messages: [NDEFPayload]) {
+    func fillAdapter(messages: [NDEFPayloadMessage]) {
         adapter.clearCellGenerators()
 
         for message in messages {
             switch message.type {
             case .text:
-                guard let textPayload = message as? TextPayload else {
-                    continue
-                }
-                let generator = BaseCellGenerator<TextMessageCell>(with: textPayload)
-                adapter.addCellGenerator(generator)
+                configureTextMessageCell(message: message)
             case .uri:
-                guard let uriPayload = message as? URIPayload else {
-                    continue
-                }
-                let generator = BaseCellGenerator<URIMessageCell>(with: uriPayload)
-                generator.didSelectEvent += { [weak self] in
-                    self?.output?.uriChosen(uriPayload: uriPayload)
-                }
-                adapter.addCellGenerator(generator)
+                configureURIMessageCell(message: message)
+            case .contact:
+                configureContactMessageCell(message: message)
             default:
                 continue
             }
         }
 
         adapter.forceRefill()
+    }
+
+    func configureTextMessageCell(message: NDEFPayloadMessage) {
+        guard let textMessage = message as? TextMessage else {
+            return
+        }
+        let generator = BaseCellGenerator<TextMessageCell>(with: textMessage)
+        adapter.addCellGenerator(generator)
+    }
+
+    func configureURIMessageCell(message: NDEFPayloadMessage) {
+        guard let uriMessage = message as? URIMessage else {
+            return
+        }
+        let generator = BaseCellGenerator<URIMessageCell>(with: uriMessage)
+        generator.didSelectEvent += { [weak self] in
+            self?.output?.uriChosen(uriMessage: uriMessage)
+        }
+        adapter.addCellGenerator(generator)
+    }
+
+    func configureContactMessageCell(message: NDEFPayloadMessage) {
+        guard let contactMessage = message as? ContactMessage else {
+            return
+        }
+        let generator = BaseCellGenerator<ContactMessageCell>(with: contactMessage)
+        generator.didSelectEvent += { [weak self] in
+            self?.output?.contactChosen(contactMessage: contactMessage)
+        }
+        adapter.addCellGenerator(generator)
+
     }
 
 }

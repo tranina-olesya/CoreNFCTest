@@ -8,5 +8,6 @@
 
 protocol ReadTagScreenViewOutput {
     func viewDidLoad()
-    func uriChosen(uriPayload: URIPayload)
+    func uriChosen(uriMessage: URIMessage)
+    func contactChosen(contactMessage: ContactMessage)
 }

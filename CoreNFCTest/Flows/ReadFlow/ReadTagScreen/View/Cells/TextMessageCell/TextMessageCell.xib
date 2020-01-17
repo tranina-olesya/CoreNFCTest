@@ -25,7 +25,7 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xwv-9a-EqM">
-                        <rect key="frame" x="70" y="10" width="240" height="50"/>
+                        <rect key="frame" x="70" y="32" width="240" height="28"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -37,26 +37,36 @@
                             <constraint firstAttribute="height" constant="1" id="EZU-yK-YTo"/>
                         </constraints>
                     </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TDb-Jd-aho">
+                        <rect key="frame" x="70" y="10" width="240" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
                     <constraint firstItem="8un-TE-7jG" firstAttribute="top" secondItem="irn-Sb-BGf" secondAttribute="bottom" constant="10" id="0KL-4k-ZlA"/>
                     <constraint firstAttribute="bottom" secondItem="8un-TE-7jG" secondAttribute="bottom" id="8YA-A1-Vrr"/>
                     <constraint firstAttribute="trailing" secondItem="Xwv-9a-EqM" secondAttribute="trailing" constant="10" id="Dd0-GF-SjK"/>
+                    <constraint firstItem="TDb-Jd-aho" firstAttribute="leading" secondItem="irn-Sb-BGf" secondAttribute="trailing" constant="10" id="Gf0-xS-2rY"/>
                     <constraint firstAttribute="trailing" secondItem="8un-TE-7jG" secondAttribute="trailing" id="KD9-wu-kwz"/>
+                    <constraint firstItem="TDb-Jd-aho" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="NiR-me-XyW"/>
                     <constraint firstItem="irn-Sb-BGf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="PBB-eY-RXz"/>
                     <constraint firstItem="8un-TE-7jG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="a0A-4d-cRW"/>
+                    <constraint firstAttribute="trailing" secondItem="TDb-Jd-aho" secondAttribute="trailing" constant="10" id="dyk-tv-KC8"/>
                     <constraint firstItem="Xwv-9a-EqM" firstAttribute="leading" secondItem="irn-Sb-BGf" secondAttribute="trailing" constant="10" id="gU4-kE-2g3"/>
                     <constraint firstItem="8un-TE-7jG" firstAttribute="top" secondItem="Xwv-9a-EqM" secondAttribute="bottom" constant="10" id="htK-yK-pAi"/>
-                    <constraint firstItem="Xwv-9a-EqM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="vue-mX-ck3"/>
+                    <constraint firstItem="Xwv-9a-EqM" firstAttribute="top" secondItem="TDb-Jd-aho" secondAttribute="bottom" constant="5" id="mPe-yl-OKE"/>
                     <constraint firstItem="irn-Sb-BGf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="x6b-br-Vc6"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="languageLabel" destination="TDb-Jd-aho" id="ovm-zd-fua"/>
                 <outlet property="separatorView" destination="8un-TE-7jG" id="xTE-rx-Rye"/>
                 <outlet property="textPayloadLabel" destination="Xwv-9a-EqM" id="rbb-4y-8Z2"/>
             </connections>
-            <point key="canvasLocation" x="131.8840579710145" y="163.05803571428569"/>
+            <point key="canvasLocation" x="131.8840579710145" y="162.72321428571428"/>
         </tableViewCell>
     </objects>
     <resources>

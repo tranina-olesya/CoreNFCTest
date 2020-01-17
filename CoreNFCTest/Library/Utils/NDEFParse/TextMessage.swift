@@ -8,7 +8,7 @@
 
 import Foundation
 
-final class TextPayload: NDEFPayload {
+final class TextMessage: NDEFPayloadMessage {
 
     // MARK: - Properties
 

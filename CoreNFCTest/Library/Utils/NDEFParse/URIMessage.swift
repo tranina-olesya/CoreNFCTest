@@ -8,7 +8,7 @@
 
 import Foundation
 
-final class URIPayload: NDEFPayload {
+final class URIMessage: NDEFPayloadMessage {
 
     // MARK: - Properties
 

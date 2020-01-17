@@ -28,7 +28,7 @@ final class URIMessageCell: UITableViewCell {
 
 extension URIMessageCell: Configurable {
 
-    func configure(with uriPayload: URIPayload) {
+    func configure(with uriPayload: URIMessage) {
         uriLabel.text = uriPayload.url.absoluteString
     }
 

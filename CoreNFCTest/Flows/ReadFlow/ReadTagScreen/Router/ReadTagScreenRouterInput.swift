@@ -6,7 +6,8 @@
 //  Copyright © 2020 Олеся Транина. All rights reserved.
 //
 
-import Foundation
+import Contacts
 
 protocol ReadTagScreenRouterInput {
+    func openContactScreen(contact: CNContact)
 }

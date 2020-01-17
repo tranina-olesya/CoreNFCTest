@@ -13,12 +13,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var window: UIWindow?
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+        guard let windowScene = scene as? UIWindowScene else {
+            return
+        }
         let rootVC = ReadTagScreenModuleConfigurator().configure()
 
-        let windowScene = UIWindowScene(session: session, connectionOptions: connectionOptions)
-        self.window = UIWindow(windowScene: windowScene)
-        self.window?.rootViewController = UINavigationController(rootViewController: rootVC)
-        self.window?.makeKeyAndVisible()
+        let window = UIWindow(windowScene: windowScene)
+        window.rootViewController = UINavigationController(rootViewController: rootVC)
+        self.window = window
+        window.makeKeyAndVisible()
     }
 
 }

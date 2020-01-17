@@ -9,14 +9,14 @@
 import CoreNFC
 import UIKit
 
-typealias MessagesClosure = ([NDEFPayload]) -> Void
+typealias MessagesClosure = ([NDEFPayloadMessage]) -> Void
 
 final class NFCReader: NSObject, NFCNDEFReaderSessionDelegate {
 
     var onRead: MessagesClosure?
 
     func readerSession(_ session: NFCNDEFReaderSession, didDetectNDEFs messages: [NFCNDEFMessage]) {
-        var ndefMessages = [NDEFPayload]()
+        var ndefMessages = [NDEFPayloadMessage]()
         for message in messages {
             for record in message.records {
                 guard let rawValue = String(data: record.type, encoding: .utf8) else {
@@ -33,7 +33,13 @@ final class NFCReader: NSObject, NFCNDEFReaderSessionDelegate {
                         return
                     }
                     ndefMessages.append(textPayloadMessage)
+                case .contact:
+                    guard let contactPayloadMessage = NDEFParser.parseContact(payload: record.payload) else {
+                        return
+                    }
+                    ndefMessages.append(contactPayloadMessage)
                 case .smartPoster:
+                    print(String(data: record.payload, encoding: .utf8))
                     continue
                 default:
                     continue

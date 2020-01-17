@@ -20,12 +20,16 @@ final class ReadTagScreenPresenter: ReadTagScreenModuleInput {
 
 extension ReadTagScreenPresenter: ReadTagScreenViewOutput {
 
+    func contactChosen(contactMessage: ContactMessage) {
+        router?.openContactScreen(contact: contactMessage.contact)
+    }
+
     func viewDidLoad() {
         view?.setupInitialState()
     }
 
-    func uriChosen(uriPayload: URIPayload) {
-        view?.openURL(url: uriPayload.url)
+    func uriChosen(uriMessage: URIMessage) {
+        view?.openURL(url: uriMessage.url)
     }
 
 }

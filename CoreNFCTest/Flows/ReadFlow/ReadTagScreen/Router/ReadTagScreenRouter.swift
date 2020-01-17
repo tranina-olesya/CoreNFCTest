@@ -6,7 +6,7 @@
 //  Copyright © 2020 Олеся Транина. All rights reserved.
 //
 
-import UIKit
+import ContactsUI
 
 final class ReadTagScreenRouter: ReadTagScreenRouterInput {
 
@@ -15,5 +15,10 @@ final class ReadTagScreenRouter: ReadTagScreenRouterInput {
     weak var view: ModuleTransitionable?
 
 	// MARK: - ReadTagScreenRouterInput
+
+    func openContactScreen(contact: CNContact) {
+        let contactViewController = CNContactViewController(for: contact)
+        view?.push(module: contactViewController, animated: true)
+    }
 
 }

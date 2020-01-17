@@ -6,23 +6,27 @@
 //  Copyright © 2020 Surf. All rights reserved.
 //
 
-import CoreNFC
+import Contacts
 
 enum NDEFParser {
 
-    static func parseUriPayload(payload: Data) -> URIPayload? {
+    static func parseUriPayload(payload: Data) -> URIMessage? {
         let prefix = URIType.from(prefix: payload.prefix(1))
         let rawPayload = payload.dropFirst(1)
 
-        guard let payload = String(data: rawPayload, encoding: .utf8),
-            let url = URL(string: "\(prefix.stringPrefix)\(payload)") else {
+        guard var payload = String(data: rawPayload, encoding: .utf8) else {
+            return nil
+        }
+        payload = payload.replacingOccurrences(of: "geo", with: "maps")
+
+        guard let url = URL(string: "\(prefix.stringPrefix)\(payload)") else {
             return nil
         }
 
-        return URIPayload(uriType: prefix, url: url)
+        return URIMessage(uriType: prefix, url: url)
     }
 
-    static func parseTextPayload(payload: Data) -> TextPayload? {
+    static func parseTextPayload(payload: Data) -> TextMessage? {
         let languagePayload = payload.subdata(in: Range(1...2))
         let textPayload = payload.advanced(by: 3)
 
@@ -31,26 +35,15 @@ enum NDEFParser {
                 return nil
         }
 
-        return TextPayload(languageCode: language, text: text)
+        return TextMessage(languageCode: language, text: text)
     }
 
-    static func formattedTypeNameFormat(from typeNameFormat: NFCTypeNameFormat) -> String {
-        switch typeNameFormat {
-        case .empty:
-            return "Empty"
-        case .nfcWellKnown:
-            return "NFC Well Known"
-        case .media:
-            return "Media"
-        case .absoluteURI:
-            return "Absolute URI"
-        case .nfcExternal:
-            return "NFC External"
-        case .unchanged:
-            return "Unchanged"
-        default:
-            return "Unknown"
+    static func parseContact(payload: Data) -> ContactMessage? {
+        guard let contacts = try? CNContactVCardSerialization.contacts(with: payload),
+            let contact = contacts.first else {
+            return nil
         }
+        return ContactMessage(contact: contact)
     }
 
 }

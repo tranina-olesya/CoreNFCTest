@@ -1,20 +1,20 @@
 //
-//  TextMessageCell.swift
+//  ContactMessageCell.swift
 //  CoreNFCTest
 //
-//  Created by Олеся Транина on 16/01/2020.
+//  Created by Олеся Транина on 17/01/2020.
 //  Copyright © 2020 Surf. All rights reserved.
 //
 
 import ReactiveDataDisplayManager
 
-final class TextMessageCell: UITableViewCell {
+final class ContactMessageCell: UITableViewCell {
 
     // MARK: - IBOutlets
 
+    @IBOutlet private weak var nameLabel: UILabel!
+    @IBOutlet private weak var phoneLabel: UILabel!
     @IBOutlet private weak var separatorView: UIView!
-    @IBOutlet private weak var textPayloadLabel: UILabel!
-    @IBOutlet private weak var languageLabel: UILabel!
 
     // MARK: - UITableViewCell
 
@@ -27,18 +27,18 @@ final class TextMessageCell: UITableViewCell {
 
 // MARK: - Configurable
 
-extension TextMessageCell: Configurable {
+extension ContactMessageCell: Configurable {
 
-    func configure(with textMessage: TextMessage) {
-        textPayloadLabel.text = textMessage.text
-        languageLabel.text = textMessage.languageCode
+    func configure(with contactMessage: ContactMessage) {
+        nameLabel.text = contactMessage.contact.givenName
+        phoneLabel.text = contactMessage.contact.phoneNumbers.first?.value.stringValue
     }
 
 }
 
 // MARK: - Configuration
 
-private extension TextMessageCell {
+private extension ContactMessageCell {
 
     func setupInitialState() {
         configureSeparatorView()
