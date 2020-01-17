@@ -6,17 +6,47 @@
 //  Copyright © 2020 Surf. All rights reserved.
 //
 
-import Foundation
+import CoreNFC
 
 class NDEFPayloadMessage {
 
     // MARK: - Properties
 
-    let type: PayloadType
+    let nfcType: NFCTypeNameFormat
 
     // MARK: - Initialization
 
-    init(type: PayloadType) {
-        self.type = type
+    init(nfcType: NFCTypeNameFormat) {
+        self.nfcType = nfcType
     }
+}
+
+class MediaMessage: NDEFPayloadMessage {
+
+    // MARK: - Properties
+
+    let mediaType: MediaPayloadType
+
+    // MARK: - Initialization
+
+    init(mediaType: MediaPayloadType) {
+        self.mediaType = mediaType
+        super.init(nfcType: .media)
+    }
+
+}
+
+class WellKnownMessage: NDEFPayloadMessage {
+
+    // MARK: - Properties
+
+    let wellKnownType: WellKnownPayloadType
+
+    // MARK: - Initialization
+
+    init(wellKnownType: WellKnownPayloadType) {
+        self.wellKnownType = wellKnownType
+        super.init(nfcType: .nfcWellKnown)
+    }
+
 }

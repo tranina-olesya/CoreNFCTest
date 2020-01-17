@@ -77,15 +77,31 @@ private extension ReadTagScreenViewController {
         adapter.clearCellGenerators()
 
         for message in messages {
-            switch message.type {
-            case .text:
-                configureTextMessageCell(message: message)
-            case .uri:
-                configureURIMessageCell(message: message)
-            case .contact:
-                configureContactMessageCell(message: message)
+            switch message.nfcType {
+            case .media:
+                guard let message = message as? MediaMessage else {
+                    continue
+                }
+                switch message.mediaType {
+                case .wifi:
+                    break
+                case .contact:
+                    configureContactMessageCell(message: message)
+                }
+            case .nfcWellKnown:
+                guard let message = message as? WellKnownMessage else {
+                    continue
+                }
+                switch message.wellKnownType {
+                case .text:
+                    configureTextMessageCell(message: message)
+                case .uri:
+                    configureURIMessageCell(message: message)
+                case .smartPoster:
+                    break
+                }
             default:
-                continue
+                break
             }
         }
 

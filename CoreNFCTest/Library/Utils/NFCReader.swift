@@ -19,28 +19,17 @@ final class NFCReader: NSObject, NFCNDEFReaderSessionDelegate {
         var ndefMessages = [NDEFPayloadMessage]()
         for message in messages {
             for record in message.records {
-                guard let rawValue = String(data: record.type, encoding: .utf8) else {
-                    return
-                }
-                switch PayloadType(rawValue: rawValue) {
-                case .uri:
-                    guard let urlPayloadMessage = NDEFParser.parseUriPayload(payload: record.payload) else {
-                        return
+                switch record.typeNameFormat {
+                case .media:
+                    guard let message = NDEFParser.parseMediaMessage(record: record) else {
+                        continue
                     }
-                    ndefMessages.append(urlPayloadMessage)
-                case .text:
-                    guard let textPayloadMessage = NDEFParser.parseTextPayload(payload: record.payload) else {
-                        return
+                    ndefMessages.append(message)
+                case .nfcWellKnown:
+                    guard let message = NDEFParser.parseWellKnownMessage(record: record) else {
+                        continue
                     }
-                    ndefMessages.append(textPayloadMessage)
-                case .contact:
-                    guard let contactPayloadMessage = NDEFParser.parseContact(payload: record.payload) else {
-                        return
-                    }
-                    ndefMessages.append(contactPayloadMessage)
-                case .smartPoster:
-                    print(String(data: record.payload, encoding: .utf8))
-                    continue
+                    ndefMessages.append(message)
                 default:
                     continue
                 }

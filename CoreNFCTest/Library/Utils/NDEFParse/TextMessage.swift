@@ -8,7 +8,7 @@
 
 import Foundation
 
-final class TextMessage: NDEFPayloadMessage {
+final class TextMessage: WellKnownMessage {
 
     // MARK: - Properties
 
@@ -20,7 +20,7 @@ final class TextMessage: NDEFPayloadMessage {
     init(languageCode: String, text: String) {
         self.languageCode = languageCode
         self.text = text
-        super.init(type: .text)
+        super.init(wellKnownType: .text)
     }
 
 }

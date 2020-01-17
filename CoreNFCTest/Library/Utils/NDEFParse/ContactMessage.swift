@@ -8,13 +8,13 @@
 
 import Contacts
 
-final class ContactMessage: NDEFPayloadMessage {
+final class ContactMessage: MediaMessage {
 
     let contact: CNContact
 
     init(contact: CNContact) {
         self.contact = contact
-        super.init(type: .contact)
+        super.init(mediaType: .contact)
     }
 
 }

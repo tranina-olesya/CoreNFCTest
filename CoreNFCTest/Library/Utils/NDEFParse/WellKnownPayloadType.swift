@@ -8,9 +8,8 @@
 
 import Foundation
 
-enum PayloadType: String {
+enum WellKnownPayloadType: String {
     case text = "T"
     case uri = "U"
     case smartPoster = "Sp"
-    case contact = "text/vcard"
 }

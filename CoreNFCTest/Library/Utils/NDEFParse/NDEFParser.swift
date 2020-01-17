@@ -7,10 +7,49 @@
 //
 
 import Contacts
+import CoreNFC
+import NetworkExtension
 
 enum NDEFParser {
 
-    static func parseUriPayload(payload: Data) -> URIMessage? {
+    static func parseWellKnownMessage(record: NFCNDEFPayload) -> NDEFPayloadMessage? {
+        guard let rawValue = String(data: record.type, encoding: .utf8) else {
+            return nil
+        }
+        switch WellKnownPayloadType(rawValue: rawValue) {
+        case .uri:
+            guard let urlPayloadMessage = parseURIMessage(payload: record.payload) else {
+                return nil
+            }
+            return urlPayloadMessage
+        case .text:
+            guard let textPayloadMessage = parseTextMessage(payload: record.payload) else {
+                return nil
+            }
+            return textPayloadMessage
+        case .smartPoster:
+            return nil
+        default:
+            return nil
+        }
+    }
+
+    static func parseMediaMessage(record: NFCNDEFPayload) -> NDEFPayloadMessage? {
+        guard let rawValue = String(data: record.type, encoding: .utf8) else {
+            return nil
+        }
+        switch MediaPayloadType(rawValue: rawValue) {
+        case .contact:
+            guard let contactPayloadMessage = parseContact(payload: record.payload) else {
+                return nil
+            }
+            return contactPayloadMessage
+        default:
+            return nil
+        }
+    }
+
+    private static func parseURIMessage(payload: Data) -> URIMessage? {
         let prefix = URIType.from(prefix: payload.prefix(1))
         let rawPayload = payload.dropFirst(1)
 
@@ -26,7 +65,7 @@ enum NDEFParser {
         return URIMessage(uriType: prefix, url: url)
     }
 
-    static func parseTextPayload(payload: Data) -> TextMessage? {
+    private static func parseTextMessage(payload: Data) -> TextMessage? {
         let languagePayload = payload.subdata(in: Range(1...2))
         let textPayload = payload.advanced(by: 3)
 
@@ -38,7 +77,7 @@ enum NDEFParser {
         return TextMessage(languageCode: language, text: text)
     }
 
-    static func parseContact(payload: Data) -> ContactMessage? {
+    private static func parseContact(payload: Data) -> ContactMessage? {
         guard let contacts = try? CNContactVCardSerialization.contacts(with: payload),
             let contact = contacts.first else {
             return nil

@@ -8,7 +8,7 @@
 
 import Foundation
 
-final class URIMessage: NDEFPayloadMessage {
+final class URIMessage: WellKnownMessage {
 
     // MARK: - Properties
 
@@ -20,7 +20,7 @@ final class URIMessage: NDEFPayloadMessage {
     init(uriType: URIType, url: URL) {
         self.uriType = uriType
         self.url = url
-        super.init(type: .uri)
+        super.init(wellKnownType: .uri)
     }
 
 }
