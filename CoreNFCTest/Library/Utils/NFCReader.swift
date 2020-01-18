@@ -9,14 +9,14 @@
 import CoreNFC
 import UIKit
 
-typealias MessagesClosure = ([NDEFPayloadMessage]) -> Void
+typealias MessagesClosure = ([NDEFMessage]) -> Void
 
 final class NFCReader: NSObject, NFCNDEFReaderSessionDelegate {
 
     var onRead: MessagesClosure?
 
     func readerSession(_ session: NFCNDEFReaderSession, didDetectNDEFs messages: [NFCNDEFMessage]) {
-        var ndefMessages = [NDEFPayloadMessage]()
+        var ndefMessages = [NDEFMessage]()
         for message in messages {
             for record in message.records {
                 switch record.typeNameFormat {

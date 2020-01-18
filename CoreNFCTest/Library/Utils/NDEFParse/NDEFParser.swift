@@ -12,7 +12,7 @@ import NetworkExtension
 
 enum NDEFParser {
 
-    static func parseWellKnownMessage(record: NFCNDEFPayload) -> NDEFPayloadMessage? {
+    static func parseWellKnownMessage(record: NFCNDEFPayload) -> NDEFMessage? {
         guard let rawValue = String(data: record.type, encoding: .utf8) else {
             return nil
         }
@@ -34,7 +34,7 @@ enum NDEFParser {
         }
     }
 
-    static func parseMediaMessage(record: NFCNDEFPayload) -> NDEFPayloadMessage? {
+    static func parseMediaMessage(record: NFCNDEFPayload) -> NDEFMessage? {
         guard let rawValue = String(data: record.type, encoding: .utf8) else {
             return nil
         }
