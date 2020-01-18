@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		063671CE014C77D9D67ABB08 /* WriteTagScreenRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22B78C688ACE60EB15AA954 /* WriteTagScreenRouterInput.swift */; };
 		119A22AA04B2E3C024E2D417 /* Pods_CoreNFCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39CFC515F4CDC295DF31C711 /* Pods_CoreNFCTest.framework */; };
+		174446982CE8D13CAF211DC5 /* MainTabBarScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398218C261F1F80746671DAC /* MainTabBarScreenPresenter.swift */; };
+		1D524ADAAEC63DE37E4C0716 /* WriteTagScreenModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CE37671066B59E0CEE1DAB /* WriteTagScreenModuleConfigurator.swift */; };
+		1EFC5028B0A6B25543971139 /* MainTabBarScreenRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D084991CBED7D1477A996B55 /* MainTabBarScreenRouterInput.swift */; };
+		20D5A8E37576C1B182E82C2E /* MainTabBarScreenViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8953BB32D71343BBD904661 /* MainTabBarScreenViewController.storyboard */; };
 		2D187DF623CF25250062201F /* NFCReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D187DF523CF25250062201F /* NFCReader.swift */; };
 		2D1BA2BF23CC621600FE9799 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1BA2BE23CC621600FE9799 /* AppDelegate.swift */; };
 		2D1BA2C123CC621600FE9799 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1BA2C023CC621600FE9799 /* SceneDelegate.swift */; };
@@ -31,24 +36,43 @@
 		2D26B70223D084F000491641 /* NDEFMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D26B70123D084F000491641 /* NDEFMessage.swift */; };
 		2D26B70523D08D1900491641 /* TextMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D26B70323D08D1900491641 /* TextMessageCell.swift */; };
 		2D26B70623D08D1900491641 /* TextMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D26B70423D08D1900491641 /* TextMessageCell.xib */; };
+		2D5E7A4B88DD6768F20CA1BE /* WriteTagScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2A9B38884C0CA249967F28 /* WriteTagScreenRouter.swift */; };
+		367B2E52230AEE428CF28C52 /* WriteTagScreenModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04348725EC93B548744C2C57 /* WriteTagScreenModuleOutput.swift */; };
 		43C271ACDECA4DF45AC879C1 /* ReadTagScreenViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0598D2768354D0219A7A0B4A /* ReadTagScreenViewController.storyboard */; };
+		5D9729A36CCC9F58F5DE3EB8 /* WriteTagScreenModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F46DBD28B8B477152D282DF /* WriteTagScreenModuleInput.swift */; };
+		5EAD57F0198F2A17B835BB21 /* MainTabBarScreenModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CBF103D13FA61D05A45082 /* MainTabBarScreenModuleInput.swift */; };
+		614ACB5307BF25C082EAC1DE /* WriteTagScreenViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18491A374A441F146DA0C4EE /* WriteTagScreenViewController.storyboard */; };
+		7047CCF744FDE2B4155C25C2 /* MainTabBarScreenModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7822B9D6B412E2942363A9D /* MainTabBarScreenModuleOutput.swift */; };
 		74459331113361FFD00950FC /* ReadTagScreenModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7440254AFEEB44D31F5750FC /* ReadTagScreenModuleConfigurator.swift */; };
+		756E726415855F36603E93C2 /* MainTabBarScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5769AB15E91C39B50796A79 /* MainTabBarScreenRouter.swift */; };
+		7AFFD5A662BE7B5E9E784844 /* MainTabBarScreenViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF9CB2086B220EAD0E21C76 /* MainTabBarScreenViewOutput.swift */; };
+		7CB78023B13E8C790E739FB3 /* WriteTagScreenViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D8791F7430FAA061365FB9 /* WriteTagScreenViewOutput.swift */; };
 		8A9EE0506EFC27DB0DAD3193 /* ReadTagScreenViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF1A53C2B8FD16C86D9851C /* ReadTagScreenViewOutput.swift */; };
 		8B5C6ADED258E5A196DA7F7D /* ReadTagScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7077AC25B1AF1C8E0C81A559 /* ReadTagScreenPresenter.swift */; };
 		8CB1F58A8EA7361C34917D03 /* ReadTagScreenRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CA91CF3F759B6E3166229C /* ReadTagScreenRouterInput.swift */; };
 		8CCDEFFF87B98FED18710C6C /* ReadTagScreenModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E070F6CC504E3FC9AF6538D1 /* ReadTagScreenModuleOutput.swift */; };
 		916DB4C60045ECE10A462544 /* ReadTagScreenViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C805155B5174D10C811D42C5 /* ReadTagScreenViewInput.swift */; };
+		9274FA3ED9F6485A33117B23 /* MainTabBarScreenModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE14B29ADE575B1481A19CD7 /* MainTabBarScreenModuleConfigurator.swift */; };
 		931D114B9C2A6E5EB9A0284F /* ReadTagScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2D6A06C0D3B9B93EAA1189 /* ReadTagScreenViewController.swift */; };
+		979BFD512DA203A85821277C /* WriteTagScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5BAAB30B68C33074E70A66 /* WriteTagScreenPresenter.swift */; };
+		BC1278294E65C83D0A2E8EEB /* MainTabBarScreenViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32C55B18A6DE4F0A411AF75 /* MainTabBarScreenViewInput.swift */; };
 		BCC11C7A23D31F9700CCF7C8 /* MediaMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC11C7923D31F9700CCF7C8 /* MediaMessage.swift */; };
 		BCC11C7C23D31FF500CCF7C8 /* WellKnownMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC11C7B23D31FF500CCF7C8 /* WellKnownMessage.swift */; };
+		BCC11C7E23D329A000CCF7C8 /* MainScreenTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC11C7D23D329A000CCF7C8 /* MainScreenTab.swift */; };
+		D589ED5D09C3A23453CC3D9B /* MainTabBarScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEAF307D043B618DDA5D4F5 /* MainTabBarScreenViewController.swift */; };
 		E6391A478675BF2FC2DEC589 /* ReadTagScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AD0B8DF9A08D329FBBDAEA /* ReadTagScreenRouter.swift */; };
+		E65D5A1DE0FEE65AE458CDE1 /* WriteTagScreenViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603F85D48371883B0D9F2C0B /* WriteTagScreenViewInput.swift */; };
+		F1B30D375C585DAD6D8BB8FA /* WriteTagScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15634489773D13ABDC1A3F37 /* WriteTagScreenViewController.swift */; };
 		F4A1295E4619D548E2B90D42 /* ReadTagScreenModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016FF60B5C98AE7FC6F3E13B /* ReadTagScreenModuleInput.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		016FF60B5C98AE7FC6F3E13B /* ReadTagScreenModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReadTagScreenModuleInput.swift; sourceTree = "<group>"; };
+		04348725EC93B548744C2C57 /* WriteTagScreenModuleOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WriteTagScreenModuleOutput.swift; sourceTree = "<group>"; };
 		0598D2768354D0219A7A0B4A /* ReadTagScreenViewController.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = ReadTagScreenViewController.storyboard; sourceTree = "<group>"; };
 		0A2D6A06C0D3B9B93EAA1189 /* ReadTagScreenViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReadTagScreenViewController.swift; sourceTree = "<group>"; };
+		15634489773D13ABDC1A3F37 /* WriteTagScreenViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WriteTagScreenViewController.swift; sourceTree = "<group>"; };
+		18491A374A441F146DA0C4EE /* WriteTagScreenViewController.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = WriteTagScreenViewController.storyboard; sourceTree = "<group>"; };
 		2D187DF523CF25250062201F /* NFCReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCReader.swift; sourceTree = "<group>"; };
 		2D1BA2BB23CC621600FE9799 /* CoreNFCTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreNFCTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D1BA2BE23CC621600FE9799 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -75,18 +99,36 @@
 		2D26B70323D08D1900491641 /* TextMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextMessageCell.swift; sourceTree = "<group>"; };
 		2D26B70423D08D1900491641 /* TextMessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextMessageCell.xib; sourceTree = "<group>"; };
 		2D94312E23CC736E004B4E9B /* CoreNFCTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CoreNFCTest.entitlements; sourceTree = "<group>"; };
+		2E2A9B38884C0CA249967F28 /* WriteTagScreenRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WriteTagScreenRouter.swift; sourceTree = "<group>"; };
+		398218C261F1F80746671DAC /* MainTabBarScreenPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainTabBarScreenPresenter.swift; sourceTree = "<group>"; };
 		39CFC515F4CDC295DF31C711 /* Pods_CoreNFCTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoreNFCTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		56CBF103D13FA61D05A45082 /* MainTabBarScreenModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainTabBarScreenModuleInput.swift; sourceTree = "<group>"; };
+		5EF9CB2086B220EAD0E21C76 /* MainTabBarScreenViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainTabBarScreenViewOutput.swift; sourceTree = "<group>"; };
+		603F85D48371883B0D9F2C0B /* WriteTagScreenViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WriteTagScreenViewInput.swift; sourceTree = "<group>"; };
 		6CF1A53C2B8FD16C86D9851C /* ReadTagScreenViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReadTagScreenViewOutput.swift; sourceTree = "<group>"; };
 		7077AC25B1AF1C8E0C81A559 /* ReadTagScreenPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReadTagScreenPresenter.swift; sourceTree = "<group>"; };
+		73D8791F7430FAA061365FB9 /* WriteTagScreenViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WriteTagScreenViewOutput.swift; sourceTree = "<group>"; };
 		7440254AFEEB44D31F5750FC /* ReadTagScreenModuleConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReadTagScreenModuleConfigurator.swift; sourceTree = "<group>"; };
 		82AD0B8DF9A08D329FBBDAEA /* ReadTagScreenRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReadTagScreenRouter.swift; sourceTree = "<group>"; };
 		88CA91CF3F759B6E3166229C /* ReadTagScreenRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReadTagScreenRouterInput.swift; sourceTree = "<group>"; };
+		8A5BAAB30B68C33074E70A66 /* WriteTagScreenPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WriteTagScreenPresenter.swift; sourceTree = "<group>"; };
+		8F46DBD28B8B477152D282DF /* WriteTagScreenModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WriteTagScreenModuleInput.swift; sourceTree = "<group>"; };
 		9E4B534069FA888FC6C737F6 /* Pods-CoreNFCTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreNFCTest.release.xcconfig"; path = "Target Support Files/Pods-CoreNFCTest/Pods-CoreNFCTest.release.xcconfig"; sourceTree = "<group>"; };
+		A5769AB15E91C39B50796A79 /* MainTabBarScreenRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainTabBarScreenRouter.swift; sourceTree = "<group>"; };
+		B7822B9D6B412E2942363A9D /* MainTabBarScreenModuleOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainTabBarScreenModuleOutput.swift; sourceTree = "<group>"; };
 		BCC11C7923D31F9700CCF7C8 /* MediaMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaMessage.swift; sourceTree = "<group>"; };
 		BCC11C7B23D31FF500CCF7C8 /* WellKnownMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WellKnownMessage.swift; sourceTree = "<group>"; };
+		BCC11C7D23D329A000CCF7C8 /* MainScreenTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenTab.swift; sourceTree = "<group>"; };
+		BE14B29ADE575B1481A19CD7 /* MainTabBarScreenModuleConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainTabBarScreenModuleConfigurator.swift; sourceTree = "<group>"; };
 		C805155B5174D10C811D42C5 /* ReadTagScreenViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReadTagScreenViewInput.swift; sourceTree = "<group>"; };
+		D084991CBED7D1477A996B55 /* MainTabBarScreenRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainTabBarScreenRouterInput.swift; sourceTree = "<group>"; };
+		D0CE37671066B59E0CEE1DAB /* WriteTagScreenModuleConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WriteTagScreenModuleConfigurator.swift; sourceTree = "<group>"; };
+		D8953BB32D71343BBD904661 /* MainTabBarScreenViewController.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = MainTabBarScreenViewController.storyboard; sourceTree = "<group>"; };
 		E070F6CC504E3FC9AF6538D1 /* ReadTagScreenModuleOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReadTagScreenModuleOutput.swift; sourceTree = "<group>"; };
 		E2177F898BFEDE444506DD21 /* Pods-CoreNFCTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreNFCTest.debug.xcconfig"; path = "Target Support Files/Pods-CoreNFCTest/Pods-CoreNFCTest.debug.xcconfig"; sourceTree = "<group>"; };
+		E22B78C688ACE60EB15AA954 /* WriteTagScreenRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WriteTagScreenRouterInput.swift; sourceTree = "<group>"; };
+		F32C55B18A6DE4F0A411AF75 /* MainTabBarScreenViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainTabBarScreenViewInput.swift; sourceTree = "<group>"; };
+		FEEAF307D043B618DDA5D4F5 /* MainTabBarScreenViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainTabBarScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +215,8 @@
 			isa = PBXGroup;
 			children = (
 				500D385CDA984824ABBCD72A /* ReadFlow */,
+				4CAEFE7B3B78EB849E659B05 /* MainTabBarFlow */,
+				562650994FAE066BE6717DBA /* WriteFlow */,
 			);
 			path = Flows;
 			sourceTree = "<group>";
@@ -268,12 +312,39 @@
 			path = Configurator;
 			sourceTree = "<group>";
 		};
+		4CAEFE7B3B78EB849E659B05 /* MainTabBarFlow */ = {
+			isa = PBXGroup;
+			children = (
+				9FC99FD0BBE6BE4ACCC84929 /* MainTabBarScreen */,
+				BCC11C7D23D329A000CCF7C8 /* MainScreenTab.swift */,
+			);
+			path = MainTabBarFlow;
+			sourceTree = "<group>";
+		};
 		500D385CDA984824ABBCD72A /* ReadFlow */ = {
 			isa = PBXGroup;
 			children = (
 				676A5042BE47D827931E24DF /* ReadTagScreen */,
 			);
 			path = ReadFlow;
+			sourceTree = "<group>";
+		};
+		562650994FAE066BE6717DBA /* WriteFlow */ = {
+			isa = PBXGroup;
+			children = (
+				9C60103A5C96B0052A54F2C8 /* WriteTagScreen */,
+			);
+			path = WriteFlow;
+			sourceTree = "<group>";
+		};
+		5DF617D6E021C8E27BE0BA21 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				398218C261F1F80746671DAC /* MainTabBarScreenPresenter.swift */,
+				56CBF103D13FA61D05A45082 /* MainTabBarScreenModuleInput.swift */,
+				B7822B9D6B412E2942363A9D /* MainTabBarScreenModuleOutput.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		5DFCA61CE43D048BDD396837 /* View */ = {
@@ -297,6 +368,15 @@
 				5DFCA61CE43D048BDD396837 /* View */,
 			);
 			path = ReadTagScreen;
+			sourceTree = "<group>";
+		};
+		69F4E5B87F72F1C996ACA191 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				2E2A9B38884C0CA249967F28 /* WriteTagScreenRouter.swift */,
+				E22B78C688ACE60EB15AA954 /* WriteTagScreenRouterInput.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 		81025675CAA710D04449DCFB /* Presenter */ = {
@@ -326,6 +406,56 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
+		98C2AB9C76F580B1CA220A07 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				BE14B29ADE575B1481A19CD7 /* MainTabBarScreenModuleConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		9C60103A5C96B0052A54F2C8 /* WriteTagScreen */ = {
+			isa = PBXGroup;
+			children = (
+				D6C3D76D604465929945A3CB /* Configurator */,
+				69F4E5B87F72F1C996ACA191 /* Router */,
+				FA1FF51B8535FD54F9BDB74D /* Presenter */,
+				B1C5054049CBDC7AB4B8A9C6 /* View */,
+			);
+			path = WriteTagScreen;
+			sourceTree = "<group>";
+		};
+		9FC99FD0BBE6BE4ACCC84929 /* MainTabBarScreen */ = {
+			isa = PBXGroup;
+			children = (
+				98C2AB9C76F580B1CA220A07 /* Configurator */,
+				A19AD5D027FB06F569D25348 /* Router */,
+				5DF617D6E021C8E27BE0BA21 /* Presenter */,
+				D0DD17B39F5FA40BE48C6CEF /* View */,
+			);
+			path = MainTabBarScreen;
+			sourceTree = "<group>";
+		};
+		A19AD5D027FB06F569D25348 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				A5769AB15E91C39B50796A79 /* MainTabBarScreenRouter.swift */,
+				D084991CBED7D1477A996B55 /* MainTabBarScreenRouterInput.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		B1C5054049CBDC7AB4B8A9C6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				15634489773D13ABDC1A3F37 /* WriteTagScreenViewController.swift */,
+				18491A374A441F146DA0C4EE /* WriteTagScreenViewController.storyboard */,
+				603F85D48371883B0D9F2C0B /* WriteTagScreenViewInput.swift */,
+				73D8791F7430FAA061365FB9 /* WriteTagScreenViewOutput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		BCC11C7723D31EDB00CCF7C8 /* WellKnownType */ = {
 			isa = PBXGroup;
 			children = (
@@ -346,6 +476,35 @@
 				2D24D5E123D1E1FC00708B71 /* MediaPayloadType.swift */,
 			);
 			path = MediaType;
+			sourceTree = "<group>";
+		};
+		D0DD17B39F5FA40BE48C6CEF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FEEAF307D043B618DDA5D4F5 /* MainTabBarScreenViewController.swift */,
+				D8953BB32D71343BBD904661 /* MainTabBarScreenViewController.storyboard */,
+				F32C55B18A6DE4F0A411AF75 /* MainTabBarScreenViewInput.swift */,
+				5EF9CB2086B220EAD0E21C76 /* MainTabBarScreenViewOutput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D6C3D76D604465929945A3CB /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				D0CE37671066B59E0CEE1DAB /* WriteTagScreenModuleConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		FA1FF51B8535FD54F9BDB74D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				8A5BAAB30B68C33074E70A66 /* WriteTagScreenPresenter.swift */,
+				8F46DBD28B8B477152D282DF /* WriteTagScreenModuleInput.swift */,
+				04348725EC93B548744C2C57 /* WriteTagScreenModuleOutput.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -417,6 +576,8 @@
 				2D1BA2C823CC621800FE9799 /* Assets.xcassets in Resources */,
 				2D24D5DA23D1BFD900708B71 /* URIMessageCell.xib in Resources */,
 				43C271ACDECA4DF45AC879C1 /* ReadTagScreenViewController.storyboard in Resources */,
+				20D5A8E37576C1B182E82C2E /* MainTabBarScreenViewController.storyboard in Resources */,
+				614ACB5307BF25C082EAC1DE /* WriteTagScreenViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -533,6 +694,25 @@
 				BCC11C7A23D31F9700CCF7C8 /* MediaMessage.swift in Sources */,
 				2D26B6E923D0625B00491641 /* ModuleTransitionable.swift in Sources */,
 				8A9EE0506EFC27DB0DAD3193 /* ReadTagScreenViewOutput.swift in Sources */,
+				9274FA3ED9F6485A33117B23 /* MainTabBarScreenModuleConfigurator.swift in Sources */,
+				756E726415855F36603E93C2 /* MainTabBarScreenRouter.swift in Sources */,
+				BCC11C7E23D329A000CCF7C8 /* MainScreenTab.swift in Sources */,
+				1EFC5028B0A6B25543971139 /* MainTabBarScreenRouterInput.swift in Sources */,
+				174446982CE8D13CAF211DC5 /* MainTabBarScreenPresenter.swift in Sources */,
+				5EAD57F0198F2A17B835BB21 /* MainTabBarScreenModuleInput.swift in Sources */,
+				7047CCF744FDE2B4155C25C2 /* MainTabBarScreenModuleOutput.swift in Sources */,
+				D589ED5D09C3A23453CC3D9B /* MainTabBarScreenViewController.swift in Sources */,
+				BC1278294E65C83D0A2E8EEB /* MainTabBarScreenViewInput.swift in Sources */,
+				7AFFD5A662BE7B5E9E784844 /* MainTabBarScreenViewOutput.swift in Sources */,
+				1D524ADAAEC63DE37E4C0716 /* WriteTagScreenModuleConfigurator.swift in Sources */,
+				2D5E7A4B88DD6768F20CA1BE /* WriteTagScreenRouter.swift in Sources */,
+				063671CE014C77D9D67ABB08 /* WriteTagScreenRouterInput.swift in Sources */,
+				979BFD512DA203A85821277C /* WriteTagScreenPresenter.swift in Sources */,
+				5D9729A36CCC9F58F5DE3EB8 /* WriteTagScreenModuleInput.swift in Sources */,
+				367B2E52230AEE428CF28C52 /* WriteTagScreenModuleOutput.swift in Sources */,
+				F1B30D375C585DAD6D8BB8FA /* WriteTagScreenViewController.swift in Sources */,
+				E65D5A1DE0FEE65AE458CDE1 /* WriteTagScreenViewInput.swift in Sources */,
+				7CB78023B13E8C790E739FB3 /* WriteTagScreenViewOutput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

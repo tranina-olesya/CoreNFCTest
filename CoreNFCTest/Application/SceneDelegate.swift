@@ -16,10 +16,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = scene as? UIWindowScene else {
             return
         }
-        let rootVC = ReadTagScreenModuleConfigurator().configure()
+        let rootVC = MainTabBarScreenModuleConfigurator().configure()
 
         let window = UIWindow(windowScene: windowScene)
-        window.rootViewController = UINavigationController(rootViewController: rootVC)
+        window.rootViewController = rootVC
         self.window = window
         window.makeKeyAndVisible()
     }

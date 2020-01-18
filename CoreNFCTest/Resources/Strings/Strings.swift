@@ -14,6 +14,17 @@ internal enum L10n {
   /// Поднесите телефон к метке
   internal static let nfcAlertMessage = L10n.tr("Localizable", "NFCAlertMessage")
 
+  internal enum MainTabBarScreen {
+    internal enum ReadTab {
+      /// Чтение
+      internal static let title = L10n.tr("Localizable", "MainTabBarScreen.ReadTab.Title")
+    }
+    internal enum WriteTab {
+      /// Запись
+      internal static let title = L10n.tr("Localizable", "MainTabBarScreen.WriteTab.Title")
+    }
+  }
+
   internal enum ReadTagScreen {
     /// Отсканировать метку
     internal static let scanButtonTitle = L10n.tr("Localizable", "ReadTagScreen.scanButtonTitle")

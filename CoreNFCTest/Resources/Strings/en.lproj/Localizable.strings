@@ -8,3 +8,5 @@
 
 "NFCAlertMessage" = "Поднесите телефон к метке";
 "ReadTagScreen.scanButtonTitle" = "Отсканировать метку";
+"MainTabBarScreen.ReadTab.Title" = "Чтение";
+"MainTabBarScreen.WriteTab.Title" = "Запись";
