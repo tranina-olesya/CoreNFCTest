@@ -7,7 +7,6 @@
 //
 
 import CoreNFC
-import UIKit
 
 typealias MessagesClosure = ([NDEFMessage]) -> Void
 
@@ -17,21 +16,10 @@ final class NFCReader: NSObject, NFCNDEFReaderSessionDelegate {
 
     func readerSession(_ session: NFCNDEFReaderSession, didDetectNDEFs messages: [NFCNDEFMessage]) {
         var ndefMessages = [NDEFMessage]()
-        for message in messages {
-            for record in message.records {
-                switch record.typeNameFormat {
-                case .media:
-                    guard let message = NDEFParser.parseMediaMessage(record: record) else {
-                        continue
-                    }
-                    ndefMessages.append(message)
-                case .nfcWellKnown:
-                    guard let message = NDEFParser.parseWellKnownMessage(record: record) else {
-                        continue
-                    }
-                    ndefMessages.append(message)
-                default:
-                    continue
+        messages.forEach {
+            $0.records.forEach {
+                if let ndefMessage = NDEFParser.parseNDEFMessage($0) {
+                    ndefMessages.append(ndefMessage)
                 }
             }
         }

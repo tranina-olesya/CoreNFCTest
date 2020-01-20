@@ -8,15 +8,6 @@
 
 import CoreNFC
 
-class NDEFMessage {
-
-    // MARK: - Properties
-
-    let nfcType: NFCTypeNameFormat
-
-    // MARK: - Initialization
-
-    init(nfcType: NFCTypeNameFormat) {
-        self.nfcType = nfcType
-    }
+protocol NDEFMessage {
+    var nfcType: NFCTypeNameFormat { get }
 }

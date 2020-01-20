@@ -10,11 +10,18 @@ import Contacts
 
 final class ContactMessage: MediaMessage {
 
+    // MARK: - Properties
+
+    var mediaType: MediaPayloadType {
+        return .contact
+    }
+
     let contact: CNContact
+
+    // MARK: - Initialization
 
     init(contact: CNContact) {
         self.contact = contact
-        super.init(mediaType: .contact)
     }
 
 }

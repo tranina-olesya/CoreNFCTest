@@ -12,6 +12,52 @@ import NetworkExtension
 
 enum NDEFParser {
 
+    static func parseNDEFMessage(_ record: NFCNDEFPayload) -> NDEFMessage? {
+        switch record.typeNameFormat {
+        case .media:
+            return parseMediaMessage(record: record)
+        case .nfcWellKnown:
+            return parseWellKnownMessage(record: record)
+        default:
+            return nil
+        }
+    }
+
+}
+
+// MARK: - Media Messages
+
+private extension NDEFParser {
+
+    static func parseMediaMessage(record: NFCNDEFPayload) -> NDEFMessage? {
+        guard let rawValue = String(data: record.type, encoding: .utf8) else {
+            return nil
+        }
+        switch MediaPayloadType(rawValue: rawValue) {
+        case .contact:
+            guard let contactPayloadMessage = parseContact(payload: record.payload) else {
+                return nil
+            }
+            return contactPayloadMessage
+        default:
+            return nil
+        }
+    }
+
+    static func parseContact(payload: Data) -> ContactMessage? {
+        guard let contacts = try? CNContactVCardSerialization.contacts(with: payload),
+            let contact = contacts.first else {
+            return nil
+        }
+        return ContactMessage(contact: contact)
+    }
+
+}
+
+// MARK: - Well Known Messages
+
+private extension NDEFParser {
+
     static func parseWellKnownMessage(record: NFCNDEFPayload) -> NDEFMessage? {
         guard let rawValue = String(data: record.type, encoding: .utf8) else {
             return nil
@@ -34,29 +80,14 @@ enum NDEFParser {
         }
     }
 
-    static func parseMediaMessage(record: NFCNDEFPayload) -> NDEFMessage? {
-        guard let rawValue = String(data: record.type, encoding: .utf8) else {
-            return nil
-        }
-        switch MediaPayloadType(rawValue: rawValue) {
-        case .contact:
-            guard let contactPayloadMessage = parseContact(payload: record.payload) else {
-                return nil
-            }
-            return contactPayloadMessage
-        default:
-            return nil
-        }
-    }
-
-    private static func parseURIMessage(payload: Data) -> URIMessage? {
+    static func parseURIMessage(payload: Data) -> URIMessage? {
         let prefix = URIType.from(prefix: payload.prefix(1))
         let rawPayload = payload.dropFirst(1)
 
         guard var payload = String(data: rawPayload, encoding: .utf8) else {
             return nil
         }
-        payload = payload.replacingOccurrences(of: "geo", with: "maps")
+        payload = payload.replacingOccurrences(of: "geo:", with: "maps:")
 
         guard let url = URL(string: "\(prefix.stringPrefix)\(payload)") else {
             return nil
@@ -65,7 +96,7 @@ enum NDEFParser {
         return URIMessage(uriType: prefix, url: url)
     }
 
-    private static func parseTextMessage(payload: Data) -> TextMessage? {
+    static func parseTextMessage(payload: Data) -> TextMessage? {
         let languagePayload = payload.subdata(in: Range(1...2))
         let textPayload = payload.advanced(by: 3)
 
@@ -75,14 +106,6 @@ enum NDEFParser {
         }
 
         return TextMessage(languageCode: language, text: text)
-    }
-
-    private static func parseContact(payload: Data) -> ContactMessage? {
-        guard let contacts = try? CNContactVCardSerialization.contacts(with: payload),
-            let contact = contacts.first else {
-            return nil
-        }
-        return ContactMessage(contact: contact)
     }
 
 }

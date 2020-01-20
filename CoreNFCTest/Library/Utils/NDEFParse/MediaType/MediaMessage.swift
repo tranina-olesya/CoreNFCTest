@@ -6,19 +6,16 @@
 //  Copyright © 2020 Surf. All rights reserved.
 //
 
-import Foundation
+import CoreNFC
 
-class MediaMessage: NDEFMessage {
+protocol MediaMessage: NDEFMessage {
+    var mediaType: MediaPayloadType { get }
+}
 
-    // MARK: - Properties
+extension MediaMessage {
 
-    let mediaType: MediaPayloadType
-
-    // MARK: - Initialization
-
-    init(mediaType: MediaPayloadType) {
-        self.mediaType = mediaType
-        super.init(nfcType: .media)
+    var nfcType: NFCTypeNameFormat {
+        return .media
     }
 
 }
