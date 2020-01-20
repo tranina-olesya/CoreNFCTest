@@ -45,12 +45,8 @@ final class ReadTagScreenViewController: UIViewController, ModuleTransitionable 
 extension ReadTagScreenViewController: ReadTagScreenViewInput {
 
     func setupInitialState() {
-        nfcReader.onRead = processMessages(messages:)
+        configureNFCReader()
         configureScanButton()
-    }
-
-    func openURL(url: URL) {
-        UIApplication.shared.open(url)
     }
 
 }
@@ -139,6 +135,10 @@ private extension ReadTagScreenViewController {
 // MARK: - Configure
 
 private extension ReadTagScreenViewController {
+
+    func configureNFCReader() {
+        nfcReader.onRead = processMessages(messages:)
+    }
 
     func configureScanButton() {
         scanButton.layer.cornerRadius = Constants.scanButtonCornerRadius

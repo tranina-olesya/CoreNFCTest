@@ -10,4 +10,5 @@ import Contacts
 
 protocol ReadTagScreenRouterInput {
     func openContactScreen(contact: CNContact)
+    func openURL(url: URL)
 }

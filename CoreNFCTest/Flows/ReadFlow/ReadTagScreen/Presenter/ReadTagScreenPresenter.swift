@@ -29,7 +29,7 @@ extension ReadTagScreenPresenter: ReadTagScreenViewOutput {
     }
 
     func uriChosen(uriMessage: URIMessage) {
-        view?.openURL(url: uriMessage.url)
+        router?.openURL(url: uriMessage.url)
     }
 
 }

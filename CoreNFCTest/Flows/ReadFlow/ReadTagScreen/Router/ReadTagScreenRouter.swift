@@ -21,4 +21,8 @@ final class ReadTagScreenRouter: ReadTagScreenRouterInput {
         view?.push(module: contactViewController, animated: true)
     }
 
+    func openURL(url: URL) {
+        UIApplication.shared.open(url)
+    }
+
 }
