@@ -8,8 +8,12 @@
 
 import CoreNFC
 
+/// Сообщение, сождержащее Well-Known запись
 protocol WellKnownMessage: NDEFMessage {
+
+    /// Тип данных в сообщении
     var wellKnownType: WellKnownPayloadType { get }
+
 }
 
 extension WellKnownMessage {

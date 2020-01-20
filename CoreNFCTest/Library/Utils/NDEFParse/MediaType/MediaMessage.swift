@@ -8,8 +8,12 @@
 
 import CoreNFC
 
+/// Сообщение, сождержащее Media запись
 protocol MediaMessage: NDEFMessage {
+
+    /// Тип данных в сообщении
     var mediaType: MediaPayloadType { get }
+
 }
 
 extension MediaMessage {

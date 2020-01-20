@@ -9,5 +9,8 @@
 import CoreNFC
 
 protocol NDEFMessage {
+
+    /// Тип сообщения, записанного на метке
     var nfcType: NFCTypeNameFormat { get }
+
 }
