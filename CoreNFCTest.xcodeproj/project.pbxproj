@@ -56,6 +56,7 @@
 		931D114B9C2A6E5EB9A0284F /* ReadTagScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2D6A06C0D3B9B93EAA1189 /* ReadTagScreenViewController.swift */; };
 		979BFD512DA203A85821277C /* WriteTagScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5BAAB30B68C33074E70A66 /* WriteTagScreenPresenter.swift */; };
 		BC1278294E65C83D0A2E8EEB /* MainTabBarScreenViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32C55B18A6DE4F0A411AF75 /* MainTabBarScreenViewInput.swift */; };
+		BC18938923FA5ACB00675935 /* NFCWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC18938823FA5ACB00675935 /* NFCWriter.swift */; };
 		BCC11C7A23D31F9700CCF7C8 /* MediaMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC11C7923D31F9700CCF7C8 /* MediaMessage.swift */; };
 		BCC11C7C23D31FF500CCF7C8 /* WellKnownMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC11C7B23D31FF500CCF7C8 /* WellKnownMessage.swift */; };
 		BCC11C7E23D329A000CCF7C8 /* MainScreenTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC11C7D23D329A000CCF7C8 /* MainScreenTab.swift */; };
@@ -116,6 +117,7 @@
 		9E4B534069FA888FC6C737F6 /* Pods-CoreNFCTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreNFCTest.release.xcconfig"; path = "Target Support Files/Pods-CoreNFCTest/Pods-CoreNFCTest.release.xcconfig"; sourceTree = "<group>"; };
 		A5769AB15E91C39B50796A79 /* MainTabBarScreenRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainTabBarScreenRouter.swift; sourceTree = "<group>"; };
 		B7822B9D6B412E2942363A9D /* MainTabBarScreenModuleOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainTabBarScreenModuleOutput.swift; sourceTree = "<group>"; };
+		BC18938823FA5ACB00675935 /* NFCWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCWriter.swift; sourceTree = "<group>"; };
 		BCC11C7923D31F9700CCF7C8 /* MediaMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaMessage.swift; sourceTree = "<group>"; };
 		BCC11C7B23D31FF500CCF7C8 /* WellKnownMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WellKnownMessage.swift; sourceTree = "<group>"; };
 		BCC11C7D23D329A000CCF7C8 /* MainScreenTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenTab.swift; sourceTree = "<group>"; };
@@ -244,6 +246,7 @@
 			children = (
 				2D26B6F823D06C1500491641 /* NDEFParse */,
 				2D187DF523CF25250062201F /* NFCReader.swift */,
+				BC18938823FA5ACB00675935 /* NFCWriter.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -514,9 +517,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D1BA2CF23CC621800FE9799 /* Build configuration list for PBXNativeTarget "CoreNFCTest" */;
 			buildPhases = (
-				DEA2AFA5A2C22034797C23C5 /* [CP] Check Pods Manifest.lock */,
 				2D26B6E323D05E4300491641 /* SwiftLint */,
 				2D26B6E423D05E8000491641 /* SwiftGen */,
+				DEA2AFA5A2C22034797C23C5 /* [CP] Check Pods Manifest.lock */,
 				2D1BA2B723CC621600FE9799 /* Sources */,
 				2D1BA2B823CC621600FE9799 /* Frameworks */,
 				2D1BA2B923CC621600FE9799 /* Resources */,
@@ -696,6 +699,7 @@
 				8A9EE0506EFC27DB0DAD3193 /* ReadTagScreenViewOutput.swift in Sources */,
 				9274FA3ED9F6485A33117B23 /* MainTabBarScreenModuleConfigurator.swift in Sources */,
 				756E726415855F36603E93C2 /* MainTabBarScreenRouter.swift in Sources */,
+				BC18938923FA5ACB00675935 /* NFCWriter.swift in Sources */,
 				BCC11C7E23D329A000CCF7C8 /* MainScreenTab.swift in Sources */,
 				1EFC5028B0A6B25543971139 /* MainTabBarScreenRouterInput.swift in Sources */,
 				174446982CE8D13CAF211DC5 /* MainTabBarScreenPresenter.swift in Sources */,

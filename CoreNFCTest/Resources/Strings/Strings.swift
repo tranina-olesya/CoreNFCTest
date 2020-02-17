@@ -25,6 +25,27 @@ internal enum L10n {
     }
   }
 
+  internal enum NFCWriter {
+    /// Запись добавлена
+    internal static let successMessage = L10n.tr("Localizable", "NFCWriter.successMessage")
+    internal enum Error {
+      /// Не удалось определить NDEF статус.
+      internal static let failedDetermineNDEFStatus = L10n.tr("Localizable", "NFCWriter.Error.failedDetermineNDEFStatus")
+      /// Неудалось записать. Попробуйте еще раз
+      internal static let failedWrite = L10n.tr("Localizable", "NFCWriter.Error.failedWrite")
+      /// Формат метки не поддерживается.
+      internal static let notSupported = L10n.tr("Localizable", "NFCWriter.Error.notSupported")
+      /// Для этой метки запись невозможна.
+      internal static let notWritable = L10n.tr("Localizable", "NFCWriter.Error.notWritable")
+      /// Недостаточно места. Необходимо %@ байт.
+      internal static func smallCapacity(_ p1: String) -> String {
+        return L10n.tr("Localizable", "NFCWriter.Error.smallCapacity", p1)
+      }
+      /// Найдено больше одной метки. Поднесите только одну.
+      internal static let tooManyTags = L10n.tr("Localizable", "NFCWriter.Error.tooManyTags")
+    }
+  }
+
   internal enum ReadTagScreen {
     /// Отсканировать метку
     internal static let scanButtonTitle = L10n.tr("Localizable", "ReadTagScreen.scanButtonTitle")

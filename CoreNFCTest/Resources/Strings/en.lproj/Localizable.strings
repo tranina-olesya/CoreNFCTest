@@ -10,3 +10,15 @@
 "ReadTagScreen.scanButtonTitle" = "Отсканировать метку";
 "MainTabBarScreen.ReadTab.Title" = "Чтение";
 "MainTabBarScreen.WriteTab.Title" = "Запись";
+
+// MARK: - NFCWriter
+
+// MARK: Errors
+"NFCWriter.Error.tooManyTags" = "Найдено больше одной метки. Поднесите только одну.";
+"NFCWriter.Error.failedDetermineNDEFStatus" = "Не удалось определить NDEF статус.";
+"NFCWriter.Error.notWritable" = "Для этой метки запись невозможна.";
+"NFCWriter.Error.notSupported" = "Формат метки не поддерживается.";
+"NFCWriter.Error.smallCapacity" = "Недостаточно места. Необходимо %@ байт.";
+"NFCWriter.Error.failedWrite" = "Неудалось записать. Попробуйте еще раз";
+
+"NFCWriter.successMessage" = "Запись добавлена";

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreNFC
 
 final class WriteTagScreenViewController: UIViewController, WriteTagScreenViewInput, ModuleTransitionable {
 
@@ -14,10 +15,26 @@ final class WriteTagScreenViewController: UIViewController, WriteTagScreenViewIn
 
     var output: WriteTagScreenViewOutput?
 
+    // MARK: - Private Properties
+
+    private lazy var nfcWriter = NFCWriter(records: [])
+
     // MARK: - UIViewController
 
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        guard let textPayload = NFCNDEFPayload.wellKnownTypeTextPayload(
+            string: "Brought to you by the Great Fish Company",
+            locale: Locale(identifier: "En"))
+        else {
+            nfcWriter = NFCWriter(records: [])
+            return
+        }
+        nfcWriter = NFCWriter(records: [textPayload])
+        nfcWriter.beginSession()
     }
 
     // MARK: - WriteTagScreenViewInput
