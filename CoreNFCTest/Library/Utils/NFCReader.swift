@@ -27,7 +27,6 @@ final class NFCReader: NSObject, NFCNDEFReaderSessionDelegate {
     }
 
     func readerSession(_ session: NFCNDEFReaderSession, didInvalidateWithError error: Error) {
-        print("NFC NDEF Invalidated")
         print("\(error)")
     }
 
