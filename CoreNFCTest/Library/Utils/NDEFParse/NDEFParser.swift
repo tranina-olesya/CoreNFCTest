@@ -97,26 +97,30 @@ private extension NDEFParser {
     }
 
     static func parseTextMessage(payload: Data) -> TextMessage? {
-        let languagePayload = payload.subdata(in: Range(1...2))
-        let textPayload = payload.advanced(by: 3)
+        guard ![UInt8](payload).isEmpty else {
+            return nil
+        }
+
+        let encodingPayload = [UInt8](payload)[0] & 0x80
+        let languageCodeLength = Int([UInt8](payload)[0] & 0x7F)
+
+        let languagePayload = payload.subdata(in: 1..<(languageCodeLength + 1))
+        let textPayload = payload.advanced(by: languageCodeLength + 1)
 
         guard
-            let encoding = getEncodingType(payload.prefix(1)),
+            [UInt8](payload).count > languageCodeLength + 1,
+            let encoding = getEncodingType(encodingPayload),
             let language = String(data: languagePayload, encoding: .utf8),
             let text = String(data: textPayload, encoding: encoding)
         else {
-                return nil
+            return nil
         }
 
         return TextMessage(languageCode: language, text: text)
     }
 
-    static func getEncodingType(_ data: Data) -> String.Encoding? {
-        guard ![UInt8](data).isEmpty else {
-            return nil
-        }
-        let encodingData = [UInt8](data)[0] & 0x80
-        let isUTF16 = encodingData != 0
+    static func getEncodingType(_ data: UInt8) -> String.Encoding? {
+        let isUTF16 = data != 0
         return isUTF16 ? .utf16 : .utf8
     }
 
