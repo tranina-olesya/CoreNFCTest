@@ -7,5 +7,6 @@
 //
 
 protocol WriteTagScreenViewInput: class {
-
+    func setupInitialState()
+    func updateMessages(_ messages: [NDEFMessage])
 }

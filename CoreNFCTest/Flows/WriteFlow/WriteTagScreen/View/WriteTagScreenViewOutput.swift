@@ -7,5 +7,6 @@
 //
 
 protocol WriteTagScreenViewOutput {
-
+    func viewDidLoad()
+    func addRecordSelected()
 }

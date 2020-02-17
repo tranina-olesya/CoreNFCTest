@@ -29,7 +29,7 @@ final class ReadTagScreenViewController: UIViewController, ModuleTransitionable 
     // MARK: - Private Properties
 
     private lazy var nfcReader = NFCReader()
-    private lazy var adapter = BaseTableDataDisplayManager(collection: tableView)
+    private lazy var adapter = NDEFRecordsAdapter(tableView: tableView)
 
     // MARK: - UIViewController
 
@@ -45,6 +45,7 @@ final class ReadTagScreenViewController: UIViewController, ModuleTransitionable 
 extension ReadTagScreenViewController: ReadTagScreenViewInput {
 
     func setupInitialState() {
+        title = L10n.MainTabBarScreen.ReadTab.title
         configureNFCReader()
         configureScanButton()
     }
@@ -60,79 +61,12 @@ private extension ReadTagScreenViewController {
     }
 
     func processMessages(messages: [NDEFMessage]) {
-        fillAdapter(messages: messages)
+        adapter.update(messages: messages)
     }
 
 }
 
-// MARK: - Adapter
-
-private extension ReadTagScreenViewController {
-
-    func fillAdapter(messages: [NDEFMessage]) {
-        adapter.clearCellGenerators()
-
-        for message in messages {
-            switch message.nfcType {
-            case .media:
-                configureMediaMessageCell(message: message)
-            case .nfcWellKnown:
-                configureWellKnownMessageCell(message: message)
-            default:
-                break
-            }
-        }
-
-        adapter.forceRefill()
-    }
-
-    func configureMediaMessageCell(message: NDEFMessage) {
-        guard let message = message as? MediaMessage else {
-            return
-        }
-        switch message.mediaType {
-        case .wifi:
-            break
-        case .contact:
-            guard let contactMessage = message as? ContactMessage else {
-                return
-            }
-            let contactMessageGenerator = BaseCellGenerator<ContactMessageCell>(with: contactMessage)
-            contactMessageGenerator.didSelectEvent += { [weak self] in
-                self?.output?.contactChosen(contactMessage: contactMessage)
-            }
-            adapter.addCellGenerator(contactMessageGenerator)
-        }
-    }
-
-    func configureWellKnownMessageCell(message: NDEFMessage) {
-        guard let message = message as? WellKnownMessage else {
-            return
-        }
-        switch message.wellKnownType {
-        case .smartPoster:
-            break
-        case .text:
-            guard let textMessage = message as? TextMessage else {
-                return
-            }
-            let textMessageGenerator = BaseCellGenerator<TextMessageCell>(with: textMessage)
-            adapter.addCellGenerator(textMessageGenerator)
-        case .uri:
-            guard let uriMessage = message as? URIMessage else {
-                return
-            }
-            let uriMessageGenerator = BaseCellGenerator<URIMessageCell>(with: uriMessage)
-            uriMessageGenerator.didSelectEvent += { [weak self] in
-                self?.output?.uriChosen(uriMessage: uriMessage)
-            }
-            adapter.addCellGenerator(uriMessageGenerator)
-        }
-    }
-
-}
-
-// MARK: - Configure
+// MARK: - Configuration
 
 private extension ReadTagScreenViewController {
 

@@ -8,12 +8,21 @@
 
 import UIKit
 
-final class WriteTagScreenRouter: WriteTagScreenRouterInput {
+final class WriteTagScreenRouter {
 
 	// MARK: - Properties
 
     weak var view: ModuleTransitionable?
 
-	// MARK: - WriteTagScreenRouterInput
+}
+
+// MARK: - WriteTagScreenRouterInput
+
+extension WriteTagScreenRouter: WriteTagScreenRouterInput {
+
+    func showAddRecordScreen(output: AddRecordModuleOutput) {
+        let addRecordScreen = AddRecordModuleConfigurator().configure(output: output)
+        view?.push(module: addRecordScreen, animated: true)
+    }
 
 }

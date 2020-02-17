@@ -6,10 +6,9 @@
   Copyright © 2020 Surf. All rights reserved.
 */
 
+// MARK: - NFC Common
+
 "NFCAlertMessage" = "Поднесите телефон к метке";
-"ReadTagScreen.scanButtonTitle" = "Отсканировать метку";
-"MainTabBarScreen.ReadTab.Title" = "Чтение";
-"MainTabBarScreen.WriteTab.Title" = "Запись";
 
 // MARK: - NFCWriter
 
@@ -21,4 +20,18 @@
 "NFCWriter.Error.smallCapacity" = "Недостаточно места. Необходимо %@ байт.";
 "NFCWriter.Error.failedWrite" = "Неудалось записать. Попробуйте еще раз";
 
+// MARK: Success
 "NFCWriter.successMessage" = "Запись добавлена";
+
+// MARK: - ReadTagScreen
+
+"ReadTagScreen.scanButtonTitle" = "Отсканировать метку";
+
+// MARK: - MainTabBarScreen
+
+"MainTabBarScreen.ReadTab.Title" = "Чтение";
+"MainTabBarScreen.WriteTab.Title" = "Запись";
+
+// MARK: - WriteTagScreen
+
+"WriteTagScreen.writeButtonTitle" = "Записать сообщения";

@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0155662CC0FFD09ECD7F0E6C /* AddRecordModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E635983E9627A12ED342C9 /* AddRecordModuleInput.swift */; };
 		063671CE014C77D9D67ABB08 /* WriteTagScreenRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22B78C688ACE60EB15AA954 /* WriteTagScreenRouterInput.swift */; };
 		119A22AA04B2E3C024E2D417 /* Pods_CoreNFCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39CFC515F4CDC295DF31C711 /* Pods_CoreNFCTest.framework */; };
 		174446982CE8D13CAF211DC5 /* MainTabBarScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398218C261F1F80746671DAC /* MainTabBarScreenPresenter.swift */; };
+		1C4A739CCF18175AFABE919B /* AddRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21491E79584D9ACFE44C5A32 /* AddRecordViewController.swift */; };
 		1D524ADAAEC63DE37E4C0716 /* WriteTagScreenModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CE37671066B59E0CEE1DAB /* WriteTagScreenModuleConfigurator.swift */; };
 		1EFC5028B0A6B25543971139 /* MainTabBarScreenRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D084991CBED7D1477A996B55 /* MainTabBarScreenRouterInput.swift */; };
 		20D5A8E37576C1B182E82C2E /* MainTabBarScreenViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8953BB32D71343BBD904661 /* MainTabBarScreenViewController.storyboard */; };
@@ -38,7 +40,12 @@
 		2D26B70623D08D1900491641 /* TextMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D26B70423D08D1900491641 /* TextMessageCell.xib */; };
 		2D5E7A4B88DD6768F20CA1BE /* WriteTagScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2A9B38884C0CA249967F28 /* WriteTagScreenRouter.swift */; };
 		367B2E52230AEE428CF28C52 /* WriteTagScreenModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04348725EC93B548744C2C57 /* WriteTagScreenModuleOutput.swift */; };
+		36AE664BBD1CCEC2564DDD20 /* AddRecordModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE86901232D04E46B00A772 /* AddRecordModuleOutput.swift */; };
 		43C271ACDECA4DF45AC879C1 /* ReadTagScreenViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0598D2768354D0219A7A0B4A /* ReadTagScreenViewController.storyboard */; };
+		4C8C05940CEC2F9E10CCA546 /* AddRecordRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6608CE173D2258F1F1D1EFA /* AddRecordRouter.swift */; };
+		5594195F44B2F2B1A2E3B8A0 /* AddRecordModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD54EC0DD2F45B2607979D4B /* AddRecordModuleConfigurator.swift */; };
+		5D00926E96A46A3ED80496B1 /* AddRecordViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09893E7B76CF7AA85267B843 /* AddRecordViewOutput.swift */; };
+		5D82390B6CBAA383C798CFBE /* AddRecordViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA12F69494B5865E9312DF33 /* AddRecordViewController.storyboard */; };
 		5D9729A36CCC9F58F5DE3EB8 /* WriteTagScreenModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F46DBD28B8B477152D282DF /* WriteTagScreenModuleInput.swift */; };
 		5EAD57F0198F2A17B835BB21 /* MainTabBarScreenModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CBF103D13FA61D05A45082 /* MainTabBarScreenModuleInput.swift */; };
 		614ACB5307BF25C082EAC1DE /* WriteTagScreenViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18491A374A441F146DA0C4EE /* WriteTagScreenViewController.storyboard */; };
@@ -48,6 +55,7 @@
 		7AFFD5A662BE7B5E9E784844 /* MainTabBarScreenViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF9CB2086B220EAD0E21C76 /* MainTabBarScreenViewOutput.swift */; };
 		7CB78023B13E8C790E739FB3 /* WriteTagScreenViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D8791F7430FAA061365FB9 /* WriteTagScreenViewOutput.swift */; };
 		8A9EE0506EFC27DB0DAD3193 /* ReadTagScreenViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF1A53C2B8FD16C86D9851C /* ReadTagScreenViewOutput.swift */; };
+		8AE1BB42E5308F985333B21F /* AddRecordViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6CA72BEBD67B79C712C361 /* AddRecordViewInput.swift */; };
 		8B5C6ADED258E5A196DA7F7D /* ReadTagScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7077AC25B1AF1C8E0C81A559 /* ReadTagScreenPresenter.swift */; };
 		8CB1F58A8EA7361C34917D03 /* ReadTagScreenRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CA91CF3F759B6E3166229C /* ReadTagScreenRouterInput.swift */; };
 		8CCDEFFF87B98FED18710C6C /* ReadTagScreenModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E070F6CC504E3FC9AF6538D1 /* ReadTagScreenModuleOutput.swift */; };
@@ -57,12 +65,20 @@
 		979BFD512DA203A85821277C /* WriteTagScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5BAAB30B68C33074E70A66 /* WriteTagScreenPresenter.swift */; };
 		BC1278294E65C83D0A2E8EEB /* MainTabBarScreenViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32C55B18A6DE4F0A411AF75 /* MainTabBarScreenViewInput.swift */; };
 		BC18938923FA5ACB00675935 /* NFCWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC18938823FA5ACB00675935 /* NFCWriter.swift */; };
+		BC18938C23FA6CF200675935 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC18938B23FA6CF200675935 /* UIViewControllerExtension.swift */; };
+		BC18938F23FA6D2B00675935 /* NavigationItemType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC18938E23FA6D2B00675935 /* NavigationItemType.swift */; };
+		BC18939123FA79D500675935 /* NDEFRecordsAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC18939023FA79D500675935 /* NDEFRecordsAdapter.swift */; };
+		BC18939723FA898300675935 /* NDEFTypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC18939523FA898300675935 /* NDEFTypeCell.swift */; };
+		BC18939823FA898300675935 /* NDEFTypeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC18939623FA898300675935 /* NDEFTypeCell.xib */; };
+		BC18939A23FA8A7500675935 /* NDEFWriteType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC18939923FA8A7500675935 /* NDEFWriteType.swift */; };
 		BCC11C7A23D31F9700CCF7C8 /* MediaMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC11C7923D31F9700CCF7C8 /* MediaMessage.swift */; };
 		BCC11C7C23D31FF500CCF7C8 /* WellKnownMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC11C7B23D31FF500CCF7C8 /* WellKnownMessage.swift */; };
 		BCC11C7E23D329A000CCF7C8 /* MainScreenTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC11C7D23D329A000CCF7C8 /* MainScreenTab.swift */; };
 		D589ED5D09C3A23453CC3D9B /* MainTabBarScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEAF307D043B618DDA5D4F5 /* MainTabBarScreenViewController.swift */; };
+		E47AEDA60C55C0632FAC885E /* AddRecordRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440CF2671DF53AB3C9AB593F /* AddRecordRouterInput.swift */; };
 		E6391A478675BF2FC2DEC589 /* ReadTagScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AD0B8DF9A08D329FBBDAEA /* ReadTagScreenRouter.swift */; };
 		E65D5A1DE0FEE65AE458CDE1 /* WriteTagScreenViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603F85D48371883B0D9F2C0B /* WriteTagScreenViewInput.swift */; };
+		E7B100A1EC0075CBDFCACA8E /* AddRecordPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A0808AD9734942447A21AA /* AddRecordPresenter.swift */; };
 		F1B30D375C585DAD6D8BB8FA /* WriteTagScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15634489773D13ABDC1A3F37 /* WriteTagScreenViewController.swift */; };
 		F4A1295E4619D548E2B90D42 /* ReadTagScreenModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016FF60B5C98AE7FC6F3E13B /* ReadTagScreenModuleInput.swift */; };
 /* End PBXBuildFile section */
@@ -71,9 +87,12 @@
 		016FF60B5C98AE7FC6F3E13B /* ReadTagScreenModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReadTagScreenModuleInput.swift; sourceTree = "<group>"; };
 		04348725EC93B548744C2C57 /* WriteTagScreenModuleOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WriteTagScreenModuleOutput.swift; sourceTree = "<group>"; };
 		0598D2768354D0219A7A0B4A /* ReadTagScreenViewController.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = ReadTagScreenViewController.storyboard; sourceTree = "<group>"; };
+		09893E7B76CF7AA85267B843 /* AddRecordViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddRecordViewOutput.swift; sourceTree = "<group>"; };
 		0A2D6A06C0D3B9B93EAA1189 /* ReadTagScreenViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReadTagScreenViewController.swift; sourceTree = "<group>"; };
+		0CE86901232D04E46B00A772 /* AddRecordModuleOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddRecordModuleOutput.swift; sourceTree = "<group>"; };
 		15634489773D13ABDC1A3F37 /* WriteTagScreenViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WriteTagScreenViewController.swift; sourceTree = "<group>"; };
 		18491A374A441F146DA0C4EE /* WriteTagScreenViewController.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = WriteTagScreenViewController.storyboard; sourceTree = "<group>"; };
+		21491E79584D9ACFE44C5A32 /* AddRecordViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddRecordViewController.swift; sourceTree = "<group>"; };
 		2D187DF523CF25250062201F /* NFCReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCReader.swift; sourceTree = "<group>"; };
 		2D1BA2BB23CC621600FE9799 /* CoreNFCTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreNFCTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D1BA2BE23CC621600FE9799 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -103,11 +122,14 @@
 		2E2A9B38884C0CA249967F28 /* WriteTagScreenRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WriteTagScreenRouter.swift; sourceTree = "<group>"; };
 		398218C261F1F80746671DAC /* MainTabBarScreenPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainTabBarScreenPresenter.swift; sourceTree = "<group>"; };
 		39CFC515F4CDC295DF31C711 /* Pods_CoreNFCTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoreNFCTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A6CA72BEBD67B79C712C361 /* AddRecordViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddRecordViewInput.swift; sourceTree = "<group>"; };
+		440CF2671DF53AB3C9AB593F /* AddRecordRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddRecordRouterInput.swift; sourceTree = "<group>"; };
 		56CBF103D13FA61D05A45082 /* MainTabBarScreenModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainTabBarScreenModuleInput.swift; sourceTree = "<group>"; };
 		5EF9CB2086B220EAD0E21C76 /* MainTabBarScreenViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainTabBarScreenViewOutput.swift; sourceTree = "<group>"; };
 		603F85D48371883B0D9F2C0B /* WriteTagScreenViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WriteTagScreenViewInput.swift; sourceTree = "<group>"; };
 		6CF1A53C2B8FD16C86D9851C /* ReadTagScreenViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReadTagScreenViewOutput.swift; sourceTree = "<group>"; };
 		7077AC25B1AF1C8E0C81A559 /* ReadTagScreenPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReadTagScreenPresenter.swift; sourceTree = "<group>"; };
+		70E635983E9627A12ED342C9 /* AddRecordModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddRecordModuleInput.swift; sourceTree = "<group>"; };
 		73D8791F7430FAA061365FB9 /* WriteTagScreenViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WriteTagScreenViewOutput.swift; sourceTree = "<group>"; };
 		7440254AFEEB44D31F5750FC /* ReadTagScreenModuleConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReadTagScreenModuleConfigurator.swift; sourceTree = "<group>"; };
 		82AD0B8DF9A08D329FBBDAEA /* ReadTagScreenRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReadTagScreenRouter.swift; sourceTree = "<group>"; };
@@ -118,6 +140,12 @@
 		A5769AB15E91C39B50796A79 /* MainTabBarScreenRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainTabBarScreenRouter.swift; sourceTree = "<group>"; };
 		B7822B9D6B412E2942363A9D /* MainTabBarScreenModuleOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainTabBarScreenModuleOutput.swift; sourceTree = "<group>"; };
 		BC18938823FA5ACB00675935 /* NFCWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCWriter.swift; sourceTree = "<group>"; };
+		BC18938B23FA6CF200675935 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		BC18938E23FA6D2B00675935 /* NavigationItemType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationItemType.swift; sourceTree = "<group>"; };
+		BC18939023FA79D500675935 /* NDEFRecordsAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NDEFRecordsAdapter.swift; sourceTree = "<group>"; };
+		BC18939523FA898300675935 /* NDEFTypeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NDEFTypeCell.swift; sourceTree = "<group>"; };
+		BC18939623FA898300675935 /* NDEFTypeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NDEFTypeCell.xib; sourceTree = "<group>"; };
+		BC18939923FA8A7500675935 /* NDEFWriteType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NDEFWriteType.swift; sourceTree = "<group>"; };
 		BCC11C7923D31F9700CCF7C8 /* MediaMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaMessage.swift; sourceTree = "<group>"; };
 		BCC11C7B23D31FF500CCF7C8 /* WellKnownMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WellKnownMessage.swift; sourceTree = "<group>"; };
 		BCC11C7D23D329A000CCF7C8 /* MainScreenTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenTab.swift; sourceTree = "<group>"; };
@@ -126,9 +154,13 @@
 		D084991CBED7D1477A996B55 /* MainTabBarScreenRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainTabBarScreenRouterInput.swift; sourceTree = "<group>"; };
 		D0CE37671066B59E0CEE1DAB /* WriteTagScreenModuleConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WriteTagScreenModuleConfigurator.swift; sourceTree = "<group>"; };
 		D8953BB32D71343BBD904661 /* MainTabBarScreenViewController.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = MainTabBarScreenViewController.storyboard; sourceTree = "<group>"; };
+		D8A0808AD9734942447A21AA /* AddRecordPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddRecordPresenter.swift; sourceTree = "<group>"; };
+		DD54EC0DD2F45B2607979D4B /* AddRecordModuleConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddRecordModuleConfigurator.swift; sourceTree = "<group>"; };
 		E070F6CC504E3FC9AF6538D1 /* ReadTagScreenModuleOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReadTagScreenModuleOutput.swift; sourceTree = "<group>"; };
 		E2177F898BFEDE444506DD21 /* Pods-CoreNFCTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreNFCTest.debug.xcconfig"; path = "Target Support Files/Pods-CoreNFCTest/Pods-CoreNFCTest.debug.xcconfig"; sourceTree = "<group>"; };
 		E22B78C688ACE60EB15AA954 /* WriteTagScreenRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WriteTagScreenRouterInput.swift; sourceTree = "<group>"; };
+		E6608CE173D2258F1F1D1EFA /* AddRecordRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddRecordRouter.swift; sourceTree = "<group>"; };
+		EA12F69494B5865E9312DF33 /* AddRecordViewController.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = AddRecordViewController.storyboard; sourceTree = "<group>"; };
 		F32C55B18A6DE4F0A411AF75 /* MainTabBarScreenViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainTabBarScreenViewInput.swift; sourceTree = "<group>"; };
 		FEEAF307D043B618DDA5D4F5 /* MainTabBarScreenViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainTabBarScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -152,6 +184,15 @@
 				9E4B534069FA888FC6C737F6 /* Pods-CoreNFCTest.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		25C096AC371B3EDCAD5F955E /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				E6608CE173D2258F1F1D1EFA /* AddRecordRouter.swift */,
+				440CF2671DF53AB3C9AB593F /* AddRecordRouterInput.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 		2D1BA2B223CC621600FE9799 = {
@@ -235,6 +276,9 @@
 		2D26B6E123D0587800491641 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				BC18938D23FA6D1D00675935 /* Base Classes */,
+				BC18939223FA7CBB00675935 /* Common */,
+				BC18938A23FA6CD700675935 /* Extensions */,
 				2D26B6E523D0624100491641 /* Protocols */,
 				2D26B6E223D0587E00491641 /* Utils */,
 			);
@@ -336,6 +380,7 @@
 			isa = PBXGroup;
 			children = (
 				9C60103A5C96B0052A54F2C8 /* WriteTagScreen */,
+				898498082411BCD8AA2EAAAF /* AddRecord */,
 			);
 			path = WriteFlow;
 			sourceTree = "<group>";
@@ -353,7 +398,6 @@
 		5DFCA61CE43D048BDD396837 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				2D26B70723D08D1E00491641 /* Cells */,
 				0A2D6A06C0D3B9B93EAA1189 /* ReadTagScreenViewController.swift */,
 				0598D2768354D0219A7A0B4A /* ReadTagScreenViewController.storyboard */,
 				C805155B5174D10C811D42C5 /* ReadTagScreenViewInput.swift */,
@@ -400,6 +444,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		898498082411BCD8AA2EAAAF /* AddRecord */ = {
+			isa = PBXGroup;
+			children = (
+				FE9F9C968FD26D56F8E63B62 /* Configurator */,
+				25C096AC371B3EDCAD5F955E /* Router */,
+				92C306CE9BD905BBDB3DC5BD /* Presenter */,
+				C8AB9EF845579A9A3DA6B58A /* View */,
+			);
+			path = AddRecord;
+			sourceTree = "<group>";
+		};
 		8FB475FAF867DF4A655E82F2 /* Router */ = {
 			isa = PBXGroup;
 			children = (
@@ -407,6 +462,16 @@
 				88CA91CF3F759B6E3166229C /* ReadTagScreenRouterInput.swift */,
 			);
 			path = Router;
+			sourceTree = "<group>";
+		};
+		92C306CE9BD905BBDB3DC5BD /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				D8A0808AD9734942447A21AA /* AddRecordPresenter.swift */,
+				70E635983E9627A12ED342C9 /* AddRecordModuleInput.swift */,
+				0CE86901232D04E46B00A772 /* AddRecordModuleOutput.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		98C2AB9C76F580B1CA220A07 /* Configurator */ = {
@@ -459,6 +524,49 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		BC18938A23FA6CD700675935 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BC18938B23FA6CF200675935 /* UIViewControllerExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BC18938D23FA6D1D00675935 /* Base Classes */ = {
+			isa = PBXGroup;
+			children = (
+				BC18938E23FA6D2B00675935 /* NavigationItemType.swift */,
+			);
+			path = "Base Classes";
+			sourceTree = "<group>";
+		};
+		BC18939223FA7CBB00675935 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				2D26B70723D08D1E00491641 /* Cells */,
+				BC18939023FA79D500675935 /* NDEFRecordsAdapter.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		BC18939323FA895700675935 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				BC18939423FA896100675935 /* NDEFTypeCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		BC18939423FA896100675935 /* NDEFTypeCell */ = {
+			isa = PBXGroup;
+			children = (
+				BC18939923FA8A7500675935 /* NDEFWriteType.swift */,
+				BC18939523FA898300675935 /* NDEFTypeCell.swift */,
+				BC18939623FA898300675935 /* NDEFTypeCell.xib */,
+			);
+			path = NDEFTypeCell;
+			sourceTree = "<group>";
+		};
 		BCC11C7723D31EDB00CCF7C8 /* WellKnownType */ = {
 			isa = PBXGroup;
 			children = (
@@ -479,6 +587,18 @@
 				2D24D5E123D1E1FC00708B71 /* MediaPayloadType.swift */,
 			);
 			path = MediaType;
+			sourceTree = "<group>";
+		};
+		C8AB9EF845579A9A3DA6B58A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BC18939323FA895700675935 /* Cells */,
+				21491E79584D9ACFE44C5A32 /* AddRecordViewController.swift */,
+				EA12F69494B5865E9312DF33 /* AddRecordViewController.storyboard */,
+				3A6CA72BEBD67B79C712C361 /* AddRecordViewInput.swift */,
+				09893E7B76CF7AA85267B843 /* AddRecordViewOutput.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		D0DD17B39F5FA40BE48C6CEF /* View */ = {
@@ -508,6 +628,14 @@
 				04348725EC93B548744C2C57 /* WriteTagScreenModuleOutput.swift */,
 			);
 			path = Presenter;
+			sourceTree = "<group>";
+		};
+		FE9F9C968FD26D56F8E63B62 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				DD54EC0DD2F45B2607979D4B /* AddRecordModuleConfigurator.swift */,
+			);
+			path = Configurator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -581,6 +709,8 @@
 				43C271ACDECA4DF45AC879C1 /* ReadTagScreenViewController.storyboard in Resources */,
 				20D5A8E37576C1B182E82C2E /* MainTabBarScreenViewController.storyboard in Resources */,
 				614ACB5307BF25C082EAC1DE /* WriteTagScreenViewController.storyboard in Resources */,
+				BC18939823FA898300675935 /* NDEFTypeCell.xib in Resources */,
+				5D82390B6CBAA383C798CFBE /* AddRecordViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -674,6 +804,7 @@
 				2D26B70523D08D1900491641 /* TextMessageCell.swift in Sources */,
 				2D1BA2C123CC621600FE9799 /* SceneDelegate.swift in Sources */,
 				74459331113361FFD00950FC /* ReadTagScreenModuleConfigurator.swift in Sources */,
+				BC18938C23FA6CF200675935 /* UIViewControllerExtension.swift in Sources */,
 				E6391A478675BF2FC2DEC589 /* ReadTagScreenRouter.swift in Sources */,
 				2D26B6F723D068E600491641 /* NDEFParser.swift in Sources */,
 				8CB1F58A8EA7361C34917D03 /* ReadTagScreenRouterInput.swift in Sources */,
@@ -686,6 +817,7 @@
 				F4A1295E4619D548E2B90D42 /* ReadTagScreenModuleInput.swift in Sources */,
 				2D26B6FA23D06C2D00491641 /* WellKnownPayloadType.swift in Sources */,
 				2D26B6F423D064D300491641 /* Assets.swift in Sources */,
+				BC18938F23FA6D2B00675935 /* NavigationItemType.swift in Sources */,
 				2D26B6FC23D0702200491641 /* URIType.swift in Sources */,
 				2D26B70223D084F000491641 /* NDEFMessage.swift in Sources */,
 				BCC11C7C23D31FF500CCF7C8 /* WellKnownMessage.swift in Sources */,
@@ -702,6 +834,7 @@
 				BC18938923FA5ACB00675935 /* NFCWriter.swift in Sources */,
 				BCC11C7E23D329A000CCF7C8 /* MainScreenTab.swift in Sources */,
 				1EFC5028B0A6B25543971139 /* MainTabBarScreenRouterInput.swift in Sources */,
+				BC18939123FA79D500675935 /* NDEFRecordsAdapter.swift in Sources */,
 				174446982CE8D13CAF211DC5 /* MainTabBarScreenPresenter.swift in Sources */,
 				5EAD57F0198F2A17B835BB21 /* MainTabBarScreenModuleInput.swift in Sources */,
 				7047CCF744FDE2B4155C25C2 /* MainTabBarScreenModuleOutput.swift in Sources */,
@@ -714,9 +847,20 @@
 				979BFD512DA203A85821277C /* WriteTagScreenPresenter.swift in Sources */,
 				5D9729A36CCC9F58F5DE3EB8 /* WriteTagScreenModuleInput.swift in Sources */,
 				367B2E52230AEE428CF28C52 /* WriteTagScreenModuleOutput.swift in Sources */,
+				BC18939A23FA8A7500675935 /* NDEFWriteType.swift in Sources */,
 				F1B30D375C585DAD6D8BB8FA /* WriteTagScreenViewController.swift in Sources */,
 				E65D5A1DE0FEE65AE458CDE1 /* WriteTagScreenViewInput.swift in Sources */,
 				7CB78023B13E8C790E739FB3 /* WriteTagScreenViewOutput.swift in Sources */,
+				5594195F44B2F2B1A2E3B8A0 /* AddRecordModuleConfigurator.swift in Sources */,
+				4C8C05940CEC2F9E10CCA546 /* AddRecordRouter.swift in Sources */,
+				BC18939723FA898300675935 /* NDEFTypeCell.swift in Sources */,
+				E47AEDA60C55C0632FAC885E /* AddRecordRouterInput.swift in Sources */,
+				E7B100A1EC0075CBDFCACA8E /* AddRecordPresenter.swift in Sources */,
+				0155662CC0FFD09ECD7F0E6C /* AddRecordModuleInput.swift in Sources */,
+				36AE664BBD1CCEC2564DDD20 /* AddRecordModuleOutput.swift in Sources */,
+				1C4A739CCF18175AFABE919B /* AddRecordViewController.swift in Sources */,
+				8AE1BB42E5308F985333B21F /* AddRecordViewInput.swift in Sources */,
+				5D00926E96A46A3ED80496B1 /* AddRecordViewOutput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,7 +6,7 @@
 //  Copyright © 2020 Олеся Транина. All rights reserved.
 //
 
-final class WriteTagScreenPresenter: WriteTagScreenViewOutput, WriteTagScreenModuleInput {
+final class WriteTagScreenPresenter: WriteTagScreenModuleInput {
 
     // MARK: - Properties
 
@@ -14,8 +14,31 @@ final class WriteTagScreenPresenter: WriteTagScreenViewOutput, WriteTagScreenMod
     var router: WriteTagScreenRouterInput?
     var output: WriteTagScreenModuleOutput?
 
-    // MARK: - WriteTagScreenViewOutput
+    private var messages: [NDEFMessage] = []
 
-    // MARK: - WriteTagScreenModuleInput
+}
+
+// MARK: - WriteTagScreenViewOutput
+
+extension WriteTagScreenPresenter: WriteTagScreenViewOutput {
+
+    func viewDidLoad() {
+        view?.setupInitialState()
+    }
+
+    func addRecordSelected() {
+        router?.showAddRecordScreen(output: self)
+    }
+
+}
+
+// MARK: - AddRecordModuleOutput
+
+extension WriteTagScreenPresenter: AddRecordModuleOutput {
+
+    func recordAdded(record: NDEFMessage) {
+        messages.append(record)
+        view?.updateMessages(messages)
+    }
 
 }
