@@ -10,5 +10,4 @@ import UIKit
 
 protocol ReadTagScreenViewInput: class {
     func setupInitialState()
-    func openURL(url: URL)
 }

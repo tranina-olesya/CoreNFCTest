@@ -6,19 +6,20 @@
 //  Copyright © 2020 Surf. All rights reserved.
 //
 
-import Foundation
+import CoreNFC
 
-class WellKnownMessage: NDEFMessage {
+/// Сообщение, сождержащее Well-Known запись
+protocol WellKnownMessage: NDEFMessage {
 
-    // MARK: - Properties
+    /// Тип данных в сообщении
+    var wellKnownType: WellKnownPayloadType { get }
 
-    let wellKnownType: WellKnownPayloadType
+}
 
-    // MARK: - Initialization
+extension WellKnownMessage {
 
-    init(wellKnownType: WellKnownPayloadType) {
-        self.wellKnownType = wellKnownType
-        super.init(nfcType: .nfcWellKnown)
+    var nfcType: NFCTypeNameFormat {
+        return .nfcWellKnown
     }
 
 }

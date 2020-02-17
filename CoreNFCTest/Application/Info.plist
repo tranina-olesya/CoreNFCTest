@@ -22,6 +22,8 @@
 	<true/>
 	<key>NFCReaderUsageDescription</key>
 	<string>AAABBBCCC</string>
+	<key>UIUserInterfaceStyle</key>
+	<string>Light</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

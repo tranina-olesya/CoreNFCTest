@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// Тип протокола, который должен быть добавлен к URI записи
 enum URIType {
 
     case unknown

@@ -12,6 +12,10 @@ final class TextMessage: WellKnownMessage {
 
     // MARK: - Properties
 
+    var wellKnownType: WellKnownPayloadType {
+        return .text
+    }
+
     let languageCode: String
     let text: String
 
@@ -20,7 +24,6 @@ final class TextMessage: WellKnownMessage {
     init(languageCode: String, text: String) {
         self.languageCode = languageCode
         self.text = text
-        super.init(wellKnownType: .text)
     }
 
 }

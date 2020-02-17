@@ -12,6 +12,10 @@ final class URIMessage: WellKnownMessage {
 
     // MARK: - Properties
 
+    var wellKnownType: WellKnownPayloadType {
+        return .uri
+    }
+
     let uriType: URIType
     let url: URL
 
@@ -20,7 +24,6 @@ final class URIMessage: WellKnownMessage {
     init(uriType: URIType, url: URL) {
         self.uriType = uriType
         self.url = url
-        super.init(wellKnownType: .uri)
     }
 
 }
