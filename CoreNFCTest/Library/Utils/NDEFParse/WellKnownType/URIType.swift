@@ -9,36 +9,15 @@
 import Foundation
 
 /// Тип протокола, который должен быть добавлен к URI записи
-enum URIType {
+enum URIType: String, CaseIterable {
 
-    case unknown
-    case httpWWW
-    case httpsWWW
-    case http
-    case https
-    case tel
-    case mailto
-
-    // MARK: - Properties
-
-    var stringPrefix: String {
-        switch self {
-        case .unknown:
-            return ""
-        case .httpWWW:
-            return "http://www."
-        case .httpsWWW:
-            return "https://www."
-        case .http:
-            return "http://"
-        case .https:
-            return "https://"
-        case .tel:
-            return "tel:"
-        case .mailto:
-            return "mailto:"
-        }
-    }
+    case unknown = ""
+    case httpWWW = "http://www."
+    case httpsWWW = "https://www."
+    case http = "http://"
+    case https = "https://"
+    case tel = "tel:"
+    case mailto = "mailto:"
 
     // MARK: - Internal Methods
 

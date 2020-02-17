@@ -1,5 +1,5 @@
 //
-//  AddRecordRouterInput.swift
+//  URLMessageInputRouterInput.swift
 //  CoreNFCTest
 //
 //  Created by Olesya Tranina on 17/02/2020.
@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol AddRecordRouterInput {
-    func showAddURLMessage(output: URLMessageInputModuleOutput)
+protocol URLMessageInputRouterInput {
+    func popToInitial()
 }

@@ -46,9 +46,25 @@ internal enum L10n {
     }
   }
 
+  internal enum NavigationBar {
+    /// Готово
+    internal static let ready = L10n.tr("Localizable", "NavigationBar.ready")
+  }
+
   internal enum ReadTagScreen {
     /// Отсканировать метку
     internal static let scanButtonTitle = L10n.tr("Localizable", "ReadTagScreen.scanButtonTitle")
+  }
+
+  internal enum URLMessageInput {
+    internal enum TypeLabel {
+      /// Тип
+      internal static let title = L10n.tr("Localizable", "URLMessageInput.typeLabel.Title")
+    }
+    internal enum UrlLabel {
+      /// Ссылка
+      internal static let title = L10n.tr("Localizable", "URLMessageInput.urlLabel.Title")
+    }
   }
 
   internal enum WriteTagScreen {

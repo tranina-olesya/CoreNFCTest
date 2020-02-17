@@ -8,12 +8,21 @@
 
 import UIKit
 
-final class AddRecordRouter: AddRecordRouterInput {
+final class AddRecordRouter {
 
 	// MARK: - Properties
 
     weak var view: ModuleTransitionable?
 
-	// MARK: - AddRecordRouterInput
+}
+
+// MARK: - AddRecordRouterInput
+
+extension AddRecordRouter: AddRecordRouterInput {
+
+    func showAddURLMessage(output: URLMessageInputModuleOutput) {
+        let vc = URLMessageInputModuleConfigurator().configure(output: output)
+        view?.push(module: vc, animated: true)
+    }
 
 }

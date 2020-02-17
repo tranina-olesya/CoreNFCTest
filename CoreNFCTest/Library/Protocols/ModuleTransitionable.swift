@@ -13,6 +13,7 @@ protocol ModuleTransitionable: class {
     func dismissView(animated: Bool, completion: (() -> Void)?)
     func presentModule(_ module: UIViewController, animated: Bool, completion: (() -> Void)?)
     func pop(animated: Bool)
+    func popToRoot(animated: Bool)
     func push(module: UIViewController, animated: Bool)
 }
 
@@ -32,6 +33,10 @@ extension ModuleTransitionable where Self: UIViewController {
 
     func pop(animated: Bool) {
         self.navigationController?.popViewController(animated: animated)
+    }
+
+    func popToRoot(animated: Bool) {
+        self.navigationController?.popToRootViewController(animated: animated)
     }
 
     func push(module: UIViewController, animated: Bool) {

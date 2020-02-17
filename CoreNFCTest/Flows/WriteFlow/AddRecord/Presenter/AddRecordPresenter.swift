@@ -6,6 +6,8 @@
 //  Copyright © 2020 Олеся Транина. All rights reserved.
 //
 
+import Foundation
+
 final class AddRecordPresenter: AddRecordModuleInput {
 
     // MARK: - Properties
@@ -14,9 +16,9 @@ final class AddRecordPresenter: AddRecordModuleInput {
     var router: AddRecordRouterInput?
     var output: AddRecordModuleOutput?
 
-    // MARK: - AddRecordModuleInput
-
 }
+
+// MARK: - AddRecordModuleInput
 
 extension AddRecordPresenter: AddRecordViewOutput {
 
@@ -25,7 +27,18 @@ extension AddRecordPresenter: AddRecordViewOutput {
     }
 
     func typeSelected(type: NDEFWriteType) {
-        output?.recordAdded(record: TextMessage(languageCode: "en", text: "aaaaaa"))
+        router?.showAddURLMessage(output: self)
+    }
+
+}
+
+// MARK: - URLMessageInputModuleOutput
+
+extension AddRecordPresenter: URLMessageInputModuleOutput {
+
+    func recordURLAdded(type: URIType, url: URL) {
+        let uriMessage = URIMessage(uriType: type, url: url)
+        output?.recordAdded(record: uriMessage)
     }
 
 }

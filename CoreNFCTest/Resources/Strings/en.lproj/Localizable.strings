@@ -23,6 +23,10 @@
 // MARK: Success
 "NFCWriter.successMessage" = "Запись добавлена";
 
+// MARK: - NavigationBar
+
+"NavigationBar.ready" = "Готово";
+
 // MARK: - ReadTagScreen
 
 "ReadTagScreen.scanButtonTitle" = "Отсканировать метку";
@@ -35,3 +39,8 @@
 // MARK: - WriteTagScreen
 
 "WriteTagScreen.writeButtonTitle" = "Записать сообщения";
+
+// MARK: - URLMessageInput
+
+"URLMessageInput.typeLabel.Title" = "Тип";
+"URLMessageInput.urlLabel.Title" = "Ссылка";
