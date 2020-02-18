@@ -34,7 +34,7 @@ extension WriteTagScreenPresenter: WriteTagScreenViewOutput {
 
 // MARK: - AddRecordModuleOutput
 
-extension WriteTagScreenPresenter: AddRecordModuleOutput {
+extension WriteTagScreenPresenter: AddRecordScreenModuleOutput {
 
     func recordAdded(record: NDEFMessage) {
         messages.append(record)

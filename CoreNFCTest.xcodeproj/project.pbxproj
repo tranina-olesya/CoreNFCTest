@@ -7,14 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0155662CC0FFD09ECD7F0E6C /* AddRecordModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E635983E9627A12ED342C9 /* AddRecordModuleInput.swift */; };
+		0155662CC0FFD09ECD7F0E6C /* AddRecordScreenModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E635983E9627A12ED342C9 /* AddRecordScreenModuleInput.swift */; };
 		063671CE014C77D9D67ABB08 /* WriteTagScreenRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22B78C688ACE60EB15AA954 /* WriteTagScreenRouterInput.swift */; };
 		119A22AA04B2E3C024E2D417 /* Pods_CoreNFCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39CFC515F4CDC295DF31C711 /* Pods_CoreNFCTest.framework */; };
+		1467F28245A110E29D6BCBC9 /* ContactMessageScreenModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9063075CC0F19C59A89D63CC /* ContactMessageScreenModuleInput.swift */; };
 		174446982CE8D13CAF211DC5 /* MainTabBarScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398218C261F1F80746671DAC /* MainTabBarScreenPresenter.swift */; };
-		1C4A739CCF18175AFABE919B /* AddRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21491E79584D9ACFE44C5A32 /* AddRecordViewController.swift */; };
+		18790742846BC20C6A6B0C8E /* ContactMessageScreenModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6952E520862A5E60D1C82B /* ContactMessageScreenModuleConfigurator.swift */; };
+		1A57B5BFEA7C464E5A50021F /* ContactMessageScreenViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A32A5995E061ABAFE29BF30 /* ContactMessageScreenViewController.storyboard */; };
+		1C4A739CCF18175AFABE919B /* AddRecordScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21491E79584D9ACFE44C5A32 /* AddRecordScreenViewController.swift */; };
 		1D524ADAAEC63DE37E4C0716 /* WriteTagScreenModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CE37671066B59E0CEE1DAB /* WriteTagScreenModuleConfigurator.swift */; };
+		1E8540CB25E31870E41C0B7C /* ContactMessageScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A5FD5D8B191AD97CC146A1 /* ContactMessageScreenPresenter.swift */; };
 		1EFC5028B0A6B25543971139 /* MainTabBarScreenRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D084991CBED7D1477A996B55 /* MainTabBarScreenRouterInput.swift */; };
 		20D5A8E37576C1B182E82C2E /* MainTabBarScreenViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8953BB32D71343BBD904661 /* MainTabBarScreenViewController.storyboard */; };
+		219D95F8CCCDB5CA6A560F55 /* TextMessageScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F6427B5A7E871387885DEF /* TextMessageScreenRouter.swift */; };
+		21EE9B2A17CE81B78D194CFD /* ContactMessageScreenViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABBCF127D5771611164477B /* ContactMessageScreenViewOutput.swift */; };
+		2955E548D7E3E6AE1EF66E81 /* ContactMessageScreenViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4076BEA435E078E4CB471C44 /* ContactMessageScreenViewInput.swift */; };
+		2A09A2F265E511122EAD51B6 /* TextMessageScreenViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4FBD3C8627E22E9199B961B /* TextMessageScreenViewController.storyboard */; };
 		2D187DF623CF25250062201F /* NFCReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D187DF523CF25250062201F /* NFCReader.swift */; };
 		2D1BA2BF23CC621600FE9799 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1BA2BE23CC621600FE9799 /* AppDelegate.swift */; };
 		2D1BA2C123CC621600FE9799 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1BA2C023CC621600FE9799 /* SceneDelegate.swift */; };
@@ -40,37 +48,46 @@
 		2D26B70623D08D1900491641 /* TextMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D26B70423D08D1900491641 /* TextMessageCell.xib */; };
 		2D5E7A4B88DD6768F20CA1BE /* WriteTagScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2A9B38884C0CA249967F28 /* WriteTagScreenRouter.swift */; };
 		319F9121249064C7B4CC6DD4 /* URLMessageInputModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165E4A525A80E3EE138B9EB9 /* URLMessageInputModuleConfigurator.swift */; };
-		33889D0FA919D9248CAFA305 /* URLMessageInputModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62E100F57AB1D4BDD2D1540 /* URLMessageInputModuleOutput.swift */; };
+		33889D0FA919D9248CAFA305 /* URLMessageScreenModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62E100F57AB1D4BDD2D1540 /* URLMessageScreenModuleOutput.swift */; };
 		367B2E52230AEE428CF28C52 /* WriteTagScreenModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04348725EC93B548744C2C57 /* WriteTagScreenModuleOutput.swift */; };
-		36AE664BBD1CCEC2564DDD20 /* AddRecordModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE86901232D04E46B00A772 /* AddRecordModuleOutput.swift */; };
+		36AE664BBD1CCEC2564DDD20 /* AddRecordScreenModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE86901232D04E46B00A772 /* AddRecordScreenModuleOutput.swift */; };
+		42DA34D85CF00F351FD6614C /* ContactMessageScreenModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649C943956BBC12E80E94B13 /* ContactMessageScreenModuleOutput.swift */; };
 		43C271ACDECA4DF45AC879C1 /* ReadTagScreenViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0598D2768354D0219A7A0B4A /* ReadTagScreenViewController.storyboard */; };
-		484A70DA4B4B3ECCE2DE70DD /* URLMessageInputPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9488E6BEEA9D63220279ED54 /* URLMessageInputPresenter.swift */; };
-		4C8C05940CEC2F9E10CCA546 /* AddRecordRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6608CE173D2258F1F1D1EFA /* AddRecordRouter.swift */; };
-		5594195F44B2F2B1A2E3B8A0 /* AddRecordModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD54EC0DD2F45B2607979D4B /* AddRecordModuleConfigurator.swift */; };
-		5D00926E96A46A3ED80496B1 /* AddRecordViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09893E7B76CF7AA85267B843 /* AddRecordViewOutput.swift */; };
-		5D82390B6CBAA383C798CFBE /* AddRecordViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA12F69494B5865E9312DF33 /* AddRecordViewController.storyboard */; };
+		484A70DA4B4B3ECCE2DE70DD /* URLMessageScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9488E6BEEA9D63220279ED54 /* URLMessageScreenPresenter.swift */; };
+		4C8C05940CEC2F9E10CCA546 /* AddRecordScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6608CE173D2258F1F1D1EFA /* AddRecordScreenRouter.swift */; };
+		5594195F44B2F2B1A2E3B8A0 /* AddRecordScreenModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD54EC0DD2F45B2607979D4B /* AddRecordScreenModuleConfigurator.swift */; };
+		5C5EA24AFC356B1389B5CC64 /* TextMessageScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40582CC674B54314F3A79A8 /* TextMessageScreenPresenter.swift */; };
+		5D00926E96A46A3ED80496B1 /* AddRecordScreenViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09893E7B76CF7AA85267B843 /* AddRecordScreenViewOutput.swift */; };
+		5D82390B6CBAA383C798CFBE /* AddRecordScreenViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA12F69494B5865E9312DF33 /* AddRecordScreenViewController.storyboard */; };
 		5D9729A36CCC9F58F5DE3EB8 /* WriteTagScreenModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F46DBD28B8B477152D282DF /* WriteTagScreenModuleInput.swift */; };
+		5E775663DADEFF31ED328129 /* TextMessageScreenRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E962E062690E0CEC68C68E61 /* TextMessageScreenRouterInput.swift */; };
 		5EAD57F0198F2A17B835BB21 /* MainTabBarScreenModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CBF103D13FA61D05A45082 /* MainTabBarScreenModuleInput.swift */; };
+		60C2918A85173C3CB662EAFB /* TextMessageScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ED7AB9E063D891DBB1A4C4 /* TextMessageScreenViewController.swift */; };
 		614ACB5307BF25C082EAC1DE /* WriteTagScreenViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18491A374A441F146DA0C4EE /* WriteTagScreenViewController.storyboard */; };
-		6346A8CC726C0C3C4B99A674 /* URLMessageInputRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFD5191908F24F45387CCCD /* URLMessageInputRouterInput.swift */; };
-		6F2042021CFB477B15A4D3D5 /* URLMessageInputViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D4C3ABA342679D829620AF /* URLMessageInputViewOutput.swift */; };
+		6346A8CC726C0C3C4B99A674 /* URLMessageScreenRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFD5191908F24F45387CCCD /* URLMessageScreenRouterInput.swift */; };
+		6DABF0D14B99B961E21DBB05 /* ContactMessageScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C428A3D8A391BF069BEC8121 /* ContactMessageScreenViewController.swift */; };
+		6F2042021CFB477B15A4D3D5 /* URLMessageScreenViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D4C3ABA342679D829620AF /* URLMessageScreenViewOutput.swift */; };
 		7047CCF744FDE2B4155C25C2 /* MainTabBarScreenModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7822B9D6B412E2942363A9D /* MainTabBarScreenModuleOutput.swift */; };
-		732CBF483FE32CFBB6D62877 /* URLMessageInputViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E882A69502C19CDCC7D0F48 /* URLMessageInputViewInput.swift */; };
+		732CBF483FE32CFBB6D62877 /* URLMessageScreenViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E882A69502C19CDCC7D0F48 /* URLMessageScreenViewInput.swift */; };
 		74459331113361FFD00950FC /* ReadTagScreenModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7440254AFEEB44D31F5750FC /* ReadTagScreenModuleConfigurator.swift */; };
 		756E726415855F36603E93C2 /* MainTabBarScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5769AB15E91C39B50796A79 /* MainTabBarScreenRouter.swift */; };
 		7AFFD5A662BE7B5E9E784844 /* MainTabBarScreenViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF9CB2086B220EAD0E21C76 /* MainTabBarScreenViewOutput.swift */; };
+		7BEF9884C01303EC52781559 /* TextMessageScreenModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54ECF3298987BA2FBF61CBC /* TextMessageScreenModuleConfigurator.swift */; };
 		7CB78023B13E8C790E739FB3 /* WriteTagScreenViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D8791F7430FAA061365FB9 /* WriteTagScreenViewOutput.swift */; };
+		814E76642E560DFB0EB52163 /* TextMessageScreenModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C134A1C538109418D4FDDE6C /* TextMessageScreenModuleInput.swift */; };
 		8A9EE0506EFC27DB0DAD3193 /* ReadTagScreenViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF1A53C2B8FD16C86D9851C /* ReadTagScreenViewOutput.swift */; };
-		8AE1BB42E5308F985333B21F /* AddRecordViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6CA72BEBD67B79C712C361 /* AddRecordViewInput.swift */; };
+		8AE1BB42E5308F985333B21F /* AddRecordScreenViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6CA72BEBD67B79C712C361 /* AddRecordScreenViewInput.swift */; };
 		8B5C6ADED258E5A196DA7F7D /* ReadTagScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7077AC25B1AF1C8E0C81A559 /* ReadTagScreenPresenter.swift */; };
 		8CB1F58A8EA7361C34917D03 /* ReadTagScreenRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CA91CF3F759B6E3166229C /* ReadTagScreenRouterInput.swift */; };
 		8CCDEFFF87B98FED18710C6C /* ReadTagScreenModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E070F6CC504E3FC9AF6538D1 /* ReadTagScreenModuleOutput.swift */; };
 		916DB4C60045ECE10A462544 /* ReadTagScreenViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C805155B5174D10C811D42C5 /* ReadTagScreenViewInput.swift */; };
 		9274FA3ED9F6485A33117B23 /* MainTabBarScreenModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE14B29ADE575B1481A19CD7 /* MainTabBarScreenModuleConfigurator.swift */; };
+		92C83D9EE536C52EF7B9A4DA /* TextMessageScreenModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B5D32D1C17539D5EC7F3DE /* TextMessageScreenModuleOutput.swift */; };
 		931D114B9C2A6E5EB9A0284F /* ReadTagScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2D6A06C0D3B9B93EAA1189 /* ReadTagScreenViewController.swift */; };
+		950971314A962C5C187D11DA /* TextMessageScreenViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106EB1C56C88EA95E673D273 /* TextMessageScreenViewInput.swift */; };
 		979BFD512DA203A85821277C /* WriteTagScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5BAAB30B68C33074E70A66 /* WriteTagScreenPresenter.swift */; };
-		9A406A4535B9507C1FC4F8E9 /* URLMessageInputModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DECC4F4C751B37098962C00 /* URLMessageInputModuleInput.swift */; };
-		9E1BCBF55C383DAD8F667C5E /* URLMessageInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3779C405CC2F086EE7645915 /* URLMessageInputViewController.swift */; };
+		9A406A4535B9507C1FC4F8E9 /* URLMessageScreenModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DECC4F4C751B37098962C00 /* URLMessageScreenModuleInput.swift */; };
+		9E1BCBF55C383DAD8F667C5E /* URLMessageScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3779C405CC2F086EE7645915 /* URLMessageScreenViewController.swift */; };
 		BC1278294E65C83D0A2E8EEB /* MainTabBarScreenViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32C55B18A6DE4F0A411AF75 /* MainTabBarScreenViewInput.swift */; };
 		BC18938923FA5ACB00675935 /* NFCWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC18938823FA5ACB00675935 /* NFCWriter.swift */; };
 		BC18938C23FA6CF200675935 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC18938B23FA6CF200675935 /* UIViewControllerExtension.swift */; };
@@ -82,28 +99,35 @@
 		BCC11C7A23D31F9700CCF7C8 /* MediaMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC11C7923D31F9700CCF7C8 /* MediaMessage.swift */; };
 		BCC11C7C23D31FF500CCF7C8 /* WellKnownMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC11C7B23D31FF500CCF7C8 /* WellKnownMessage.swift */; };
 		BCC11C7E23D329A000CCF7C8 /* MainScreenTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC11C7D23D329A000CCF7C8 /* MainScreenTab.swift */; };
-		CB0D98AC6B01C5C612E81D6D /* URLMessageInputViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0945A21879077888E462F1D /* URLMessageInputViewController.storyboard */; };
-		D55BB4CC9F050A3BD2078621 /* URLMessageInputRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D697230F8634F015D0C59681 /* URLMessageInputRouter.swift */; };
+		CB0D98AC6B01C5C612E81D6D /* URLMessageScreenViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0945A21879077888E462F1D /* URLMessageScreenViewController.storyboard */; };
+		D55BB4CC9F050A3BD2078621 /* URLMessageScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D697230F8634F015D0C59681 /* URLMessageScreenRouter.swift */; };
 		D589ED5D09C3A23453CC3D9B /* MainTabBarScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEAF307D043B618DDA5D4F5 /* MainTabBarScreenViewController.swift */; };
-		E47AEDA60C55C0632FAC885E /* AddRecordRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440CF2671DF53AB3C9AB593F /* AddRecordRouterInput.swift */; };
+		E47AEDA60C55C0632FAC885E /* AddRecordScreenRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440CF2671DF53AB3C9AB593F /* AddRecordScreenRouterInput.swift */; };
 		E6391A478675BF2FC2DEC589 /* ReadTagScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AD0B8DF9A08D329FBBDAEA /* ReadTagScreenRouter.swift */; };
 		E65D5A1DE0FEE65AE458CDE1 /* WriteTagScreenViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603F85D48371883B0D9F2C0B /* WriteTagScreenViewInput.swift */; };
-		E7B100A1EC0075CBDFCACA8E /* AddRecordPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A0808AD9734942447A21AA /* AddRecordPresenter.swift */; };
+		E7B100A1EC0075CBDFCACA8E /* AddRecordScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A0808AD9734942447A21AA /* AddRecordScreenPresenter.swift */; };
+		EFC822ED7B0364825C05E8D4 /* TextMessageScreenViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A43B231F9B5C4D111DCEDF9 /* TextMessageScreenViewOutput.swift */; };
+		F09D908AFC110ABDBDCBC911 /* ContactMessageScreenRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29897220AAA8B17DA661D6F /* ContactMessageScreenRouterInput.swift */; };
 		F1B30D375C585DAD6D8BB8FA /* WriteTagScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15634489773D13ABDC1A3F37 /* WriteTagScreenViewController.swift */; };
 		F4A1295E4619D548E2B90D42 /* ReadTagScreenModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016FF60B5C98AE7FC6F3E13B /* ReadTagScreenModuleInput.swift */; };
+		FC491E61BE6FFE797889449A /* ContactMessageScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B0FB6BDB9E94527861B82F /* ContactMessageScreenRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		016FF60B5C98AE7FC6F3E13B /* ReadTagScreenModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReadTagScreenModuleInput.swift; sourceTree = "<group>"; };
+		02B5D32D1C17539D5EC7F3DE /* TextMessageScreenModuleOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TextMessageScreenModuleOutput.swift; sourceTree = "<group>"; };
 		04348725EC93B548744C2C57 /* WriteTagScreenModuleOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WriteTagScreenModuleOutput.swift; sourceTree = "<group>"; };
 		0598D2768354D0219A7A0B4A /* ReadTagScreenViewController.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = ReadTagScreenViewController.storyboard; sourceTree = "<group>"; };
-		09893E7B76CF7AA85267B843 /* AddRecordViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddRecordViewOutput.swift; sourceTree = "<group>"; };
+		09893E7B76CF7AA85267B843 /* AddRecordScreenViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddRecordScreenViewOutput.swift; sourceTree = "<group>"; };
+		09B0FB6BDB9E94527861B82F /* ContactMessageScreenRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ContactMessageScreenRouter.swift; sourceTree = "<group>"; };
 		0A2D6A06C0D3B9B93EAA1189 /* ReadTagScreenViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReadTagScreenViewController.swift; sourceTree = "<group>"; };
-		0CE86901232D04E46B00A772 /* AddRecordModuleOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddRecordModuleOutput.swift; sourceTree = "<group>"; };
+		0A43B231F9B5C4D111DCEDF9 /* TextMessageScreenViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TextMessageScreenViewOutput.swift; sourceTree = "<group>"; };
+		0CE86901232D04E46B00A772 /* AddRecordScreenModuleOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddRecordScreenModuleOutput.swift; sourceTree = "<group>"; };
+		106EB1C56C88EA95E673D273 /* TextMessageScreenViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TextMessageScreenViewInput.swift; sourceTree = "<group>"; };
 		15634489773D13ABDC1A3F37 /* WriteTagScreenViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WriteTagScreenViewController.swift; sourceTree = "<group>"; };
 		165E4A525A80E3EE138B9EB9 /* URLMessageInputModuleConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = URLMessageInputModuleConfigurator.swift; sourceTree = "<group>"; };
 		18491A374A441F146DA0C4EE /* WriteTagScreenViewController.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = WriteTagScreenViewController.storyboard; sourceTree = "<group>"; };
-		21491E79584D9ACFE44C5A32 /* AddRecordViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddRecordViewController.swift; sourceTree = "<group>"; };
+		21491E79584D9ACFE44C5A32 /* AddRecordScreenViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddRecordScreenViewController.swift; sourceTree = "<group>"; };
 		2D187DF523CF25250062201F /* NFCReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCReader.swift; sourceTree = "<group>"; };
 		2D1BA2BB23CC621600FE9799 /* CoreNFCTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreNFCTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D1BA2BE23CC621600FE9799 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -131,31 +155,41 @@
 		2D26B70423D08D1900491641 /* TextMessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextMessageCell.xib; sourceTree = "<group>"; };
 		2D94312E23CC736E004B4E9B /* CoreNFCTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CoreNFCTest.entitlements; sourceTree = "<group>"; };
 		2E2A9B38884C0CA249967F28 /* WriteTagScreenRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WriteTagScreenRouter.swift; sourceTree = "<group>"; };
-		2E882A69502C19CDCC7D0F48 /* URLMessageInputViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = URLMessageInputViewInput.swift; sourceTree = "<group>"; };
-		3779C405CC2F086EE7645915 /* URLMessageInputViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = URLMessageInputViewController.swift; sourceTree = "<group>"; };
+		2E882A69502C19CDCC7D0F48 /* URLMessageScreenViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = URLMessageScreenViewInput.swift; sourceTree = "<group>"; };
+		34F6427B5A7E871387885DEF /* TextMessageScreenRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TextMessageScreenRouter.swift; sourceTree = "<group>"; };
+		3779C405CC2F086EE7645915 /* URLMessageScreenViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = URLMessageScreenViewController.swift; sourceTree = "<group>"; };
 		398218C261F1F80746671DAC /* MainTabBarScreenPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainTabBarScreenPresenter.swift; sourceTree = "<group>"; };
 		39CFC515F4CDC295DF31C711 /* Pods_CoreNFCTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoreNFCTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3A6CA72BEBD67B79C712C361 /* AddRecordViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddRecordViewInput.swift; sourceTree = "<group>"; };
-		440CF2671DF53AB3C9AB593F /* AddRecordRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddRecordRouterInput.swift; sourceTree = "<group>"; };
+		3A6CA72BEBD67B79C712C361 /* AddRecordScreenViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddRecordScreenViewInput.swift; sourceTree = "<group>"; };
+		4076BEA435E078E4CB471C44 /* ContactMessageScreenViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ContactMessageScreenViewInput.swift; sourceTree = "<group>"; };
+		41A5FD5D8B191AD97CC146A1 /* ContactMessageScreenPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ContactMessageScreenPresenter.swift; sourceTree = "<group>"; };
+		440CF2671DF53AB3C9AB593F /* AddRecordScreenRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddRecordScreenRouterInput.swift; sourceTree = "<group>"; };
 		56CBF103D13FA61D05A45082 /* MainTabBarScreenModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainTabBarScreenModuleInput.swift; sourceTree = "<group>"; };
-		5DECC4F4C751B37098962C00 /* URLMessageInputModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = URLMessageInputModuleInput.swift; sourceTree = "<group>"; };
+		5A32A5995E061ABAFE29BF30 /* ContactMessageScreenViewController.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = ContactMessageScreenViewController.storyboard; sourceTree = "<group>"; };
+		5DECC4F4C751B37098962C00 /* URLMessageScreenModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = URLMessageScreenModuleInput.swift; sourceTree = "<group>"; };
 		5EF9CB2086B220EAD0E21C76 /* MainTabBarScreenViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainTabBarScreenViewOutput.swift; sourceTree = "<group>"; };
-		5EFD5191908F24F45387CCCD /* URLMessageInputRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = URLMessageInputRouterInput.swift; sourceTree = "<group>"; };
+		5EFD5191908F24F45387CCCD /* URLMessageScreenRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = URLMessageScreenRouterInput.swift; sourceTree = "<group>"; };
 		603F85D48371883B0D9F2C0B /* WriteTagScreenViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WriteTagScreenViewInput.swift; sourceTree = "<group>"; };
+		649C943956BBC12E80E94B13 /* ContactMessageScreenModuleOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ContactMessageScreenModuleOutput.swift; sourceTree = "<group>"; };
 		6CF1A53C2B8FD16C86D9851C /* ReadTagScreenViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReadTagScreenViewOutput.swift; sourceTree = "<group>"; };
 		7077AC25B1AF1C8E0C81A559 /* ReadTagScreenPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReadTagScreenPresenter.swift; sourceTree = "<group>"; };
-		70D4C3ABA342679D829620AF /* URLMessageInputViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = URLMessageInputViewOutput.swift; sourceTree = "<group>"; };
-		70E635983E9627A12ED342C9 /* AddRecordModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddRecordModuleInput.swift; sourceTree = "<group>"; };
+		70D4C3ABA342679D829620AF /* URLMessageScreenViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = URLMessageScreenViewOutput.swift; sourceTree = "<group>"; };
+		70E635983E9627A12ED342C9 /* AddRecordScreenModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddRecordScreenModuleInput.swift; sourceTree = "<group>"; };
 		73D8791F7430FAA061365FB9 /* WriteTagScreenViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WriteTagScreenViewOutput.swift; sourceTree = "<group>"; };
 		7440254AFEEB44D31F5750FC /* ReadTagScreenModuleConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReadTagScreenModuleConfigurator.swift; sourceTree = "<group>"; };
+		74ED7AB9E063D891DBB1A4C4 /* TextMessageScreenViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TextMessageScreenViewController.swift; sourceTree = "<group>"; };
 		82AD0B8DF9A08D329FBBDAEA /* ReadTagScreenRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReadTagScreenRouter.swift; sourceTree = "<group>"; };
 		88CA91CF3F759B6E3166229C /* ReadTagScreenRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReadTagScreenRouterInput.swift; sourceTree = "<group>"; };
 		8A5BAAB30B68C33074E70A66 /* WriteTagScreenPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WriteTagScreenPresenter.swift; sourceTree = "<group>"; };
 		8F46DBD28B8B477152D282DF /* WriteTagScreenModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WriteTagScreenModuleInput.swift; sourceTree = "<group>"; };
-		9488E6BEEA9D63220279ED54 /* URLMessageInputPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = URLMessageInputPresenter.swift; sourceTree = "<group>"; };
+		9063075CC0F19C59A89D63CC /* ContactMessageScreenModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ContactMessageScreenModuleInput.swift; sourceTree = "<group>"; };
+		9488E6BEEA9D63220279ED54 /* URLMessageScreenPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = URLMessageScreenPresenter.swift; sourceTree = "<group>"; };
 		9E4B534069FA888FC6C737F6 /* Pods-CoreNFCTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreNFCTest.release.xcconfig"; path = "Target Support Files/Pods-CoreNFCTest/Pods-CoreNFCTest.release.xcconfig"; sourceTree = "<group>"; };
+		A29897220AAA8B17DA661D6F /* ContactMessageScreenRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ContactMessageScreenRouterInput.swift; sourceTree = "<group>"; };
 		A5769AB15E91C39B50796A79 /* MainTabBarScreenRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainTabBarScreenRouter.swift; sourceTree = "<group>"; };
-		B0945A21879077888E462F1D /* URLMessageInputViewController.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = URLMessageInputViewController.storyboard; sourceTree = "<group>"; };
+		AABBCF127D5771611164477B /* ContactMessageScreenViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ContactMessageScreenViewOutput.swift; sourceTree = "<group>"; };
+		B0945A21879077888E462F1D /* URLMessageScreenViewController.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = URLMessageScreenViewController.storyboard; sourceTree = "<group>"; };
+		B4FBD3C8627E22E9199B961B /* TextMessageScreenViewController.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = TextMessageScreenViewController.storyboard; sourceTree = "<group>"; };
 		B7822B9D6B412E2942363A9D /* MainTabBarScreenModuleOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainTabBarScreenModuleOutput.swift; sourceTree = "<group>"; };
 		BC18938823FA5ACB00675935 /* NFCWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCWriter.swift; sourceTree = "<group>"; };
 		BC18938B23FA6CF200675935 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
@@ -168,20 +202,26 @@
 		BCC11C7B23D31FF500CCF7C8 /* WellKnownMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WellKnownMessage.swift; sourceTree = "<group>"; };
 		BCC11C7D23D329A000CCF7C8 /* MainScreenTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenTab.swift; sourceTree = "<group>"; };
 		BE14B29ADE575B1481A19CD7 /* MainTabBarScreenModuleConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainTabBarScreenModuleConfigurator.swift; sourceTree = "<group>"; };
+		C134A1C538109418D4FDDE6C /* TextMessageScreenModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TextMessageScreenModuleInput.swift; sourceTree = "<group>"; };
+		C428A3D8A391BF069BEC8121 /* ContactMessageScreenViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ContactMessageScreenViewController.swift; sourceTree = "<group>"; };
+		C54ECF3298987BA2FBF61CBC /* TextMessageScreenModuleConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TextMessageScreenModuleConfigurator.swift; sourceTree = "<group>"; };
 		C805155B5174D10C811D42C5 /* ReadTagScreenViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReadTagScreenViewInput.swift; sourceTree = "<group>"; };
 		D084991CBED7D1477A996B55 /* MainTabBarScreenRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainTabBarScreenRouterInput.swift; sourceTree = "<group>"; };
 		D0CE37671066B59E0CEE1DAB /* WriteTagScreenModuleConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WriteTagScreenModuleConfigurator.swift; sourceTree = "<group>"; };
-		D697230F8634F015D0C59681 /* URLMessageInputRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = URLMessageInputRouter.swift; sourceTree = "<group>"; };
+		D697230F8634F015D0C59681 /* URLMessageScreenRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = URLMessageScreenRouter.swift; sourceTree = "<group>"; };
 		D8953BB32D71343BBD904661 /* MainTabBarScreenViewController.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = MainTabBarScreenViewController.storyboard; sourceTree = "<group>"; };
-		D8A0808AD9734942447A21AA /* AddRecordPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddRecordPresenter.swift; sourceTree = "<group>"; };
-		DD54EC0DD2F45B2607979D4B /* AddRecordModuleConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddRecordModuleConfigurator.swift; sourceTree = "<group>"; };
+		D8A0808AD9734942447A21AA /* AddRecordScreenPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddRecordScreenPresenter.swift; sourceTree = "<group>"; };
+		DC6952E520862A5E60D1C82B /* ContactMessageScreenModuleConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ContactMessageScreenModuleConfigurator.swift; sourceTree = "<group>"; };
+		DD54EC0DD2F45B2607979D4B /* AddRecordScreenModuleConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddRecordScreenModuleConfigurator.swift; sourceTree = "<group>"; };
 		E070F6CC504E3FC9AF6538D1 /* ReadTagScreenModuleOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReadTagScreenModuleOutput.swift; sourceTree = "<group>"; };
 		E2177F898BFEDE444506DD21 /* Pods-CoreNFCTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreNFCTest.debug.xcconfig"; path = "Target Support Files/Pods-CoreNFCTest/Pods-CoreNFCTest.debug.xcconfig"; sourceTree = "<group>"; };
 		E22B78C688ACE60EB15AA954 /* WriteTagScreenRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WriteTagScreenRouterInput.swift; sourceTree = "<group>"; };
-		E6608CE173D2258F1F1D1EFA /* AddRecordRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddRecordRouter.swift; sourceTree = "<group>"; };
-		EA12F69494B5865E9312DF33 /* AddRecordViewController.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = AddRecordViewController.storyboard; sourceTree = "<group>"; };
+		E6608CE173D2258F1F1D1EFA /* AddRecordScreenRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddRecordScreenRouter.swift; sourceTree = "<group>"; };
+		E962E062690E0CEC68C68E61 /* TextMessageScreenRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TextMessageScreenRouterInput.swift; sourceTree = "<group>"; };
+		EA12F69494B5865E9312DF33 /* AddRecordScreenViewController.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = AddRecordScreenViewController.storyboard; sourceTree = "<group>"; };
 		F32C55B18A6DE4F0A411AF75 /* MainTabBarScreenViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainTabBarScreenViewInput.swift; sourceTree = "<group>"; };
-		F62E100F57AB1D4BDD2D1540 /* URLMessageInputModuleOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = URLMessageInputModuleOutput.swift; sourceTree = "<group>"; };
+		F40582CC674B54314F3A79A8 /* TextMessageScreenPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TextMessageScreenPresenter.swift; sourceTree = "<group>"; };
+		F62E100F57AB1D4BDD2D1540 /* URLMessageScreenModuleOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = URLMessageScreenModuleOutput.swift; sourceTree = "<group>"; };
 		FEEAF307D043B618DDA5D4F5 /* MainTabBarScreenViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainTabBarScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -197,7 +237,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1382857013F888F027A23997 /* URLMessageInput */ = {
+		12F9A1A62763814F0789BC17 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				74ED7AB9E063D891DBB1A4C4 /* TextMessageScreenViewController.swift */,
+				B4FBD3C8627E22E9199B961B /* TextMessageScreenViewController.storyboard */,
+				106EB1C56C88EA95E673D273 /* TextMessageScreenViewInput.swift */,
+				0A43B231F9B5C4D111DCEDF9 /* TextMessageScreenViewOutput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1382857013F888F027A23997 /* URLMessageScreen */ = {
 			isa = PBXGroup;
 			children = (
 				89DC17E6069C558181CAEC3D /* Configurator */,
@@ -205,8 +256,26 @@
 				27B8D78DD18D31369C4038C8 /* Presenter */,
 				9907C80A1505D062792EE700 /* View */,
 			);
-			name = URLMessageInput;
-			path = URLMessageInput;
+			path = URLMessageScreen;
+			sourceTree = "<group>";
+		};
+		15B421FE3360E7DD2519451C /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				DC6952E520862A5E60D1C82B /* ContactMessageScreenModuleConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		1FAF2845B9FDA5E943977BB7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C428A3D8A391BF069BEC8121 /* ContactMessageScreenViewController.swift */,
+				5A32A5995E061ABAFE29BF30 /* ContactMessageScreenViewController.storyboard */,
+				4076BEA435E078E4CB471C44 /* ContactMessageScreenViewInput.swift */,
+				AABBCF127D5771611164477B /* ContactMessageScreenViewOutput.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		21C2DCF721F41504976D11A0 /* Pods */ = {
@@ -221,8 +290,8 @@
 		25C096AC371B3EDCAD5F955E /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				E6608CE173D2258F1F1D1EFA /* AddRecordRouter.swift */,
-				440CF2671DF53AB3C9AB593F /* AddRecordRouterInput.swift */,
+				E6608CE173D2258F1F1D1EFA /* AddRecordScreenRouter.swift */,
+				440CF2671DF53AB3C9AB593F /* AddRecordScreenRouterInput.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -230,11 +299,10 @@
 		27B8D78DD18D31369C4038C8 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				9488E6BEEA9D63220279ED54 /* URLMessageInputPresenter.swift */,
-				5DECC4F4C751B37098962C00 /* URLMessageInputModuleInput.swift */,
-				F62E100F57AB1D4BDD2D1540 /* URLMessageInputModuleOutput.swift */,
+				9488E6BEEA9D63220279ED54 /* URLMessageScreenPresenter.swift */,
+				5DECC4F4C751B37098962C00 /* URLMessageScreenModuleInput.swift */,
+				F62E100F57AB1D4BDD2D1540 /* URLMessageScreenModuleOutput.swift */,
 			);
-			name = Presenter;
 			path = Presenter;
 			sourceTree = "<group>";
 		};
@@ -402,6 +470,36 @@
 			path = Configurator;
 			sourceTree = "<group>";
 		};
+		4267D2B8BC21CDE469D0CC72 /* ContactMessageScreen */ = {
+			isa = PBXGroup;
+			children = (
+				15B421FE3360E7DD2519451C /* Configurator */,
+				48977ABCCB68AE8DC4A758DF /* Router */,
+				452CCA30EA7F75ABC5EF7A88 /* Presenter */,
+				1FAF2845B9FDA5E943977BB7 /* View */,
+			);
+			path = ContactMessageScreen;
+			sourceTree = "<group>";
+		};
+		452CCA30EA7F75ABC5EF7A88 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				41A5FD5D8B191AD97CC146A1 /* ContactMessageScreenPresenter.swift */,
+				9063075CC0F19C59A89D63CC /* ContactMessageScreenModuleInput.swift */,
+				649C943956BBC12E80E94B13 /* ContactMessageScreenModuleOutput.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		48977ABCCB68AE8DC4A758DF /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				09B0FB6BDB9E94527861B82F /* ContactMessageScreenRouter.swift */,
+				A29897220AAA8B17DA661D6F /* ContactMessageScreenRouterInput.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 		4CAEFE7B3B78EB849E659B05 /* MainTabBarFlow */ = {
 			isa = PBXGroup;
 			children = (
@@ -409,6 +507,15 @@
 				BCC11C7D23D329A000CCF7C8 /* MainScreenTab.swift */,
 			);
 			path = MainTabBarFlow;
+			sourceTree = "<group>";
+		};
+		4CC02F01426EEA56E2064177 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				34F6427B5A7E871387885DEF /* TextMessageScreenRouter.swift */,
+				E962E062690E0CEC68C68E61 /* TextMessageScreenRouterInput.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 		500D385CDA984824ABBCD72A /* ReadFlow */ = {
@@ -423,8 +530,10 @@
 			isa = PBXGroup;
 			children = (
 				9C60103A5C96B0052A54F2C8 /* WriteTagScreen */,
-				898498082411BCD8AA2EAAAF /* AddRecord */,
-				1382857013F888F027A23997 /* URLMessageInput */,
+				898498082411BCD8AA2EAAAF /* AddRecordScreen */,
+				1382857013F888F027A23997 /* URLMessageScreen */,
+				4267D2B8BC21CDE469D0CC72 /* ContactMessageScreen */,
+				8EE65B124D8A3936C5D13BF4 /* TextMessageScreen */,
 			);
 			path = WriteFlow;
 			sourceTree = "<group>";
@@ -488,7 +597,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		898498082411BCD8AA2EAAAF /* AddRecord */ = {
+		898498082411BCD8AA2EAAAF /* AddRecordScreen */ = {
 			isa = PBXGroup;
 			children = (
 				FE9F9C968FD26D56F8E63B62 /* Configurator */,
@@ -496,7 +605,7 @@
 				92C306CE9BD905BBDB3DC5BD /* Presenter */,
 				C8AB9EF845579A9A3DA6B58A /* View */,
 			);
-			path = AddRecord;
+			path = AddRecordScreen;
 			sourceTree = "<group>";
 		};
 		89DC17E6069C558181CAEC3D /* Configurator */ = {
@@ -504,8 +613,18 @@
 			children = (
 				165E4A525A80E3EE138B9EB9 /* URLMessageInputModuleConfigurator.swift */,
 			);
-			name = Configurator;
 			path = Configurator;
+			sourceTree = "<group>";
+		};
+		8EE65B124D8A3936C5D13BF4 /* TextMessageScreen */ = {
+			isa = PBXGroup;
+			children = (
+				E85219DD8D1594B5238FC90F /* Configurator */,
+				4CC02F01426EEA56E2064177 /* Router */,
+				91125A1D086ACD0203A869EE /* Presenter */,
+				12F9A1A62763814F0789BC17 /* View */,
+			);
+			path = TextMessageScreen;
 			sourceTree = "<group>";
 		};
 		8FB475FAF867DF4A655E82F2 /* Router */ = {
@@ -517,12 +636,22 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
+		91125A1D086ACD0203A869EE /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F40582CC674B54314F3A79A8 /* TextMessageScreenPresenter.swift */,
+				C134A1C538109418D4FDDE6C /* TextMessageScreenModuleInput.swift */,
+				02B5D32D1C17539D5EC7F3DE /* TextMessageScreenModuleOutput.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		92C306CE9BD905BBDB3DC5BD /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				D8A0808AD9734942447A21AA /* AddRecordPresenter.swift */,
-				70E635983E9627A12ED342C9 /* AddRecordModuleInput.swift */,
-				0CE86901232D04E46B00A772 /* AddRecordModuleOutput.swift */,
+				D8A0808AD9734942447A21AA /* AddRecordScreenPresenter.swift */,
+				70E635983E9627A12ED342C9 /* AddRecordScreenModuleInput.swift */,
+				0CE86901232D04E46B00A772 /* AddRecordScreenModuleOutput.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -538,12 +667,11 @@
 		9907C80A1505D062792EE700 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				3779C405CC2F086EE7645915 /* URLMessageInputViewController.swift */,
-				B0945A21879077888E462F1D /* URLMessageInputViewController.storyboard */,
-				2E882A69502C19CDCC7D0F48 /* URLMessageInputViewInput.swift */,
-				70D4C3ABA342679D829620AF /* URLMessageInputViewOutput.swift */,
+				3779C405CC2F086EE7645915 /* URLMessageScreenViewController.swift */,
+				B0945A21879077888E462F1D /* URLMessageScreenViewController.storyboard */,
+				2E882A69502C19CDCC7D0F48 /* URLMessageScreenViewInput.swift */,
+				70D4C3ABA342679D829620AF /* URLMessageScreenViewOutput.swift */,
 			);
-			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -657,10 +785,9 @@
 		C4E72A681A7E216CA9B3B423 /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				D697230F8634F015D0C59681 /* URLMessageInputRouter.swift */,
-				5EFD5191908F24F45387CCCD /* URLMessageInputRouterInput.swift */,
+				D697230F8634F015D0C59681 /* URLMessageScreenRouter.swift */,
+				5EFD5191908F24F45387CCCD /* URLMessageScreenRouterInput.swift */,
 			);
-			name = Router;
 			path = Router;
 			sourceTree = "<group>";
 		};
@@ -668,10 +795,10 @@
 			isa = PBXGroup;
 			children = (
 				BC18939323FA895700675935 /* Cells */,
-				21491E79584D9ACFE44C5A32 /* AddRecordViewController.swift */,
-				EA12F69494B5865E9312DF33 /* AddRecordViewController.storyboard */,
-				3A6CA72BEBD67B79C712C361 /* AddRecordViewInput.swift */,
-				09893E7B76CF7AA85267B843 /* AddRecordViewOutput.swift */,
+				21491E79584D9ACFE44C5A32 /* AddRecordScreenViewController.swift */,
+				EA12F69494B5865E9312DF33 /* AddRecordScreenViewController.storyboard */,
+				3A6CA72BEBD67B79C712C361 /* AddRecordScreenViewInput.swift */,
+				09893E7B76CF7AA85267B843 /* AddRecordScreenViewOutput.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -695,6 +822,14 @@
 			path = Configurator;
 			sourceTree = "<group>";
 		};
+		E85219DD8D1594B5238FC90F /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				C54ECF3298987BA2FBF61CBC /* TextMessageScreenModuleConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
 		FA1FF51B8535FD54F9BDB74D /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
@@ -708,7 +843,7 @@
 		FE9F9C968FD26D56F8E63B62 /* Configurator */ = {
 			isa = PBXGroup;
 			children = (
-				DD54EC0DD2F45B2607979D4B /* AddRecordModuleConfigurator.swift */,
+				DD54EC0DD2F45B2607979D4B /* AddRecordScreenModuleConfigurator.swift */,
 			);
 			path = Configurator;
 			sourceTree = "<group>";
@@ -785,8 +920,10 @@
 				20D5A8E37576C1B182E82C2E /* MainTabBarScreenViewController.storyboard in Resources */,
 				614ACB5307BF25C082EAC1DE /* WriteTagScreenViewController.storyboard in Resources */,
 				BC18939823FA898300675935 /* NDEFTypeCell.xib in Resources */,
-				5D82390B6CBAA383C798CFBE /* AddRecordViewController.storyboard in Resources */,
-				CB0D98AC6B01C5C612E81D6D /* URLMessageInputViewController.storyboard in Resources */,
+				5D82390B6CBAA383C798CFBE /* AddRecordScreenViewController.storyboard in Resources */,
+				CB0D98AC6B01C5C612E81D6D /* URLMessageScreenViewController.storyboard in Resources */,
+				1A57B5BFEA7C464E5A50021F /* ContactMessageScreenViewController.storyboard in Resources */,
+				2A09A2F265E511122EAD51B6 /* TextMessageScreenViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -927,25 +1064,43 @@
 				F1B30D375C585DAD6D8BB8FA /* WriteTagScreenViewController.swift in Sources */,
 				E65D5A1DE0FEE65AE458CDE1 /* WriteTagScreenViewInput.swift in Sources */,
 				7CB78023B13E8C790E739FB3 /* WriteTagScreenViewOutput.swift in Sources */,
-				5594195F44B2F2B1A2E3B8A0 /* AddRecordModuleConfigurator.swift in Sources */,
-				4C8C05940CEC2F9E10CCA546 /* AddRecordRouter.swift in Sources */,
+				5594195F44B2F2B1A2E3B8A0 /* AddRecordScreenModuleConfigurator.swift in Sources */,
+				4C8C05940CEC2F9E10CCA546 /* AddRecordScreenRouter.swift in Sources */,
 				BC18939723FA898300675935 /* NDEFTypeCell.swift in Sources */,
-				E47AEDA60C55C0632FAC885E /* AddRecordRouterInput.swift in Sources */,
-				E7B100A1EC0075CBDFCACA8E /* AddRecordPresenter.swift in Sources */,
-				0155662CC0FFD09ECD7F0E6C /* AddRecordModuleInput.swift in Sources */,
-				36AE664BBD1CCEC2564DDD20 /* AddRecordModuleOutput.swift in Sources */,
-				1C4A739CCF18175AFABE919B /* AddRecordViewController.swift in Sources */,
-				8AE1BB42E5308F985333B21F /* AddRecordViewInput.swift in Sources */,
-				5D00926E96A46A3ED80496B1 /* AddRecordViewOutput.swift in Sources */,
+				E47AEDA60C55C0632FAC885E /* AddRecordScreenRouterInput.swift in Sources */,
+				E7B100A1EC0075CBDFCACA8E /* AddRecordScreenPresenter.swift in Sources */,
+				0155662CC0FFD09ECD7F0E6C /* AddRecordScreenModuleInput.swift in Sources */,
+				36AE664BBD1CCEC2564DDD20 /* AddRecordScreenModuleOutput.swift in Sources */,
+				1C4A739CCF18175AFABE919B /* AddRecordScreenViewController.swift in Sources */,
+				8AE1BB42E5308F985333B21F /* AddRecordScreenViewInput.swift in Sources */,
+				5D00926E96A46A3ED80496B1 /* AddRecordScreenViewOutput.swift in Sources */,
 				319F9121249064C7B4CC6DD4 /* URLMessageInputModuleConfigurator.swift in Sources */,
-				D55BB4CC9F050A3BD2078621 /* URLMessageInputRouter.swift in Sources */,
-				6346A8CC726C0C3C4B99A674 /* URLMessageInputRouterInput.swift in Sources */,
-				484A70DA4B4B3ECCE2DE70DD /* URLMessageInputPresenter.swift in Sources */,
-				9A406A4535B9507C1FC4F8E9 /* URLMessageInputModuleInput.swift in Sources */,
-				33889D0FA919D9248CAFA305 /* URLMessageInputModuleOutput.swift in Sources */,
-				9E1BCBF55C383DAD8F667C5E /* URLMessageInputViewController.swift in Sources */,
-				732CBF483FE32CFBB6D62877 /* URLMessageInputViewInput.swift in Sources */,
-				6F2042021CFB477B15A4D3D5 /* URLMessageInputViewOutput.swift in Sources */,
+				D55BB4CC9F050A3BD2078621 /* URLMessageScreenRouter.swift in Sources */,
+				6346A8CC726C0C3C4B99A674 /* URLMessageScreenRouterInput.swift in Sources */,
+				484A70DA4B4B3ECCE2DE70DD /* URLMessageScreenPresenter.swift in Sources */,
+				9A406A4535B9507C1FC4F8E9 /* URLMessageScreenModuleInput.swift in Sources */,
+				33889D0FA919D9248CAFA305 /* URLMessageScreenModuleOutput.swift in Sources */,
+				9E1BCBF55C383DAD8F667C5E /* URLMessageScreenViewController.swift in Sources */,
+				732CBF483FE32CFBB6D62877 /* URLMessageScreenViewInput.swift in Sources */,
+				6F2042021CFB477B15A4D3D5 /* URLMessageScreenViewOutput.swift in Sources */,
+				18790742846BC20C6A6B0C8E /* ContactMessageScreenModuleConfigurator.swift in Sources */,
+				FC491E61BE6FFE797889449A /* ContactMessageScreenRouter.swift in Sources */,
+				F09D908AFC110ABDBDCBC911 /* ContactMessageScreenRouterInput.swift in Sources */,
+				1E8540CB25E31870E41C0B7C /* ContactMessageScreenPresenter.swift in Sources */,
+				1467F28245A110E29D6BCBC9 /* ContactMessageScreenModuleInput.swift in Sources */,
+				42DA34D85CF00F351FD6614C /* ContactMessageScreenModuleOutput.swift in Sources */,
+				6DABF0D14B99B961E21DBB05 /* ContactMessageScreenViewController.swift in Sources */,
+				2955E548D7E3E6AE1EF66E81 /* ContactMessageScreenViewInput.swift in Sources */,
+				21EE9B2A17CE81B78D194CFD /* ContactMessageScreenViewOutput.swift in Sources */,
+				7BEF9884C01303EC52781559 /* TextMessageScreenModuleConfigurator.swift in Sources */,
+				219D95F8CCCDB5CA6A560F55 /* TextMessageScreenRouter.swift in Sources */,
+				5E775663DADEFF31ED328129 /* TextMessageScreenRouterInput.swift in Sources */,
+				5C5EA24AFC356B1389B5CC64 /* TextMessageScreenPresenter.swift in Sources */,
+				814E76642E560DFB0EB52163 /* TextMessageScreenModuleInput.swift in Sources */,
+				92C83D9EE536C52EF7B9A4DA /* TextMessageScreenModuleOutput.swift in Sources */,
+				60C2918A85173C3CB662EAFB /* TextMessageScreenViewController.swift in Sources */,
+				950971314A962C5C187D11DA /* TextMessageScreenViewInput.swift in Sources */,
+				EFC822ED7B0364825C05E8D4 /* TextMessageScreenViewOutput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

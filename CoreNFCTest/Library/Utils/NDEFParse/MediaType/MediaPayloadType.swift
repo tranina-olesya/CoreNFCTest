@@ -10,6 +10,6 @@ import Foundation
 
 /// Тип данных, который может находиться в Media записи
 enum MediaPayloadType: String {
-    case contact = "text/vcard"
+    case contact = "text/vCard"
     case wifi = "application/vnd.wfa.wsc"
 }

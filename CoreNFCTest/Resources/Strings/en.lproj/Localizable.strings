@@ -40,7 +40,17 @@
 
 "WriteTagScreen.writeButtonTitle" = "Записать сообщения";
 
-// MARK: - URLMessageInput
+// MARK: - URLMessageScreen
 
-"URLMessageInput.typeLabel.Title" = "Тип";
-"URLMessageInput.urlLabel.Title" = "Ссылка";
+"URLMessageScreen.typeLabel.Title" = "Тип";
+"URLMessageScreen.urlLabel.Title" = "Ссылка";
+
+// MARK: - TextMessageScreen
+
+"TextMessageScreen.textLabel.title" = "Текст";
+
+// MARK: - ContactMessageScreen
+
+"ContactMessageScreen.nameLabel.title" = "Имя";
+"ContactMessageScreen.phoneLabel.title" = "Телефон";
+"ContactMessageScreen.emailLabel.title" = "Email";

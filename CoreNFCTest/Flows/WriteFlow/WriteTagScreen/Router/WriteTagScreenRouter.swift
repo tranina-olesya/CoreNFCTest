@@ -20,8 +20,8 @@ final class WriteTagScreenRouter {
 
 extension WriteTagScreenRouter: WriteTagScreenRouterInput {
 
-    func showAddRecordScreen(output: AddRecordModuleOutput) {
-        let addRecordScreen = AddRecordModuleConfigurator().configure(output: output)
+    func showAddRecordScreen(output: AddRecordScreenModuleOutput) {
+        let addRecordScreen = AddRecordScreenModuleConfigurator().configure(output: output)
         view?.push(module: addRecordScreen, animated: true)
     }
 

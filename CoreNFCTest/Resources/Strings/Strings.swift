@@ -14,6 +14,21 @@ internal enum L10n {
   /// Поднесите телефон к метке
   internal static let nfcAlertMessage = L10n.tr("Localizable", "NFCAlertMessage")
 
+  internal enum ContactMessageScreen {
+    internal enum EmailLabel {
+      /// Email
+      internal static let title = L10n.tr("Localizable", "ContactMessageScreen.emailLabel.title")
+    }
+    internal enum NameLabel {
+      /// Имя
+      internal static let title = L10n.tr("Localizable", "ContactMessageScreen.nameLabel.title")
+    }
+    internal enum PhoneLabel {
+      /// Телефон
+      internal static let title = L10n.tr("Localizable", "ContactMessageScreen.phoneLabel.title")
+    }
+  }
+
   internal enum MainTabBarScreen {
     internal enum ReadTab {
       /// Чтение
@@ -56,14 +71,21 @@ internal enum L10n {
     internal static let scanButtonTitle = L10n.tr("Localizable", "ReadTagScreen.scanButtonTitle")
   }
 
-  internal enum URLMessageInput {
+  internal enum TextMessageScreen {
+    internal enum TextLabel {
+      /// Текст
+      internal static let title = L10n.tr("Localizable", "TextMessageScreen.textLabel.title")
+    }
+  }
+
+  internal enum URLMessageScreen {
     internal enum TypeLabel {
       /// Тип
-      internal static let title = L10n.tr("Localizable", "URLMessageInput.typeLabel.Title")
+      internal static let title = L10n.tr("Localizable", "URLMessageScreen.typeLabel.Title")
     }
     internal enum UrlLabel {
       /// Ссылка
-      internal static let title = L10n.tr("Localizable", "URLMessageInput.urlLabel.Title")
+      internal static let title = L10n.tr("Localizable", "URLMessageScreen.urlLabel.Title")
     }
   }
 

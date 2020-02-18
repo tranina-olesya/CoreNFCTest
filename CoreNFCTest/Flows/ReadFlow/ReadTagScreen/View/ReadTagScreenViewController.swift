@@ -48,6 +48,7 @@ extension ReadTagScreenViewController: ReadTagScreenViewInput {
         title = L10n.MainTabBarScreen.ReadTab.title
         configureNFCReader()
         configureScanButton()
+        configureAdapter()
     }
 
 }
@@ -77,6 +78,15 @@ private extension ReadTagScreenViewController {
     func configureScanButton() {
         scanButton.layer.cornerRadius = Constants.scanButtonCornerRadius
         scanButton.setTitle(L10n.ReadTagScreen.scanButtonTitle, for: .normal)
+    }
+
+    func configureAdapter() {
+        adapter.contactChosen = { [weak self] message in
+            self?.output?.contactChosen(contactMessage: message)
+        }
+        adapter.uriChosen = { [weak self] message in
+            self?.output?.uriChosen(uriMessage: message)
+        }
     }
 
 }
