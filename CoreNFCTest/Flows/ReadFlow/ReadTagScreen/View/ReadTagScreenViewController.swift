@@ -28,7 +28,6 @@ final class ReadTagScreenViewController: UIViewController, ModuleTransitionable 
 
     // MARK: - Private Properties
 
-    private lazy var nfcReader = NFCReader()
     private lazy var adapter = NDEFRecordsAdapter(tableView: tableView)
 
     // MARK: - UIViewController
@@ -46,9 +45,12 @@ extension ReadTagScreenViewController: ReadTagScreenViewInput {
 
     func setupInitialState() {
         title = L10n.MainTabBarScreen.ReadTab.title
-        configureNFCReader()
         configureScanButton()
         configureAdapter()
+    }
+
+    func updateMessages(messages: [NDEFMessage]) {
+        adapter.update(messages: messages)
     }
 
 }
@@ -58,11 +60,7 @@ extension ReadTagScreenViewController: ReadTagScreenViewInput {
 private extension ReadTagScreenViewController {
 
     @IBAction func scanButtonPressed(_ sender: Any) {
-        nfcReader.beginSession()
-    }
-
-    func processMessages(messages: [NDEFMessage]) {
-        adapter.update(messages: messages)
+        output?.startScan()
     }
 
 }
@@ -70,10 +68,6 @@ private extension ReadTagScreenViewController {
 // MARK: - Configuration
 
 private extension ReadTagScreenViewController {
-
-    func configureNFCReader() {
-        nfcReader.onRead = processMessages(messages:)
-    }
 
     func configureScanButton() {
         scanButton.layer.cornerRadius = Constants.scanButtonCornerRadius

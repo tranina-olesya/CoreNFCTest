@@ -39,6 +39,7 @@
 // MARK: - WriteTagScreen
 
 "WriteTagScreen.writeButtonTitle" = "Записать сообщения";
+"WriteTagScreen.clearButton.title" = "Очистить";
 
 // MARK: - URLMessageScreen
 
@@ -54,3 +55,9 @@
 "ContactMessageScreen.nameLabel.title" = "Имя";
 "ContactMessageScreen.phoneLabel.title" = "Телефон";
 "ContactMessageScreen.emailLabel.title" = "Email";
+
+// MARK: - AddRecordScreen
+
+"AddRecordScreen.NDEFWriteType.uri" = "Ссылка";
+"AddRecordScreen.NDEFWriteType.text" = "Текст";
+"AddRecordScreen.NDEFWriteType.contact" = "Контакт";

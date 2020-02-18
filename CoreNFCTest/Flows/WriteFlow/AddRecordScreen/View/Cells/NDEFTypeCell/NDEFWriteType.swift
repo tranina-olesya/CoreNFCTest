@@ -19,11 +19,11 @@ enum NDEFWriteType: CaseIterable {
     var title: String {
         switch self {
         case .uri:
-            return "u"
+            return L10n.AddRecordScreen.NDEFWriteType.uri
         case .contact:
-            return "c"
+            return L10n.AddRecordScreen.NDEFWriteType.contact
         case .text:
-            return "t"
+            return L10n.AddRecordScreen.NDEFWriteType.text
         }
     }
 

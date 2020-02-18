@@ -61,6 +61,7 @@ private extension WriteTagScreenViewController {
     func configureNavigationBar() {
         title = L10n.MainTabBarScreen.WriteTab.title
         setRightNavigationBarItem(type: .add, selector: #selector(addRecordSelected))
+        setLeftNavigationBarItem(title: L10n.WriteTagScreen.ClearButton.title, selector: #selector(clearRecordsSelected))
     }
 
     func configureWriteButton() {
@@ -74,13 +75,18 @@ private extension WriteTagScreenViewController {
 
 private extension WriteTagScreenViewController {
 
+    @IBAction func writeButtonPressed(_ sender: Any) {
+        output?.writeRecords()
+    }
+
     @objc
     func addRecordSelected() {
         output?.addRecordSelected()
     }
 
-    @IBAction func writeButtonPressed(_ sender: Any) {
-        output?.writeRecords()
+    @objc
+    func clearRecordsSelected() {
+        output?.clearRecordsSelected()
     }
 
 }

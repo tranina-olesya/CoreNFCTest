@@ -66,9 +66,9 @@ private extension ContactMessageScreenViewController {
     @objc
     func readySelected() {
         guard
-            let name = nameLabel.text,
-            let phone = phoneLabel.text,
-            let email = emailLabel.text
+            let name = nameTextField.text,
+            let phone = phoneTextField.text,
+            let email = emailTextField.text
         else {
             return
         }

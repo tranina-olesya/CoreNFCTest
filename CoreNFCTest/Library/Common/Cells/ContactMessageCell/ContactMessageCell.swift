@@ -30,7 +30,7 @@ final class ContactMessageCell: UITableViewCell {
 extension ContactMessageCell: Configurable {
 
     func configure(with contactMessage: ContactMessage) {
-        nameLabel.text = contactMessage.contact.givenName
+        nameLabel.text = contactMessage.contact.namePrefix
         phoneLabel.text = contactMessage.contact.phoneNumbers.first?.value.stringValue
     }
 

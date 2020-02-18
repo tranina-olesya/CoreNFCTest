@@ -39,6 +39,11 @@ extension WriteTagScreenPresenter: WriteTagScreenViewOutput {
         router?.showAddRecordScreen(output: self)
     }
 
+    func clearRecordsSelected() {
+        messages = []
+        view?.updateMessages(messages)
+    }
+
 }
 
 // MARK: - AddRecordModuleOutput

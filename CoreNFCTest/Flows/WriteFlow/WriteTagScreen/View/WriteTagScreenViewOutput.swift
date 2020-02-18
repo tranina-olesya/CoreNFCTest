@@ -9,5 +9,6 @@
 protocol WriteTagScreenViewOutput {
     func viewDidLoad()
     func addRecordSelected()
+    func clearRecordsSelected()
     func writeRecords()
 }

@@ -14,6 +14,17 @@ internal enum L10n {
   /// Поднесите телефон к метке
   internal static let nfcAlertMessage = L10n.tr("Localizable", "NFCAlertMessage")
 
+  internal enum AddRecordScreen {
+    internal enum NDEFWriteType {
+      /// Контакт
+      internal static let contact = L10n.tr("Localizable", "AddRecordScreen.NDEFWriteType.contact")
+      /// Текст
+      internal static let text = L10n.tr("Localizable", "AddRecordScreen.NDEFWriteType.text")
+      /// Ссылка
+      internal static let uri = L10n.tr("Localizable", "AddRecordScreen.NDEFWriteType.uri")
+    }
+  }
+
   internal enum ContactMessageScreen {
     internal enum EmailLabel {
       /// Email
@@ -92,6 +103,10 @@ internal enum L10n {
   internal enum WriteTagScreen {
     /// Записать сообщения
     internal static let writeButtonTitle = L10n.tr("Localizable", "WriteTagScreen.writeButtonTitle")
+    internal enum ClearButton {
+      /// Очистить
+      internal static let title = L10n.tr("Localizable", "WriteTagScreen.clearButton.title")
+    }
   }
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length

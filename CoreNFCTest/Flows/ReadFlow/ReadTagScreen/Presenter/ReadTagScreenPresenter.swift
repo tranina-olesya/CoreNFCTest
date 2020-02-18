@@ -14,11 +14,26 @@ final class ReadTagScreenPresenter: ReadTagScreenModuleInput {
     var router: ReadTagScreenRouterInput?
     var output: ReadTagScreenModuleOutput?
 
+    // MARK: - Private Properties
+
+    private let nfcReader: NFCReader
+
+    // MARK: - Initialization
+
+    init() {
+        nfcReader = NFCReader()
+        nfcReader.onRead = processMessages(messages:)
+    }
+
 }
 
 // MARK: - ReadTagScreenViewOutput
 
 extension ReadTagScreenPresenter: ReadTagScreenViewOutput {
+
+    func startScan() {
+        nfcReader.beginSession()
+    }
 
     func contactChosen(contactMessage: ContactMessage) {
         router?.openContactScreen(contact: contactMessage.contact)
@@ -30,6 +45,16 @@ extension ReadTagScreenPresenter: ReadTagScreenViewOutput {
 
     func uriChosen(uriMessage: URIMessage) {
         router?.openURL(url: uriMessage.url)
+    }
+
+}
+
+// MARK: - Help Methods
+
+private extension ReadTagScreenPresenter {
+
+    func processMessages(messages: [NDEFMessage]) {
+        view?.updateMessages(messages: messages)
     }
 
 }
