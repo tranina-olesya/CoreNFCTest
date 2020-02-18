@@ -28,7 +28,6 @@ final class WriteTagScreenViewController: UIViewController, ModuleTransitionable
 
     // MARK: - Private Properties
 
-    private lazy var nfcWriter = NFCWriter(records: [])
     private lazy var adapter = NDEFRecordsAdapter(tableView: tableView)
 
     // MARK: - UIViewController
@@ -38,17 +37,6 @@ final class WriteTagScreenViewController: UIViewController, ModuleTransitionable
         output?.viewDidLoad()
     }
 
-    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        guard let textPayload = NFCNDEFPayload.wellKnownTypeTextPayload(
-            string: "Brought to you by the Great Fish Company",
-            locale: Locale(identifier: "En"))
-        else {
-            nfcWriter = NFCWriter(records: [])
-            return
-        }
-        nfcWriter = NFCWriter(records: [textPayload])
-        nfcWriter.beginSession()
-    }
 }
 
 // MARK: - WriteTagScreenViewInput
@@ -89,6 +77,10 @@ private extension WriteTagScreenViewController {
     @objc
     func addRecordSelected() {
         output?.addRecordSelected()
+    }
+
+    @IBAction func writeButtonPressed(_ sender: Any) {
+        output?.writeRecords()
     }
 
 }
