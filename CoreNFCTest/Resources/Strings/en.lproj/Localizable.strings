@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  CoreNFCTest
+
+  Created by Олеся Транина on 16/01/2020.
+  Copyright © 2020 Surf. All rights reserved.
+*/
+
+"NFCAlertMessage" = "Поднесите телефон к метке";
+"ReadTagScreen.scanButtonTitle" = "Отсканировать метку";
