@@ -32,6 +32,10 @@ final class ReadTagScreenPresenter: ReadTagScreenModuleInput {
 extension ReadTagScreenPresenter: ReadTagScreenViewOutput {
 
     func startScan() {
+        guard nfcReader.isReadingAvalible else {
+            router?.showMessageModule(with: L10n.NFCAlert.Error.readingNotAvalible)
+            return
+        }
         nfcReader.beginSession()
     }
 

@@ -96,6 +96,7 @@
 		BC18939723FA898300675935 /* NDEFTypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC18939523FA898300675935 /* NDEFTypeCell.swift */; };
 		BC18939823FA898300675935 /* NDEFTypeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC18939623FA898300675935 /* NDEFTypeCell.xib */; };
 		BC18939A23FA8A7500675935 /* NDEFWriteType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC18939923FA8A7500675935 /* NDEFWriteType.swift */; };
+		BC2A659D2402EC3A0083BE1E /* NDEFPayloadUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2A659C2402EC3A0083BE1E /* NDEFPayloadUtils.swift */; };
 		BCC11C7A23D31F9700CCF7C8 /* MediaMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC11C7923D31F9700CCF7C8 /* MediaMessage.swift */; };
 		BCC11C7C23D31FF500CCF7C8 /* WellKnownMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC11C7B23D31FF500CCF7C8 /* WellKnownMessage.swift */; };
 		BCC11C7E23D329A000CCF7C8 /* MainScreenTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC11C7D23D329A000CCF7C8 /* MainScreenTab.swift */; };
@@ -198,6 +199,7 @@
 		BC18939523FA898300675935 /* NDEFTypeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NDEFTypeCell.swift; sourceTree = "<group>"; };
 		BC18939623FA898300675935 /* NDEFTypeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NDEFTypeCell.xib; sourceTree = "<group>"; };
 		BC18939923FA8A7500675935 /* NDEFWriteType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NDEFWriteType.swift; sourceTree = "<group>"; };
+		BC2A659C2402EC3A0083BE1E /* NDEFPayloadUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NDEFPayloadUtils.swift; sourceTree = "<group>"; };
 		BCC11C7923D31F9700CCF7C8 /* MediaMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaMessage.swift; sourceTree = "<group>"; };
 		BCC11C7B23D31FF500CCF7C8 /* WellKnownMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WellKnownMessage.swift; sourceTree = "<group>"; };
 		BCC11C7D23D329A000CCF7C8 /* MainScreenTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenTab.swift; sourceTree = "<group>"; };
@@ -400,6 +402,7 @@
 			isa = PBXGroup;
 			children = (
 				2D26B6F823D06C1500491641 /* NDEFParse */,
+				BC2A659C2402EC3A0083BE1E /* NDEFPayloadUtils.swift */,
 				2D187DF523CF25250062201F /* NFCReader.swift */,
 				BC18938823FA5ACB00675935 /* NFCWriter.swift */,
 			);
@@ -1029,6 +1032,7 @@
 				2D24D5DB23D1BFD900708B71 /* URIMessageCell.swift in Sources */,
 				F4A1295E4619D548E2B90D42 /* ReadTagScreenModuleInput.swift in Sources */,
 				2D26B6FA23D06C2D00491641 /* WellKnownPayloadType.swift in Sources */,
+				BC2A659D2402EC3A0083BE1E /* NDEFPayloadUtils.swift in Sources */,
 				2D26B6F423D064D300491641 /* Assets.swift in Sources */,
 				BC18938F23FA6D2B00675935 /* NavigationItemType.swift in Sources */,
 				2D26B6FC23D0702200491641 /* URIType.swift in Sources */,

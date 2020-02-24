@@ -11,8 +11,6 @@ import Foundation
 // swiftlint:disable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:disable nesting type_body_length type_name
 internal enum L10n {
-  /// Поднесите телефон к метке
-  internal static let nfcAlertMessage = L10n.tr("Localizable", "NFCAlertMessage")
 
   internal enum AddRecordScreen {
     internal enum NDEFWriteType {
@@ -48,6 +46,19 @@ internal enum L10n {
     internal enum WriteTab {
       /// Запись
       internal static let title = L10n.tr("Localizable", "MainTabBarScreen.WriteTab.Title")
+    }
+  }
+
+  internal enum NFCAlert {
+    /// Поднесите телефон к метке
+    internal static let message = L10n.tr("Localizable", "NFCAlert.message")
+    internal enum Action {
+      /// ОК
+      internal static let ok = L10n.tr("Localizable", "NFCAlert.Action.ok")
+    }
+    internal enum Error {
+      /// Это устройство не поддерживает чтение NFC меток
+      internal static let readingNotAvalible = L10n.tr("Localizable", "NFCAlert.Error.readingNotAvalible")
     }
   }
 

@@ -10,4 +10,5 @@ import Foundation
 
 protocol WriteTagScreenRouterInput {
     func showAddRecordScreen(output: AddRecordScreenModuleOutput)
+    func showMessageModule(with message: String)
 }

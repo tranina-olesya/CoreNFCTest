@@ -6,9 +6,11 @@
   Copyright © 2020 Surf. All rights reserved.
 */
 
-// MARK: - NFC Common
+// MARK: - ALert
 
-"NFCAlertMessage" = "Поднесите телефон к метке";
+"NFCAlert.message" = "Поднесите телефон к метке";
+"NFCAlert.Error.readingNotAvalible" = "Это устройство не поддерживает чтение NFC меток";
+"NFCAlert.Action.ok" = "ОК";
 
 // MARK: - NFCWriter
 

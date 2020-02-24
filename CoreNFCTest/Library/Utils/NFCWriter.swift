@@ -10,11 +10,21 @@ import CoreNFC
 
 final class NFCWriter: NSObject, NFCNDEFReaderSessionDelegate {
 
+    // MARK: - Properties
+
     var ndefMessage: NFCNDEFMessage
+
+    var isReadingAvalible: Bool {
+        return NFCNDEFReaderSession.readingAvailable
+    }
+
+    // MARK: - Initialization
 
     init(records: [NFCNDEFPayload]) {
         ndefMessage = NFCNDEFMessage(records: records)
     }
+
+    // MARK: - NFCNDEFReaderSessionDelegate
 
     func readerSession(_ session: NFCNDEFReaderSession, didInvalidateWithError error: Error) {
     }
@@ -73,9 +83,11 @@ final class NFCWriter: NSObject, NFCNDEFReaderSessionDelegate {
         }
     }
 
+    // MARK: - Methods
+
     func beginSession() {
         let session = NFCNDEFReaderSession(delegate: self, queue: DispatchQueue.main, invalidateAfterFirstRead: true)
-        session.alertMessage = L10n.nfcAlertMessage
+        session.alertMessage = L10n.NFCAlert.message
         session.begin()
     }
 
