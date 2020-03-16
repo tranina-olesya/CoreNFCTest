@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="h3k-bK-TNO">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Text Message Screen View Controller-->
+        <scene sceneID="PlN-iW-H7B">
+            <objects>
+                <viewController id="h3k-bK-TNO" customClass="TextMessageScreenViewController" customModule="CoreNFCTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cA6-JB-jfU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ihq-zw-hdb">
+                                <rect key="frame" x="20" y="20" width="335" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="HQB-f4-QZ7">
+                                <rect key="frame" x="20" y="61" width="335" height="586"/>
+                                <color key="backgroundColor" white="0.9589225364057985" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ihq-zw-hdb" firstAttribute="leading" secondItem="YWU-9O-L7t" secondAttribute="leading" constant="20" id="NGe-rw-w72"/>
+                            <constraint firstItem="HQB-f4-QZ7" firstAttribute="top" secondItem="Ihq-zw-hdb" secondAttribute="bottom" constant="20" id="R5R-gy-HTs"/>
+                            <constraint firstItem="YWU-9O-L7t" firstAttribute="trailing" secondItem="HQB-f4-QZ7" secondAttribute="trailing" constant="20" id="d1q-gp-3vW"/>
+                            <constraint firstItem="YWU-9O-L7t" firstAttribute="trailing" secondItem="Ihq-zw-hdb" secondAttribute="trailing" constant="20" id="ms7-h4-PtZ"/>
+                            <constraint firstItem="HQB-f4-QZ7" firstAttribute="leading" secondItem="YWU-9O-L7t" secondAttribute="leading" constant="20" id="qLC-30-WAI"/>
+                            <constraint firstItem="YWU-9O-L7t" firstAttribute="bottom" secondItem="HQB-f4-QZ7" secondAttribute="bottom" constant="20" id="r9a-lU-V9J"/>
+                            <constraint firstItem="Ihq-zw-hdb" firstAttribute="top" secondItem="YWU-9O-L7t" secondAttribute="top" constant="20" id="rwC-09-zSr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="YWU-9O-L7t"/>
+                    </view>
+                    <connections>
+                        <outlet property="textLabel" destination="Ihq-zw-hdb" id="cab-NA-SIH"/>
+                        <outlet property="textView" destination="HQB-f4-QZ7" id="9nu-ez-WCK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="psv-Wb-mBc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="575" y="-231"/>
+        </scene>
+    </scenes>
+</document>

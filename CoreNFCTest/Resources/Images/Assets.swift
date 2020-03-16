@@ -18,6 +18,15 @@
 
 // swiftlint:disable identifier_name line_length nesting type_body_length type_name
 internal enum Asset {
+  internal enum MainTab {
+
+    internal static let rIcon = ImageAsset(name: "MainTab/rIcon")
+    internal static let wIcon = ImageAsset(name: "MainTab/wIcon")
+  }
+  internal enum NavigationBar {
+
+    internal static let iconAdd = ImageAsset(name: "NavigationBar/iconAdd")
+  }
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name
 

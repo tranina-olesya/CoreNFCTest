@@ -11,12 +11,113 @@ import Foundation
 // swiftlint:disable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:disable nesting type_body_length type_name
 internal enum L10n {
-  /// Поднесите телефон к метке
-  internal static let nfcAlertMessage = L10n.tr("Localizable", "NFCAlertMessage")
+
+  internal enum AddRecordScreen {
+    internal enum NDEFWriteType {
+      /// Контакт
+      internal static let contact = L10n.tr("Localizable", "AddRecordScreen.NDEFWriteType.contact")
+      /// Текст
+      internal static let text = L10n.tr("Localizable", "AddRecordScreen.NDEFWriteType.text")
+      /// Ссылка
+      internal static let uri = L10n.tr("Localizable", "AddRecordScreen.NDEFWriteType.uri")
+    }
+  }
+
+  internal enum ContactMessageScreen {
+    internal enum EmailLabel {
+      /// Email
+      internal static let title = L10n.tr("Localizable", "ContactMessageScreen.emailLabel.title")
+    }
+    internal enum NameLabel {
+      /// Имя
+      internal static let title = L10n.tr("Localizable", "ContactMessageScreen.nameLabel.title")
+    }
+    internal enum PhoneLabel {
+      /// Телефон
+      internal static let title = L10n.tr("Localizable", "ContactMessageScreen.phoneLabel.title")
+    }
+  }
+
+  internal enum MainTabBarScreen {
+    internal enum ReadTab {
+      /// Чтение
+      internal static let title = L10n.tr("Localizable", "MainTabBarScreen.ReadTab.Title")
+    }
+    internal enum WriteTab {
+      /// Запись
+      internal static let title = L10n.tr("Localizable", "MainTabBarScreen.WriteTab.Title")
+    }
+  }
+
+  internal enum NFCAlert {
+    /// Поднесите телефон к метке
+    internal static let message = L10n.tr("Localizable", "NFCAlert.message")
+    internal enum Action {
+      /// ОК
+      internal static let ok = L10n.tr("Localizable", "NFCAlert.Action.ok")
+    }
+    internal enum Error {
+      /// Это устройство не поддерживает чтение NFC меток
+      internal static let readingNotAvalible = L10n.tr("Localizable", "NFCAlert.Error.readingNotAvalible")
+    }
+  }
+
+  internal enum NFCWriter {
+    /// Запись добавлена
+    internal static let successMessage = L10n.tr("Localizable", "NFCWriter.successMessage")
+    internal enum Error {
+      /// Не удалось определить NDEF статус.
+      internal static let failedDetermineNDEFStatus = L10n.tr("Localizable", "NFCWriter.Error.failedDetermineNDEFStatus")
+      /// Неудалось записать. Попробуйте еще раз
+      internal static let failedWrite = L10n.tr("Localizable", "NFCWriter.Error.failedWrite")
+      /// Формат метки не поддерживается.
+      internal static let notSupported = L10n.tr("Localizable", "NFCWriter.Error.notSupported")
+      /// Для этой метки запись невозможна.
+      internal static let notWritable = L10n.tr("Localizable", "NFCWriter.Error.notWritable")
+      /// Недостаточно места. Необходимо %@ байт.
+      internal static func smallCapacity(_ p1: String) -> String {
+        return L10n.tr("Localizable", "NFCWriter.Error.smallCapacity", p1)
+      }
+      /// Найдено больше одной метки. Поднесите только одну.
+      internal static let tooManyTags = L10n.tr("Localizable", "NFCWriter.Error.tooManyTags")
+    }
+  }
+
+  internal enum NavigationBar {
+    /// Готово
+    internal static let ready = L10n.tr("Localizable", "NavigationBar.ready")
+  }
 
   internal enum ReadTagScreen {
     /// Отсканировать метку
     internal static let scanButtonTitle = L10n.tr("Localizable", "ReadTagScreen.scanButtonTitle")
+  }
+
+  internal enum TextMessageScreen {
+    internal enum TextLabel {
+      /// Текст
+      internal static let title = L10n.tr("Localizable", "TextMessageScreen.textLabel.title")
+    }
+  }
+
+  internal enum URLMessageScreen {
+    internal enum TypeLabel {
+      /// Тип
+      internal static let title = L10n.tr("Localizable", "URLMessageScreen.typeLabel.Title")
+    }
+    internal enum UrlLabel {
+      /// Ссылка
+      internal static let title = L10n.tr("Localizable", "URLMessageScreen.urlLabel.Title")
+    }
+  }
+
+  internal enum WriteTagScreen {
+    /// Записать сообщения
+    internal static let writeButtonTitle = L10n.tr("Localizable", "WriteTagScreen.writeButtonTitle")
+    internal enum ClearButton {
+      /// Очистить
+      internal static let title = L10n.tr("Localizable", "WriteTagScreen.clearButton.title")
+    }
   }
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length

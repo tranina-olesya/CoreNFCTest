@@ -25,4 +25,11 @@ final class ReadTagScreenRouter: ReadTagScreenRouterInput {
         UIApplication.shared.open(url)
     }
 
+    func showMessageModule(with message: String) {
+        let alertController = UIAlertController(title: nil, message: message, preferredStyle: .alert)
+        let cancelAction = UIAlertAction(title: L10n.NFCAlert.Action.ok, style: .cancel, handler: nil)
+        alertController.addAction(cancelAction)
+        view?.presentModule(alertController, animated: true, completion: nil)
+    }
+
 }

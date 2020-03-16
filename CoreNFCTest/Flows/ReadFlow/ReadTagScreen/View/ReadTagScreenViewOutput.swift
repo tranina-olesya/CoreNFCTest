@@ -10,4 +10,5 @@ protocol ReadTagScreenViewOutput {
     func viewDidLoad()
     func uriChosen(uriMessage: URIMessage)
     func contactChosen(contactMessage: ContactMessage)
+    func startScan()
 }

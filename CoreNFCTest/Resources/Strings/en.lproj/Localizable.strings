@@ -6,5 +6,60 @@
   Copyright © 2020 Surf. All rights reserved.
 */
 
-"NFCAlertMessage" = "Поднесите телефон к метке";
+// MARK: - ALert
+
+"NFCAlert.message" = "Поднесите телефон к метке";
+"NFCAlert.Error.readingNotAvalible" = "Это устройство не поддерживает чтение NFC меток";
+"NFCAlert.Action.ok" = "ОК";
+
+// MARK: - NFCWriter
+
+// MARK: Errors
+"NFCWriter.Error.tooManyTags" = "Найдено больше одной метки. Поднесите только одну.";
+"NFCWriter.Error.failedDetermineNDEFStatus" = "Не удалось определить NDEF статус.";
+"NFCWriter.Error.notWritable" = "Для этой метки запись невозможна.";
+"NFCWriter.Error.notSupported" = "Формат метки не поддерживается.";
+"NFCWriter.Error.smallCapacity" = "Недостаточно места. Необходимо %@ байт.";
+"NFCWriter.Error.failedWrite" = "Неудалось записать. Попробуйте еще раз";
+
+// MARK: Success
+"NFCWriter.successMessage" = "Запись добавлена";
+
+// MARK: - NavigationBar
+
+"NavigationBar.ready" = "Готово";
+
+// MARK: - ReadTagScreen
+
 "ReadTagScreen.scanButtonTitle" = "Отсканировать метку";
+
+// MARK: - MainTabBarScreen
+
+"MainTabBarScreen.ReadTab.Title" = "Чтение";
+"MainTabBarScreen.WriteTab.Title" = "Запись";
+
+// MARK: - WriteTagScreen
+
+"WriteTagScreen.writeButtonTitle" = "Записать сообщения";
+"WriteTagScreen.clearButton.title" = "Очистить";
+
+// MARK: - URLMessageScreen
+
+"URLMessageScreen.typeLabel.Title" = "Тип";
+"URLMessageScreen.urlLabel.Title" = "Ссылка";
+
+// MARK: - TextMessageScreen
+
+"TextMessageScreen.textLabel.title" = "Текст";
+
+// MARK: - ContactMessageScreen
+
+"ContactMessageScreen.nameLabel.title" = "Имя";
+"ContactMessageScreen.phoneLabel.title" = "Телефон";
+"ContactMessageScreen.emailLabel.title" = "Email";
+
+// MARK: - AddRecordScreen
+
+"AddRecordScreen.NDEFWriteType.uri" = "Ссылка";
+"AddRecordScreen.NDEFWriteType.text" = "Текст";
+"AddRecordScreen.NDEFWriteType.contact" = "Контакт";

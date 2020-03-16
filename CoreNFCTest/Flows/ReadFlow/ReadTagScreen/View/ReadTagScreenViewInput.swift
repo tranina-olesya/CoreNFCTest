@@ -10,4 +10,5 @@ import UIKit
 
 protocol ReadTagScreenViewInput: class {
     func setupInitialState()
+    func updateMessages(messages: [NDEFMessage])
 }

@@ -89,7 +89,7 @@ private extension NDEFParser {
         }
         payload = payload.replacingOccurrences(of: "geo:", with: "maps:")
 
-        guard let url = URL(string: "\(prefix.stringPrefix)\(payload)") else {
+        guard let url = URL(string: "\(prefix.rawValue)\(payload)") else {
             return nil
         }
 

@@ -12,7 +12,15 @@ typealias MessagesClosure = ([NDEFMessage]) -> Void
 
 final class NFCReader: NSObject, NFCNDEFReaderSessionDelegate {
 
+    // MARK: - Properties
+
     var onRead: MessagesClosure?
+
+    var isReadingAvalible: Bool {
+        return NFCNDEFReaderSession.readingAvailable
+    }
+
+    // MARK: - NFCNDEFReaderSessionDelegate
 
     func readerSession(_ session: NFCNDEFReaderSession, didDetectNDEFs messages: [NFCNDEFMessage]) {
         var ndefMessages = [NDEFMessage]()
@@ -29,10 +37,12 @@ final class NFCReader: NSObject, NFCNDEFReaderSessionDelegate {
     func readerSession(_ session: NFCNDEFReaderSession, didInvalidateWithError error: Error) {
         print("\(error)")
     }
+    
+    // MARK: - Methods
 
     func beginSession() {
         let session = NFCNDEFReaderSession(delegate: self, queue: DispatchQueue.main, invalidateAfterFirstRead: true)
-        session.alertMessage = L10n.nfcAlertMessage
+        session.alertMessage = L10n.NFCAlert.message
         session.begin()
     }
 
